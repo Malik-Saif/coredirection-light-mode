@@ -1,4 +1,4 @@
-$primaryColor: #00A5E1;
+$primaryColor: #690FAD;
 $colorWhite: #FFFFFF;
 $colorBlack: #000000;
 
@@ -22,7 +22,8 @@ button:focus {
 }
 
 .bg-gradient {
-    background: linear-gradient(90deg, #06A7E0 0%, #BED62F 96.86%);
+    // background: linear-gradient(90deg, #06A7E0 0%, #BED62F 96.86%);
+    background-color: #690FAD;
 
 }
 
@@ -464,7 +465,7 @@ button:focus {
                 .btn-invite {
                     width: 40px;
                     height: 40px;
-                    background-color: #222222;
+                    background-color: $colorEerieBlack;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -6598,7 +6599,7 @@ button:focus {
         .info {
             width: 395px;
             margin-right: 75px;
-            margin-top: -34px;
+            margin-top: -5px;
 
             @media screen and (max-width: 500px) {
                 margin-right: 0;
