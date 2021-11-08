@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
+    <title>Terms & Conditions | Dubai Fitness Challenge</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="" id="body">
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header id="header">
+            <div class="container-fluid px-5 flex items-center py-1">
+
+                <!-- start logo-box -->
+                <button class="navbar-brand mr-auto">
+                    <img src="./assets/images/logo.png" alt="brand-logo" class="navbar-brand-logo">
+                </button>
+                <!-- end logo-box -->
+
+                <nav class="navbar">
+                    <!-- start navigation menu -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link py-2">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.dubaifitnesschallenge.com/about-us/" class="nav-link block py-2">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link py-2">Contact Us</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link py-2 btn-signin">Sign
+                                In</button>
+                        </li>
+                    </ul>
+                    <!-- end navigation menu -->
+
+                    <div class="mobile-nav-divider"></div>
+
+                    <!-- start small screen log-in button -->
+                    <div class="login-btn-box text-center">
+                        <p class="signin-label text-center">Already have an account?</p>
+                        <button class="btn-login  py-2 px-6 mb-16 mx-auto rounded-full btn-signin">Log
+                            In</button>
+                    </div>
+                    <!-- end small screen log-in button -->
+                </nav>
+
+                <!-- start signup button -->
+                <button class="btn-signup  py-2 px-6 rounded-full">Sign Up</button>
+                <!-- end signup button -->
+
+                <!-- start small screen menu toggle button -->
+                <div id="toggler" class="cursor-pointer ml-5">
+                    <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="btn-open">
+                        <path
+                            d="M27.7343 4.31555H2.25175C1.02098 4.31555 0 3.46659 0 2.41718V1.89837C0 0.860753 1.00699 0 2.25175 0H27.7483C28.979 0 30 0.848962 30 1.89837V2.41718C29.986 3.46659 28.979 4.31555 27.7343 4.31555Z"
+                            fill="black" />
+                        <path
+                            d="M27.7343 21.0001H2.25175C1.02098 21.0001 0 20.1511 0 19.1017V18.5947C0 17.557 1.00699 16.6963 2.25175 16.6963H27.7483C28.979 16.6963 30 17.5453 30 18.5947V19.1135C29.986 20.1511 28.979 21.0001 27.7343 21.0001Z"
+                            fill="white" />
+                        <path
+                            d="M27.7343 12.6637H2.25175C1.02098 12.6637 0 11.8147 0 10.7653V10.2465C0 9.2089 1.00699 8.34814 2.25175 8.34814H27.7483C28.979 8.34814 30 9.19711 30 10.2465V10.7653C29.986 11.8029 28.979 12.6637 27.7343 12.6637Z"
+                            fill="black" />
+                    </svg>
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="btn-close hidden">
+                        <path
+                            d="M19.7409 23.6684L1.72008 5.64758C0.849699 4.7772 0.728051 3.45481 1.47018 2.71268L1.83707 2.34579C2.57086 1.61201 3.89169 1.71542 4.77196 2.59569L22.8026 20.6264C23.673 21.4968 23.7947 22.8191 23.0526 23.5613L22.6857 23.9282C21.9336 24.6604 20.6211 24.5486 19.7409 23.6684Z"
+                            fill="black" />
+                        <path
+                            d="M22.6543 5.43637L4.63544 23.4591C3.76516 24.3296 2.44291 24.4513 1.70087 23.709L1.34235 23.3505C0.608644 22.6166 0.712051 21.2956 1.59223 20.4152L19.621 2.38261C20.4913 1.51213 21.8135 1.39047 22.5555 2.13268L22.9224 2.49961C23.6462 3.24337 23.5345 4.55601 22.6543 5.43637Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <!-- end small screen menu toggle button -->
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+
+            <!-- Terms & Conditions -->
+            <section id="legal">
+                <div class="custom-container">
+                    <div class="legal-outer-box">
+                        <div class="legal-sidebar">
+                            <div class="legal-sidebar-outer-box">
+                                <button class="btn-sidebar-toggle rounded-full">
+                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 0C32.5798 0 42 9.42025 42 21C42 32.5798 32.5798 42 21 42C9.42025 42 0 32.5798 0 21C0 9.42025 9.42025 0 21 0ZM14 29.75H28C28.966 29.75 29.75 28.966 29.75 28C29.75 27.034 28.966 26.25 28 26.25H14C13.034 26.25 12.25 27.034 12.25 28C12.25 28.966 13.034 29.75 14 29.75ZM14 22.75H28C28.966 22.75 29.75 21.966 29.75 21C29.75 20.034 28.966 19.25 28 19.25H14C13.034 19.25 12.25 20.034 12.25 21C12.25 21.966 13.034 22.75 14 22.75ZM14 15.75H28C28.966 15.75 29.75 14.966 29.75 14C29.75 13.034 28.966 12.25 28 12.25H14C13.034 12.25 12.25 13.034 12.25 14C12.25 14.966 13.034 15.75 14 15.75Z" fill="#00A5E1"/>
+                                    </svg>
+                                </button>
+                                <ul class="sidebar-menu-list">
+                                    <li class="sidebar-menu-item active">Lorem impsum headings</li>
+                                    <ul class="sidebar-submenu-list">
+                                        <li class="sidebar-submenu-item">sub-headings</li>
+                                    </ul>
+                                    <li class="sidebar-menu-item">Lorem impsum headings 2</li>
+                                    <ul class="sidebar-submenu-list">
+                                        <li class="sidebar-submenu-item">sub-headings</li>
+                                        <li class="sidebar-submenu-item">sub-headings 2</li>
+                                    </ul>
+                                    <li class="sidebar-menu-item">Lorem impsum headings 3</li>
+                                    <ul class="sidebar-submenu-list">
+                                        <li class="sidebar-submenu-item">sub-headings 1</li>
+                                        <li class="sidebar-submenu-item">sub-headings 2</li>
+                                        <li class="sidebar-submenu-item">sub-headings 3</li>
+                                    </ul>
+                                    <li class="sidebar-menu-item">Headings 4</li>
+                                    <li class="sidebar-menu-item">Headings 5</li>
+                                    <li class="sidebar-menu-item">Headings 6</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="legal-inner-box">
+                            <div class="legal-content-box">
+                                <div class="legal-content-header">
+                                    <div class="legal-content-header-outer-box flex items-center justify-between">
+                                        <button class="btn-sidebar-toggle rounded-full">
+                                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 0C32.5798 0 42 9.42025 42 21C42 32.5798 32.5798 42 21 42C9.42025 42 0 32.5798 0 21C0 9.42025 9.42025 0 21 0ZM14 29.75H28C28.966 29.75 29.75 28.966 29.75 28C29.75 27.034 28.966 26.25 28 26.25H14C13.034 26.25 12.25 27.034 12.25 28C12.25 28.966 13.034 29.75 14 29.75ZM14 22.75H28C28.966 22.75 29.75 21.966 29.75 21C29.75 20.034 28.966 19.25 28 19.25H14C13.034 19.25 12.25 20.034 12.25 21C12.25 21.966 13.034 22.75 14 22.75ZM14 15.75H28C28.966 15.75 29.75 14.966 29.75 14C29.75 13.034 28.966 12.25 28 12.25H14C13.034 12.25 12.25 13.034 12.25 14C12.25 14.966 13.034 15.75 14 15.75Z" fill="#00A5E1"/>
+                                            </svg>
+                                        </button>
+                                        <div class="legal-content-header-inner-box">
+                                            <p class="legal-content-header-title">Terms & Conditions</p>
+                                            <input class="legal-content-header-search-field rounded-full" type="search" placeholder="Search for the topic">
+                                        </div>
+                                        <button class="btn-search-bar-toggle rounded-full">
+                                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.193 3.45975C15.58 -1.15325 8.072 -1.15325 3.459 3.45975C-1.153 8.07375 -1.153 15.5807 3.459 20.1947C7.567 24.3018 13.965 24.7418 18.575 21.5347C18.672 21.9937 18.894 22.4317 19.251 22.7887L25.969 29.5068C26.948 30.4837 28.53 30.4837 29.504 29.5068C30.482 28.5287 30.482 26.9468 29.504 25.9718L22.786 19.2518C22.431 18.8978 21.992 18.6747 21.533 18.5777C24.742 13.9667 24.302 7.56975 20.193 3.45975ZM18.072 18.0737C14.628 21.5177 9.023 21.5177 5.58 18.0737C2.138 14.6297 2.138 9.02575 5.58 5.58175C9.023 2.13875 14.628 2.13875 18.072 5.58175C21.516 9.02575 21.516 14.6297 18.072 18.0737Z" fill="#00A5E1"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="legal-content-body">
+                                    <div class="legal-content-body-outer-box">
+                                        <div class="sidebar-item-content-box">
+                                            <p class="sidebar-item-content-title active">Last Updated: September 16, 2021</p>
+                                            <p class="sidebar-item-content-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                            <p class="sidebar-item-content-desc">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            
+                                            <p class="sidebar-item-content-title">Lorem impsum sites</p>
+                                            <p class="sidebar-item-content-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                            <p class="sidebar-item-content-desc">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            
+                                            <p class="sidebar-item-content-title">Governing Law</p>
+                                            <p class="sidebar-item-content-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                            <p class="sidebar-item-content-desc">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="legal-content-footer">
+                                    <div class="legal-content-footer-outer-box flex items-center justify-center">
+                                        <button class="btn-cancel rounded-full">Cancel</button>
+                                        <button class="btn-accept rounded-full">Accept Terms</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="custom-container pb-4 flex flex-wrap">
+                <div class="info mb-10">
+                    <img src="assets/images/footer-logo.png" alt="">
+                    <p class="text-xs text-justify">Launched in 2017, the challenge is simple: complete 30 minutes of activity each day for 30 days. Dubai Fitness Challenge helps create a fitness-focused mindset and inspires us all to seek healthy, active lifestyles. With a month-long calendar of free workouts, exciting fitness events and wellness-centric entertainment, there’s always plenty of inspiration to keep moving.</p>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">Company</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>Home</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>About Us</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Contact Us</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">Explore</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>Locations</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Activity Listings</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Partner with Us</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">FAQ & Legal</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>FAQ</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Privacy Policy</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Terms & Conditions</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="custom-container copyright text-center">
+                Copyright© (2021). Core Direction Holding Ltd. All right reserved
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="./assets/lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

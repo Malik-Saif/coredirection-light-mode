@@ -1,0 +1,25 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "tailwindcss-cli init",
+    "build": "postcss src/style.css -o public/style.css",
+    "watch": "postcss src/style.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-cli": "^0.1.2",
+    "tailwindcss-debug-screens": "^2.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "g": "^2.0.1",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
