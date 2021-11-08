@@ -245,8 +245,6 @@ button:focus {
 }
 
 .card {
-  -webkit-box-shadow: 0px 22px 40px 0px #0000001A;
-          box-shadow: 0px 22px 40px 0px #0000001A;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -343,8 +341,6 @@ button:focus {
 
 .card > button {
   width: 100%;
-  -webkit-box-shadow: 0px 22px 40px 0px #0000001A;
-          box-shadow: 0px 22px 40px 0px #0000001A;
   border-radius: 11px;
 }
 
@@ -2061,23 +2057,14 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
-  height: 100%;
+  min-height: calc(100vh - 96px);
+  height: 550px;
   position: relative;
-}
-#banner::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(102.61deg, rgba(72, 72, 72, 0.45) 5.88%, rgba(72, 72, 72, 0.2025) 96.13%);
-  content: "";
-  right: 0;
-  bottom: 0;
 }
 #banner .custom-container {
   position: relative;
-  min-height: 100vh;
-  height: 100%;
+  min-height: calc(100vh - 96px);
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2100,6 +2087,7 @@ button:focus {
   line-height: 58.5px;
   margin-bottom: 39px;
   color: #FFFFFF;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
 }
 @media screen and (max-width: 991px) {
   #banner .custom-container .hero-title {
@@ -2118,6 +2106,7 @@ button:focus {
   color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
+  background-color: #690FAD;
 }
 @media screen and (max-width: 991px) {
   #banner .custom-container .hero-btn {

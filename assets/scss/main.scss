@@ -260,7 +260,7 @@ button:focus {
 }
 
 .card {
-    box-shadow: 0px 22px 40px 0px #0000001A;
+    // box-shadow: 0px 22px 40px 0px #0000001A;
     height: fit-content;
     display: inline-block;
     min-height: 345px;
@@ -366,7 +366,7 @@ button:focus {
 }
 .card>button {
     width: 100%;
-    box-shadow: 0px 22px 40px 0px #0000001A;
+    // box-shadow: 0px 22px 40px 0px #0000001A;
     border-radius: 11px;
 }
 
@@ -2166,24 +2166,24 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
-    height: 100%;
+    min-height: calc(100vh - 96px);
+    height: 550px;
     position: relative;
 
-    &::before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: linear-gradient(102.61deg, rgba(72, 72, 72, 0.45) 5.88%, rgba(72, 72, 72, 0.2025) 96.13%);
-        content: "";
-        right: 0;
-        bottom: 0;
-    }
+    // &::before {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     background: linear-gradient(102.61deg, rgba(72, 72, 72, 0.45) 5.88%, rgba(72, 72, 72, 0.2025) 96.13%);
+    //     content: "";
+    //     right: 0;
+    //     bottom: 0;
+    // }
 
     .custom-container {
         position: relative;
-        min-height: 100vh;
-        height: 100%;
+        min-height: calc(100vh - 96px);
+        height: 550px;
         display: flex;
         align-items: center;
         padding-top: calc(5vw + 20px);
@@ -2201,6 +2201,7 @@ button:focus {
             line-height: 58.5px;
             margin-bottom: 39px;
             color: $colorWhite;
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
 
             @media screen and (max-width: 991px) {
                 font-size: 28px;
@@ -2218,6 +2219,7 @@ button:focus {
             line-height: 21.94px;
             color: $colorWhite;
             box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.13);
+            background-color: $primaryColor;
 
             @media screen and (max-width: 991px) {
                 width: 180px;
