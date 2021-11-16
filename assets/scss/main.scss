@@ -877,6 +877,7 @@ button:focus {
     label {
         position: relative;
         cursor: pointer;
+        user-select: none;
 
         &::before {
             width: 18px;
@@ -2194,10 +2195,11 @@ button:focus {
             flex-direction: column-reverse;
             align-items: baseline;
             .hero-img{
-                margin-top: 100px;
-                margin-bottom: 50px;
+                max-width: 300px !important;
+                margin-bottom: 35px;
                 padding-left: 1rem;
                 padding-right: 1rem;
+                margin-left: auto;
             }
         }
 
@@ -3486,11 +3488,6 @@ button:focus {
 }
 
 #our-partners {
-    // margin-top: 46px;
-
-    // @media screen and (max-width: 991px) {
-    //     margin-top: 35px;
-    // }
     .section-header {
         margin-top: 0px;
     }
@@ -6220,9 +6217,6 @@ button:focus {
     }
 }
 .btn-live-chat-toggle{
-    // position: fixed;
-    // right: 20px;
-    // bottom: 20px;
     margin-top: 20px;
     @media screen and (min-width: 992px) {
         display: none;
@@ -6734,6 +6728,67 @@ button:focus {
             position: absolute;
             right: 8px;
             bottom: 12px;
+        }
+    }
+    .tc-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorEerieBlack;
+        a{
+            color: $primaryColor;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+    .checkbox-field-box{
+        input:checked+label:after {
+            top: 1px;
+            @media screen and (max-width: 991px) {
+                top: 1px;
+            }
+        }
+        label{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+    .btn-signup{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        width: 266px;
+        height: 60px;
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+            width: 180px;
+            height: 46px;
+        }
+    }
+    .social-signup-text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
         }
     }
 }

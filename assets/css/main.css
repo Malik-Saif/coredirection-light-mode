@@ -823,6 +823,10 @@ button:focus {
 .form-group label {
   position: relative;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .form-group label::before {
   width: 18px;
@@ -2101,10 +2105,11 @@ button:focus {
             align-items: baseline;
   }
   #banner .custom-container .hero-img {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    max-width: 300px !important;
+    margin-bottom: 35px;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 991px) {
@@ -6559,6 +6564,71 @@ button:focus {
   position: absolute;
   right: 8px;
   bottom: 12px;
+}
+#sign-up .tc-content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+#sign-up .tc-content a {
+  color: #690FAD;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#sign-up .checkbox-field-box input:checked + label:after {
+  top: 1px;
+}
+@media screen and (max-width: 991px) {
+  #sign-up .checkbox-field-box input:checked + label:after {
+    top: 1px;
+  }
+}
+#sign-up .checkbox-field-box label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#sign-up .btn-signup {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  width: 266px;
+  height: 60px;
+}
+@media screen and (max-width: 992px) {
+  #sign-up .btn-signup {
+    font-size: 14px;
+    width: 180px;
+    height: 46px;
+  }
+}
+#sign-up .social-signup-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #sign-up .social-signup-text {
+    font-size: 14px;
+  }
 }
 
 #footer {
