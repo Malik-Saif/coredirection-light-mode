@@ -31,6 +31,18 @@ button:focus {
     color: $primaryColor !important;
 }
 
+.error-message{
+    color: #F14336;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-items: flex-start;
+}
+
 .container-fluid {
     width: 100%;
     max-width: calc(1300px + 2rem);
