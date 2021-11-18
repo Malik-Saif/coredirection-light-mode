@@ -1662,7 +1662,7 @@ button:focus {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    margin-right: 164px;
+    margin-right: 54px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -6645,6 +6645,461 @@ button:focus {
   }
 }
 
+#my-account .my-account-header {
+  background: #FFFFFF;
+  margin-top: 41px;
+  margin-bottom: 19px;
+  border-radius: 11px;
+  padding: 24px 96px 15px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-header {
+    padding: 28px 15px 11px;
+  }
+}
+#my-account .my-account-header .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 17px;
+  width: 100%;
+  height: 3px;
+  background-color: #F1F1F1;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+#my-account .my-account-header .progress-bar .progress-status-box {
+  width: 209px;
+  height: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-header .progress-bar .progress-status-box {
+    width: 83px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-header .progress-bar .progress-status {
+    width: 9px;
+    height: 9px;
+    background: #690FAD;
+    border-radius: 50%;
+  }
+}
+#my-account .my-account-header .progress-bar .progress-status-box.active {
+  background: #690FAD;
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-header .progress-bar .progress-status-box:nth-child(2) {
+    margin-left: 34px;
+  }
+}
+#my-account .my-account-header ul {
+  margin-left: 8px;
+  margin-right: 34px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-header ul {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-header ul li .icon-box {
+    display: none;
+  }
+}
+#my-account .my-account-header ul li .icon-box svg, #my-account .my-account-header ul li .icon-box path {
+  fill: #000000;
+}
+#my-account .my-account-header ul li .content-box {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-header ul li .content-box {
+    display: none;
+  }
+}
+#my-account .my-account-table-header {
+  padding: 22px 39px 20px;
+  background-color: #690FAD;
+  border-radius: 11px 11px 0px 0px;
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-table-header {
+    padding: 18px 24px 19px;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+            box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
+#my-account .my-account-table-header .my-account-selected-tab-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-table-header .my-account-selected-tab-heading {
+    display: none;
+  }
+}
+#my-account .my-account-table-header .my-account-table-heading-list .my-account-table-heading-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.06px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-table-header .my-account-table-heading-list .my-account-table-heading-item {
+    display: none;
+  }
+}
+#my-account .package-membership-content-box .my-account-table-heading-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+}
+#my-account .package-membership-content-box .my-account-table-heading-item:last-child {
+  text-align: right;
+}
+#my-account .booking-history-content-box .my-account-table-heading-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+}
+#my-account .my-account-table-body {
+  max-height: 353px;
+  overflow-y: scroll;
+  margin-bottom: 76px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+#my-account .my-account-table-body::-webkit-scrollbar {
+  width: 4px;
+}
+#my-account .my-account-table-body::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+  border-radius: 11px;
+}
+#my-account .my-account-table-body::-webkit-scrollbar-thumb {
+  background-color: #C4C4C4;
+  border-radius: 11px;
+}
+#my-account .my-account-table-body .my-account-table-row {
+  background-color: #FFFFFF;
+  padding: 18px 24px 19px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-table-body .my-account-table-row {
+    padding: 10px 13px 11px;
+    margin-bottom: 1px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-table-body .small-screen-accordion-box {
+    display: none;
+  }
+}
+#my-account .my-account-table-body .small-screen-accordion-icon-box {
+  width: 56px;
+}
+#my-account .my-account-table-body .small-screen-accordion-icon-box svg, #my-account .my-account-table-body .small-screen-accordion-icon-box ellipse {
+  fill: #690FAD;
+}
+#my-account .my-account-table-body .small-screen-accordion-icon-box path {
+  fill: #FFFFFF;
+}
+#my-account .my-account-table-body .small-screen-accordion-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.0px;
+  color: #000000;
+  padding-top: 11px;
+}
+#my-account .my-account-table-body .my-account-table-content-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14.0px;
+}
+@media screen and (max-width: 991px) {
+  #my-account .my-account-table-body .my-account-table-content-item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-table-body .available-session-box {
+    margin-right: 83px;
+  }
+}
+#my-account .my-account-table-body .table-small-screen-heading {
+  width: 112px;
+  font-weight: 700;
+  color: #690FAD;
+}
+@media screen and (min-width: 992px) {
+  #my-account .my-account-table-body .table-small-screen-heading {
+    display: none;
+  }
+}
+#my-account .my-account-table-body .table-data {
+  font-weight: 500;
+  color: #000000;
+}
+#my-account .my-account-table-body .btn-cancel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #690FAD;
+  padding: 6px 25px;
+}
+#my-account .my-account-table-body .btn-checked-in {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #C4C4C4;
+  padding: 6px 12px;
+}
+@media screen and (min-width: 992px) {
+  #my-account .package-membership-content-box .my-account-table-content-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #my-account .package-membership-content-box .my-account-table-content-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .package-membership-content-box .my-account-table-content-item:last-child .table-data {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .package-membership-content-box .my-account-table-content-item:nth-last-child(2) .table-data {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .booking-history-content-box .my-account-table-content-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #my-account .booking-history-content-box .my-account-table-content-list {
+    display: none;
+  }
+}
+#my-account .payment-detail-content-box {
+  margin-bottom: 182px;
+}
+#my-account .payment-detail-content-box .my-account-table-header {
+  background-color: transparent;
+}
+@media screen and (max-width: 991px) {
+  #my-account .payment-detail-content-box .my-account-table-header {
+    background-color: #690FAD;
+  }
+}
+@media screen and (min-width: 992px) {
+  #my-account .payment-detail-content-box .my-account-table-header {
+    padding: 0;
+    margin-left: 9px;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+}
+#my-account .payment-detail-content-box .lg-screen-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.94px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 34px;
+  color: #000000;
+}
+@media screen and (max-width: 992px) {
+  #my-account .payment-detail-content-box .lg-screen-title {
+    display: none;
+  }
+}
+#my-account .payment-detail-content-box .card-icon-box span {
+  min-width: 22.56px;
+  min-height: 22.56px;
+}
+#my-account .payment-detail-content-box .card-icon-box .first-icon {
+  background: #FFFFFFF2;
+  margin-right: -7px;
+}
+#my-account .payment-detail-content-box .card-icon-box .second-icon {
+  background: #F1F1F1A6;
+}
+#my-account .payment-detail-content-box .payment-detail-card-inner-box {
+  margin-bottom: 21px;
+}
+#my-account .payment-detail-content-box .btn-edit-payment-detail, #my-account .payment-detail-content-box .btn-delete-payment-detail {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  font-family: 'Montserrat', sans-serif;
+}
+#my-account .payment-detail-content-box .btn-edit-payment-detail svg, #my-account .payment-detail-content-box .btn-edit-payment-detail path, #my-account .payment-detail-content-box .btn-delete-payment-detail svg, #my-account .payment-detail-content-box .btn-delete-payment-detail path {
+  fill: #000000;
+}
+#my-account .payment-detail-content-box .btn-edit-payment-detail {
+  margin-bottom: 13px;
+}
+#my-account .payment-detail-content-box .btn-delete-payment-detail {
+  margin-top: 12px;
+  margin-left: auto;
+}
+#my-account .payment-detail-content-box .payment-detail-card {
+  padding: 31.15px 24.4px 32.23px 28px;
+  height: 188px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  background: radial-gradient(141.97% 92.29% at 3.67% 12.86%, #690FAD 0%, #3E0867 90.74%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+#my-account .payment-detail-content-box .payment-detail-card .card-title {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  font-family: 'Montserrat', sans-serif;
+}
+#my-account .payment-detail-content-box .payment-detail-card .card-number {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 7px;
+}
+#my-account .payment-detail-content-box .payment-detail-card .cardholder-name {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  font-family: 'Montserrat', sans-serif;
+}
+#my-account .payment-detail-content-box .btn-add-payment-detail {
+  padding: 31.15px 24.4px 32.23px 28px;
+  height: 188px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  background-color: #FFFFFF;
+  margin-bottom: 18px;
+}
+#my-account .payment-detail-content-box .btn-add-payment-detail svg, #my-account .payment-detail-content-box .btn-add-payment-detail path {
+  fill: #000000;
+}
+#my-account .payment-detail-content-box .btn-add-payment-detail p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 26px;
+}
+#my-account .payment-detail-cards-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+#session-cancel-modal .modal-outer-box {
+  max-width: calc(450px + 2rem);
+  background: #FFFFFF;
+}
+#session-cancel-modal .form-container {
+  width: 100%;
+  max-width: 345px;
+}
+#session-cancel-modal .session-cancel-title {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 21.94px;
+  margin-top: 21px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+#session-cancel-modal .session-cancel-desc {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.3px;
+  margin-bottom: 18px;
+}
+#session-cancel-modal .session-cancel-btn-box {
+  text-align: center;
+}
+#session-cancel-modal .session-cancel-btn-box .session-cancel-btn {
+  width: 205px;
+  height: 45px;
+  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
+          box-shadow: 0px 4px 4px 0px #00000040;
+  color: #FFFFFF;
+  background-color: #690FAD;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  margin-bottom: 50px;
+}
+
 #footer {
   padding-top: 65px;
   background-color: #FFFFFF;
@@ -6679,7 +7134,7 @@ button:focus {
   }
 }
 #footer .custom-container .links {
-  width: 140px;
+  width: 150px;
   margin-right: 108px;
   color: #000000;
 }
