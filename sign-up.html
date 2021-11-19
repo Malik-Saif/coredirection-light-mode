@@ -97,24 +97,28 @@
 
         <!-- main -->
         <main id="main">
-            <!-- hero banner -->
-            <section id="banner" style="background-color: #fff;">
-                <div class="custom-container mx-auto justify-center">
-                    <div class="hero-content-box">
-                        <p class="hero-tagline">CoreDirection</p>
-                        <h3 class="hero-title text-primary">Inspiring <br> Movement <br> Across The UAE</h3>
-                        <button class="hero-btn rounded-full">Join Now</button>
-                    </div>
-                    <div class="hero-img">
-                        <img class="ml-auto" src="./assets/images/bg-03.png" alt="">
-                    </div>
-                </div>
-            </section>
 
+            <!-- sign-up form -->
             <section id="sign-up">
                 <div class="custom-container mx-auto">
-                    <div class="signup-form-container">
+                    <div class="signup-form-container mx-auto">
                         <div class="personal-detail-box">
+                            <div class="social-signup-box mb-5 flex items-center justify-center">
+                                <p class="social-signup-text mr-5">Sign up with</p>
+                                <ul class="social-list flex items-center">
+                                    <li class="social-item mr-4">
+                                        <a href="#" class="social-link">
+                                            <img src="./assets/images/social-icons/google-01.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./assets/images/social-icons/apple-01.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="signup-options">or</p>
                             <p class="form-title">Enter your personal details</p>
                             <p class="form-desc">We understand your privacy. Please enter your information accordingly.</p>
                             <form>
@@ -190,26 +194,21 @@
                                     </div>
                                 </div>
                                 <div class="mb-9">
-                                    <label for="fname" class="form-label block">Date Of Birth</label>
-                                    <div class="grid grid-cols-6 gap-4">
-                                        <div class="field-control-box">
-                                            <input type="text" class="form-control block" id="fname" placeholder="Day">
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="black"/>
-                                            </svg>
-                                        </div>
-                                        <div class="field-control-box col-span-3">
-                                            <input type="text" class="form-control block" id="fname" placeholder="Month">
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="black"/>
-                                            </svg>
-                                        </div>
-                                        <div class="field-control-box col-span-2">
-                                            <input type="text" class="form-control block" id="fname" placeholder="Year">
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="black"/>
-                                            </svg>
-                                        </div>
+                                    <div class="field-control-box">
+                                        <label for="dob" class="form-label block">Select your Date Of Birth</label>
+                                        <input type="text" class="form-control block" id="dob" placeholder="Select Date">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.5117 8.08594C10.9 8.08594 11.2148 7.77114 11.2148 7.38281C11.2148 6.99449 10.9 6.67969 10.5117 6.67969C10.1234 6.67969 9.80859 6.99449 9.80859 7.38281C9.80859 7.77114 10.1234 8.08594 10.5117 8.08594Z" fill="#690FAD"/>
+                                            <path d="M10.5117 11.1445C10.9 11.1445 11.2148 10.8297 11.2148 10.4414C11.2148 10.0531 10.9 9.73828 10.5117 9.73828C10.1234 9.73828 9.80859 10.0531 9.80859 10.4414C9.80859 10.8297 10.1234 11.1445 10.5117 11.1445Z" fill="#690FAD"/>
+                                            <path d="M13.5703 8.08594C13.9586 8.08594 14.2734 7.77114 14.2734 7.38281C14.2734 6.99449 13.9586 6.67969 13.5703 6.67969C13.182 6.67969 12.8672 6.99449 12.8672 7.38281C12.8672 7.77114 13.182 8.08594 13.5703 8.08594Z" fill="#690FAD"/>
+                                            <path d="M17.2968 8.78905C17.6852 8.78905 18 8.47426 18 8.08593V4.21874C18 2.66793 16.7383 1.40625 15.1875 1.40625H14.2734V0.703124C14.2734 0.314789 13.9586 0 13.5703 0C13.182 0 12.8672 0.314789 12.8672 0.703124V1.40625H9.66795V0.703124C9.66795 0.314789 9.35316 0 8.96483 0C8.57649 0 8.26171 0.314789 8.26171 0.703124V1.40625H5.09765V0.703124C5.09765 0.314789 4.78286 0 4.39452 0C4.00619 0 3.6914 0.314789 3.6914 0.703124V1.40625H2.8125C1.26169 1.40625 0 2.66793 0 4.21874V15.1875C0 16.7383 1.26169 18 2.8125 18H11.6719C11.6958 18 11.7195 17.9987 11.7428 17.9964C11.7659 17.9987 11.7891 18 11.8123 18C11.9998 18 12.1838 17.9249 12.3189 17.7846L17.8033 12.0893C17.9989 11.8861 18.0543 11.5858 17.9439 11.3263C17.8335 11.0669 17.5788 10.8984 17.2968 10.8984H13.9219C12.371 10.8984 11.1094 12.1601 11.1094 13.7109V16.5937H2.8125C2.03709 16.5937 1.40625 15.9629 1.40625 15.1875V4.21874C1.40625 3.44334 2.03709 2.8125 2.8125 2.8125H3.6914V3.51562C3.6914 3.90395 4.00619 4.21874 4.39452 4.21874C4.78286 4.21874 5.09765 3.90395 5.09765 3.51562V2.8125H8.26171V3.51562C8.26171 3.90395 8.57649 4.21874 8.96483 4.21874C9.35316 4.21874 9.66795 3.90395 9.66795 3.51562V2.8125H12.8672V3.51562C12.8672 3.90395 13.182 4.21874 13.5703 4.21874C13.9586 4.21874 14.2734 3.90395 14.2734 3.51562V2.8125H15.1875C15.9629 2.8125 16.5937 3.44334 16.5937 4.21874V8.08593C16.5937 8.47426 16.9085 8.78905 17.2968 8.78905ZM12.5156 13.7109C12.5156 12.9355 13.1464 12.3047 13.9219 12.3047H15.6436L12.5156 15.553V13.7109Z" fill="#690FAD"/>
+                                            <path d="M4.39453 8.08594C4.78285 8.08594 5.09765 7.77114 5.09765 7.38281C5.09765 6.99449 4.78285 6.67969 4.39453 6.67969C4.00621 6.67969 3.69141 6.99449 3.69141 7.38281C3.69141 7.77114 4.00621 8.08594 4.39453 8.08594Z" fill="#690FAD"/>
+                                            <path d="M7.45312 11.1445C7.84145 11.1445 8.15625 10.8297 8.15625 10.4414C8.15625 10.0531 7.84145 9.73828 7.45312 9.73828C7.0648 9.73828 6.75 10.0531 6.75 10.4414C6.75 10.8297 7.0648 11.1445 7.45312 11.1445Z" fill="#690FAD"/>
+                                            <path d="M4.39453 14.2031C4.78285 14.2031 5.09765 13.8883 5.09765 13.5C5.09765 13.1117 4.78285 12.7969 4.39453 12.7969C4.00621 12.7969 3.69141 13.1117 3.69141 13.5C3.69141 13.8883 4.00621 14.2031 4.39453 14.2031Z" fill="#690FAD"/>
+                                            <path d="M4.39453 11.1445C4.78285 11.1445 5.09765 10.8297 5.09765 10.4414C5.09765 10.0531 4.78285 9.73828 4.39453 9.73828C4.00621 9.73828 3.69141 10.0531 3.69141 10.4414C3.69141 10.8297 4.00621 11.1445 4.39453 11.1445Z" fill="#690FAD"/>
+                                            <path d="M7.45312 14.2031C7.84145 14.2031 8.15625 13.8883 8.15625 13.5C8.15625 13.1117 7.84145 12.7969 7.45312 12.7969C7.0648 12.7969 6.75 13.1117 6.75 13.5C6.75 13.8883 7.0648 14.2031 7.45312 14.2031Z" fill="#690FAD"/>
+                                            <path d="M7.45312 8.08594C7.84145 8.08594 8.15625 7.77114 8.15625 7.38281C8.15625 6.99449 7.84145 6.67969 7.45312 6.67969C7.0648 6.67969 6.75 6.99449 6.75 7.38281C6.75 7.77114 7.0648 8.08594 7.45312 8.08594Z" fill="#690FAD"/>
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="mb-9">
@@ -222,61 +221,6 @@
                                             <circle cx="13.5" cy="13.5" r="1.75" stroke="#690FAD" stroke-width="1.5"/>
                                             <line x1="6.40234" y1="13.1395" x2="13.9417" y2="5.6002" stroke="#690FAD" stroke-width="1.5" stroke-linecap="round"/>
                                         </svg>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="emergency-detail-box">
-                            <p class="form-title">Emergency contact details</p>
-                            <p class="form-desc">Please provide information of your beloved one’s. So, we can contact them in case of any emergency.</p>
-                            <form>
-                                <div class="mb-9">
-                                    <div class="grid grid-cols-2 gap-4">
-                                        <div class="form-control-box">
-                                            <label for="fname" class="form-label block">First Name<span class="field-primary">*</span></label>
-                                            <input type="text" class="form-control block" id="fname" placeholder="Enter your First Name">
-                                        </div>
-                                        <div class="form-control-box">
-                                            <label for="fname" class="form-label block">Last Name<span class="field-primary">*</span></label>
-                                            <input type="text" class="form-control block" id="fname" placeholder="Enter your Last Name">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-9">
-                                    <div class="field-control-box">
-                                        <label for="fname" class="form-label block">Enter your email address<span class="field-primary">*</span></label>
-                                        <input type="text" class="form-control block" id="fname" placeholder="johnsmith@example.com">
-                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.9246 13.5754C16.7811 12.4318 15.4198 11.5853 13.9346 11.0726C15.5252 9.97705 16.5703 8.14365 16.5703 6.07031C16.5703 2.72303 13.8473 0 10.5 0C7.15271 0 4.42969 2.72303 4.42969 6.07031C4.42969 8.14365 5.47477 9.97705 7.06535 11.0726C5.58018 11.5849 4.21887 12.4318 3.07535 13.5754C1.09225 15.5585 0 18.1954 0 21H1.64062C1.64062 16.115 5.61504 12.1406 10.5 12.1406C15.385 12.1406 19.3594 16.115 19.3594 21H21C21 18.1954 19.9078 15.5585 17.9246 13.5754ZM10.5 10.5C8.05752 10.5 6.07031 8.51279 6.07031 6.07031C6.07031 3.62783 8.05752 1.64062 10.5 1.64062C12.9425 1.64062 14.9297 3.62783 14.9297 6.07031C14.9297 8.51279 12.9425 10.5 10.5 10.5Z" fill="#690FAD"/>
-                                        </svg>
-                                    </div>
-                                    <p class="error-message flex mt-2">
-                                        <svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.00151 12C4.8146 12.0003 3.65426 11.6486 2.66729 10.9893C1.68031 10.33 0.911044 9.39283 0.456797 8.29628C0.00255109 7.19972 -0.116264 5.99308 0.115383 4.829C0.34703 3.66491 0.918731 2.59567 1.75816 1.75656C2.5976 0.917444 3.66705 0.346148 4.83122 0.114941C5.9954 -0.116266 7.20199 0.00300535 8.29837 0.457666C9.39475 0.912327 10.3316 1.68195 10.9906 2.66917C11.6495 3.6564 12.0007 4.81687 12 6.00378C11.999 7.59416 11.3666 9.11909 10.2418 10.2434C9.11706 11.3678 7.59189 11.9996 6.00151 12ZM6.74858 7.13119C6.74858 6.76144 6.74858 6.39168 6.74858 6.02269C6.74858 5.57505 6.42268 5.24839 5.99244 5.25217C5.89296 5.25221 5.7945 5.2723 5.70295 5.31123C5.61141 5.35017 5.52865 5.40716 5.45962 5.4788C5.39059 5.55044 5.33672 5.63526 5.3012 5.72818C5.26569 5.82111 5.24927 5.92025 5.25293 6.01966C5.24991 6.75262 5.24991 7.48507 5.25293 8.21701C5.25293 8.66314 5.57958 9.00189 5.99849 9.0034C6.41739 9.00492 6.7448 8.66465 6.74783 8.22004C6.75085 7.85709 6.74858 7.49414 6.74858 7.13119ZM5.99773 4.49528C6.09514 4.49657 6.19184 4.47864 6.2823 4.44249C6.37275 4.40634 6.45519 4.35269 6.52487 4.28463C6.59455 4.21656 6.65012 4.1354 6.68838 4.04582C6.72664 3.95624 6.74684 3.85998 6.74783 3.76257C6.74843 3.56424 6.67022 3.37379 6.5304 3.23312C6.39058 3.09245 6.2006 3.01308 6.00227 3.01248C5.80393 3.01188 5.61348 3.09009 5.47281 3.22991C5.33214 3.36973 5.25278 3.5597 5.25217 3.75804C5.25257 3.85544 5.27218 3.95181 5.30989 4.04162C5.3476 4.13143 5.40267 4.21291 5.47193 4.2814C5.54119 4.34989 5.62329 4.40404 5.71352 4.44074C5.80374 4.47744 5.90033 4.49597 5.99773 4.49528Z" fill="#F14336"/>
-                                        </svg> Invalid email! please check your spellings
-                                    </p>
-                                </div>
-                                <div class="mb-9">
-                                    <label for="fname" class="form-label block">Phone Number<span class="field-primary">*</span></label>
-                                    <div class="grid grid-cols-4">
-                                        <div class="field-control-box">
-                                            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="left: 0;">
-                                                <rect width="24" height="12" fill="url(#pattern0)"/>
-                                                <defs>
-                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                <use xlink:href="#image0_11_3060" transform="translate(0 -0.00196078) scale(0.00392157 0.00784314)"/>
-                                                </pattern>
-                                                <image id="image0_11_3060" width="255" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACACAYAAADEfL/eAAAEEklEQVR4Ae3YsVEDQRBE0Q0AVx74eISgJE6RiIiIREkonlUdciaH/6hS1bnT3X97hrXX2tXf4/Njr/uPHw2aGaiCf84Nfg9f+vEHPwDSAJS3HvCDH/zRDIA/any58cz+/h8H+MGv+aMZAH/UeO3X/A//9B384Nf80QyAP2r8bADfzS0A/ODX/NEMgD9qvLZvtv30Hfzg1/zRDIA/avxsAN/NLQD84Nf80QyAP2q8tm+2/fQd/ODX/NEMgD9q/GwA380tAPzg1/zRDIA/ary2b7b99B384Nf80QyAP2r8bADfzS0A/ODX/NEMgD9qvLZvtv30Hfzg1/zRDIA/avxsAN/NLQD84Nf80QyAP2q8tm+2/fQd/ODX/NEMgD9q/GwA380tAPzg1/zRDIA/ary2b7b99B384Nf80QyAP2r8bADfzS0A/ODX/NEMgD9qvLZvtv30Hfzg1/zRDIA/avxsAN/NLQD84Nf80QyAP2q8tm+2/fQd/ODX/NEMgD9q/GwA380tAPzg1/zRDJThf35/7dvfrx8NkhlYZfj39br9UaCqAPirzps7rwD48xEgQFUB8FedN3deAfDnI0CAqgLgrzpv7rwC4M9HgABVBcBfdd7ceQXAn48AAaoKgL/qvLnzCoA/HwECVBUAf9V5c+cVAH8+AgSoKgD+qvPmzisA/nwECFBVAPxV582dVwD8+QgQoKoA+KvOmzuvAPjzESBAVQHwV503d14B8OcjQICqAuCvOm/uvALgz0eAAFUFwF913tx5BcCfjwABqgqAv+q8ufMKgD8fAQJUFQB/1Xlz5xUAfz4CBKgqAP6q8+bOKwD+fAQIUFUA/FXnzZ1XAPz5CBCgqgD4q86bO68A+PMRIEBVAfBXnTd3XgHw5yNAgKoC4K86b+68AuDPR4AAVQXAX3Xe3HkFwJ+PAAGqCoC/6ry58wqk4X9eLvs4Dj8aJDOQhv+xzvH9aBDNwF5rV3/gj4beg/8uvSr459zgB3966wE/ANIAlLcA8IMf/NEMgD9qfLnxzO7md/N7+NJbj+YHQBqA8hYAfvCDP5oB8EeNLzee2d38bn4PX3rr0fwASANQ3gLAD37wRzMA/qjx5cYzu5vfze/hS289mh8AaQDKWwD4wQ/+aAbAHzW+3Hhmd/O7+T186a1H8wMgDUB5CwA/+MEfzQD4o8aXG8/sbn43v4cvvfVofgCkAShvAeAHP/ijGQB/1Phy45ndze/m9/Cltx7ND4A0AOUtAPzgB380A+CPGl9uPLO7+d38Hr701qP5AZAGoLwFgB/84I9mAPxR48uNZ3Y3v5vfw5feejQ/ANIAlLcA8IMf/NEMgD9qfLnxzO7md/N7+NJbj+YHQBqA8hYAfvCDP5oB8EeNLzee2f9v/hfAnDp9+4nHgQAAAABJRU5ErkJggg=="/>
-                                                </defs>
-                                            </svg>
-                                            <input type="text" class="form-control block" id="fname" placeholder="+971" style="padding-left: 35px;">
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="black"/>
-                                            </svg>
-                                        </div>
-                                        <div class="form-control-box col-span-3">
-                                            <input type="text" class="form-control block" id="fname" placeholder="1234 567890">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="tc-content-box mb-7">
@@ -294,24 +238,7 @@
                                         <label for="relevantPromotionalEmail">I want to receive relavant promotional email from CoreDirection partners.</label>
                                     </div>
                                 </div>
-                                <div class="signup-btn-box flex items-center flex-wrap">
-                                    <button class="btn-signup bg-gradient rounded-full mb-5 mr-5">Sign Up</button>
-                                    <div class="social-signup-box mb-5 flex items-center">
-                                        <p class="social-signup-text mr-5">Sign up with</p>
-                                        <ul class="social-list flex items-center">
-                                            <li class="social-item mr-4">
-                                                <a href="#" class="social-link">
-                                                    <img src="./assets/images/social-icons/google-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="social-item">
-                                                <a href="#" class="social-link">
-                                                    <img src="./assets/images/social-icons/apple-01.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <button class="btn-signup bg-gradient rounded-full mb-5 mr-5">Sign Up</button>
                             </form>
                         </div>
                     </div>

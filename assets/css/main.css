@@ -6478,19 +6478,9 @@ button:focus {
   padding-top: 125px;
   padding-bottom: 145px;
 }
-@media screen and (min-width: 768px) {
-  #sign-up .signup-form-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
-  }
-}
-@media screen and (min-width: 992px) {
-  #sign-up .signup-form-container {
-    -webkit-column-gap: 100px;
-            column-gap: 100px;
-  }
+#sign-up .signup-form-container {
+  width: 100%;
+  max-width: 550px;
 }
 #sign-up .form-title {
   font-family: 'Montserrat', sans-serif;
@@ -6620,7 +6610,7 @@ button:focus {
   letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
-  width: 266px;
+  width: 100%;
   height: 60px;
 }
 @media screen and (max-width: 992px) {
@@ -6643,6 +6633,17 @@ button:focus {
   #sign-up .social-signup-text {
     font-size: 14px;
   }
+}
+#sign-up .signup-options {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 35px;
 }
 
 #my-account .my-account-header {
