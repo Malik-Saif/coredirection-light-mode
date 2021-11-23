@@ -3978,26 +3978,21 @@ button:focus {
   margin-top: 0px;
 }
 
+#business-profile {
+  background-color: #FFFFFF;
+}
 #business-profile .business-profile-header .business-profile-banner-box,
 #business-profile .business-profile-header .business-profile-map-box {
-  width: 50%;
-  height: 440px;
+  width: 100%;
+  border-radius: 0 0 7px 7px;
+  height: 331px;
   overflow: hidden;
-}
-@media screen and (max-width: 991px) {
-  #business-profile .business-profile-header .business-profile-banner-box,
-  #business-profile .business-profile-header .business-profile-map-box {
-    width: 100%;
-  }
 }
 #business-profile .business-profile-header .business-profile-banner-box img,
 #business-profile .business-profile-header .business-profile-map-box img {
   width: 100%;
-  height: 440px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  border-radius: 0 0 7px 7px;
+  height: 331px;
 }
 @media screen and (max-width: 991px) {
   #business-profile .business-profile-header .business-profile-map-box {
@@ -4005,7 +4000,7 @@ button:focus {
   }
 }
 #business-profile .business-profile-info-box {
-  padding-top: 39px;
+  margin-top: -8px;
   padding-bottom: 23px;
 }
 #business-profile .business-profile-info-box .business-profile-short-info-box {
@@ -4013,10 +4008,14 @@ button:focus {
 }
 #business-profile .business-profile-info-box .business-profile-logo-box {
   margin-right: 9px;
+  padding: 3px;
+  outline: 3px solid #fff;
 }
 #business-profile .business-profile-info-box .business-profile-logo-box img {
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
+  outline: 4px solid #690FAD;
+  border: 3px solid #FFFFFF;
 }
 #business-profile .business-profile-info-box .business-profile-name-box .business-profile-brand-title {
   font-family: 'Roboto', sans-serif;
@@ -4024,15 +4023,16 @@ button:focus {
   font-weight: 500;
   line-height: 28.13px;
   margin-bottom: 4px;
+  width: 100%;
+  max-width: 349px;
 }
 #business-profile .business-profile-info-box .business-profile-name-box .business-profile-brand-subtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.07px;
-}
-#business-profile .business-profile-info-box .business-profile-contact-info-box {
-  padding-bottom: 15px;
+  width: 100%;
+  max-width: 349px;
 }
 @media screen and (max-width: 991px) {
   #business-profile .business-profile-info-box .business-profile-contact-info-box {
@@ -4050,6 +4050,8 @@ button:focus {
   padding: 13px 16px;
   background-color: #FFFFFF;
   margin-right: 15px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number svg, #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number img {
   margin-right: 7.1px;
@@ -4058,6 +4060,15 @@ button:focus {
   padding: 16px 27px;
   color: #F1F1F1;
   background-color: #690FAD;
+  margin-right: 14px;
+}
+#business-profile .tab-container {
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+  margin-bottom: 60px;
+}
+#business-profile .business-profile-menu-tab-swiper-container {
+  max-width: 800px;
 }
 #business-profile .business-profile-menu-tab-swiper-container .swiper-wrapper .swiper-slide {
   max-width: -webkit-max-content;
@@ -4067,22 +4078,18 @@ button:focus {
   max-height: -moz-max-content;
   max-height: max-content;
 }
-#business-profile .business-profile-menu-tab-list {
-  margin-bottom: 10px;
-}
 #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 17.07px;
   margin-right: 15px;
-  margin-bottom: 15px;
   background-color: #FFFFFF;
   color: #000000;
   padding: 13.28px 29.13px 14.01px;
-  -webkit-box-shadow: 0px 2px 2px 0px #00000040;
-          box-shadow: 0px 2px 2px 0px #00000040;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
+  height: 48px;
 }
 #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item svg, #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item img {
   margin-right: 4.8px;
@@ -4092,20 +4099,20 @@ button:focus {
   fill: #000000;
 }
 #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item:hover {
-  background-color: #690FAD;
-  color: #FFFFFF;
+  border-color: #690FAD;
+  color: #690FAD;
 }
 #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item:hover svg,
 #business-profile .business-profile-menu-tab-list .business-profile-menu-tab-item:hover path {
-  fill: #FFFFFF;
+  fill: #690FAD;
 }
 #business-profile .business-profile-menu-tab-list .active {
-  background-color: #690FAD;
-  color: #FFFFFF;
+  border-color: #690FAD;
+  color: #690FAD;
 }
 #business-profile .business-profile-menu-tab-list .active svg,
 #business-profile .business-profile-menu-tab-list .active path {
-  fill: #FFFFFF;
+  fill: #690FAD;
 }
 #business-profile .business-profile-gallery-list {
   display: grid;
@@ -4113,7 +4120,7 @@ button:focus {
   -webkit-column-gap: 15px;
           column-gap: 15px;
   row-gap: 15px;
-  margin-bottom: 102px;
+  padding-bottom: 102px;
 }
 #business-profile .business-profile-gallery-list .business-profile-gallery-item img {
   border-radius: 11px;
@@ -4219,7 +4226,7 @@ button:focus {
   background-color: #690FAD;
 }
 #business-profile .business-profile-activities-page {
-  margin-bottom: 126px;
+  padding-bottom: 126px;
 }
 #business-profile .business-profile-activities-page .business-profile-activities-filter {
   margin-top: 30px;
