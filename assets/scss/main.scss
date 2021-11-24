@@ -815,6 +815,94 @@ button:focus {
     }
 }
 
+.package-card{
+    background-color: $colorWhite;
+    border-radius: 11px;
+    padding: 20px;
+    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+    .package-name{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .package-current-price{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .package-prev-price{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: line-through;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .btn-package-detail{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 24px;
+    }
+    .class-pass{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4px;
+    }
+    .package-validity{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .btn-package-buy{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 14px 34px;
+        background-color: $colorWhiteSmoke;
+        border-radius: 11px;
+        margin-bottom: 0;
+    }
+    .package-header,.package-footer{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: 10px;
+    }
+}
+
 .group {
     position: relative;
 
@@ -4854,6 +4942,14 @@ button:focus {
             row-gap: 30px;
             column-gap: 30px;
         }
+    }
+
+    .business-profile-packages-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 362px));
+        column-gap: 15px;
+        row-gap: 15px;
+        padding-bottom: 102px;
     }
 }
 
