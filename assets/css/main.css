@@ -4210,6 +4210,9 @@ button:focus {
   -webkit-column-gap: 15px;
           column-gap: 15px;
   row-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 102px;
 }
 #business-profile .business-profile-gallery-list .business-profile-gallery-item img {
@@ -4771,6 +4774,9 @@ button:focus {
           column-gap: 15px;
   row-gap: 15px;
   padding-bottom: 102px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #booking-confirmation-modal .modal-outer-box,

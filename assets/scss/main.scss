@@ -4348,6 +4348,7 @@ button:focus {
         grid-template-columns: repeat(auto-fill, minmax(183px, 183px));
         column-gap: 15px;
         row-gap: 15px;
+        justify-content: center;
         padding-bottom: 102px;
 
         .business-profile-gallery-item {
@@ -4950,6 +4951,7 @@ button:focus {
         column-gap: 15px;
         row-gap: 15px;
         padding-bottom: 102px;
+        justify-content: center;
     }
 }
 
