@@ -6820,11 +6820,12 @@ button:focus {
     }
     .form-control::placeholder{
         font-style: italic;
+        font-weight: 200;
     }
     .form-control{
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 500;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
@@ -7360,6 +7361,245 @@ button:focus {
             line-height: 16.41px;
             margin-bottom: 50px;
         }
+    }
+}
+
+#profile{
+    background-color: $colorWhite;
+    box-shadow: 0px -22px 40px rgba(0, 0, 0, 0.1);
+
+    z-index: 9;
+    padding-top: 115px;
+    padding-bottom: 145px;
+    .profile-img-box{
+        .img-box {
+            max-width: 150px;
+            max-height: 150px;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+    
+            .profile-pic {
+                max-width: 175px;
+                max-height: 175px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                object-fit: cover;
+                margin-top: -12px;
+                margin-left: -12px;
+            }
+    
+            .file-upload {
+                display: none;
+            }
+    
+            .circle {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 150px;
+                height: 150px;
+                transition: all .3s;
+                background-image: url("../images/camera-icon.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: $colorWhite;
+            }
+    
+            img {
+                width: 180px;
+                height: 180px
+            }
+    
+            .upload-pen-box {
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border: 4px solid $colorWhiteSmoke;
+                background-color: $primaryColor;
+    
+                svg,
+                path {
+                    fill: $colorWhite;
+                }
+            }
+        }
+    }
+    .welcome-message-box{
+        width: 100%;
+        max-width: 768px;
+        border-bottom: 1px solid $colorBlack;
+    }
+    .signup-form-container{
+        width: 100%;
+        max-width: 550px;
+    }
+    .form-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorBlack;
+        margin-bottom: 18px;
+        @media screen and (max-width: 991px) {
+            font-size: 26px;
+            line-height: 34px;
+            margin-bottom: 12px;
+        }
+    }
+    .form-desc{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        font-style: normal;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorEerieBlack;
+        margin-bottom: 40px;
+        max-width: 434px;
+        @media screen and (max-width: 991px) {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+    .form-label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorEerieBlack;
+        .field-primary{
+            color: red;
+        }
+    }
+    .form-control::placeholder{
+        font-style: italic;
+        font-weight: 200;
+    }
+    .form-control{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        border-bottom: 1px solid $colorBlack;
+        width: 100%;
+        padding: 11px 5px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+    .field-control-box{
+        position: relative;
+        .form-control{
+            padding-right: 34px;
+        }
+        svg{
+            position: absolute;
+            right: 8px;
+            bottom: 12px;
+        }
+    }
+    .tc-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorEerieBlack;
+        a{
+            color: $primaryColor;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+    .checkbox-field-box{
+        input:checked+label:after {
+            top: 1px;
+            @media screen and (max-width: 991px) {
+                top: 1px;
+            }
+        }
+        label{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+    .btn-cancel{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorBlack;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+            width: 180px;
+            height: 46px;
+        }
+    }
+    .btn-update-profile{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        width: 100%;
+        height: 60px;
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+            width: 180px;
+            height: 46px;
+        }
+    }
+    .social-signup-text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+        }
+    }
+    .signup-options{
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 35px;
     }
 }
 
