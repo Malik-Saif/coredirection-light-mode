@@ -13,8 +13,115 @@ $colorEerieBlack: #222222;
 }
 
 body {
-    background-color: $colorLightGray;
+    background-color: $colorWhiteSmoke;
     overflow-x: hidden;
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='radio'] {
+        --active: #690FAD;
+        --active-inner: #fff;
+        --focus: 2px #680fad2d;
+        --border: #D9D9D9;
+        --border-hover: #680fad7c;
+        --background: #D9D9D9;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 21px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background .3s, border-color .3s, box-shadow .2s;
+
+        &:after {
+            content: '';
+            display: block;
+            left: 0;
+            top: 0;
+            position: absolute;
+            transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+        }
+
+        &:checked {
+            --b: var(--active);
+            --bc: var(--active);
+            --d-o: .3s;
+            --d-t: .6s;
+            --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+        }
+
+        &:disabled {
+            --b: var(--disabled);
+            cursor: not-allowed;
+            opacity: .9;
+
+            &:checked {
+                --b: var(--disabled-inner);
+                --bc: var(--border);
+            }
+
+            &+label {
+                cursor: not-allowed;
+            }
+        }
+
+        &:hover {
+            &:not(:checked) {
+                &:not(:disabled) {
+                    --bc: var(--border-hover);
+                }
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 var(--focus);
+        }
+
+        &:not(.switch) {
+            width: 21px;
+
+            &:after {
+                opacity: var(--o, 0);
+            }
+
+            &:checked {
+                --o: 1;
+            }
+        }
+
+        &+label {
+            font-size: 14px;
+            line-height: 21px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+    }
+
+    input[type='radio'] {
+        border-radius: 50%;
+
+        &:after {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background: var(--active-inner);
+            opacity: 0;
+            transform: scale(var(--s, .7));
+        }
+
+        &:checked {
+            --s: .5;
+        }
+    }
 }
 
 button:focus {
@@ -7600,6 +7707,197 @@ button:focus {
         text-align: center;
         margin-top: 24px;
         margin-bottom: 35px;
+    }
+}
+
+#cart{
+    padding-top: 58px;
+    padding-bottom: 98px;
+
+    .cart-header{
+        display: flex;
+        align-items: center;
+        height: 193px;
+        max-width: 844px;
+        padding-left:70px;
+        padding-right:70px;
+        background: $colorWhite;
+        margin-bottom: 13px;
+        border-radius: 21px;
+        @media screen and (max-width: 991px){
+            height: 94px;
+            align-items: flex-start;
+            padding: 28px 15px 11px;
+        }
+        .progress-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                max-width: 604px;
+                height: 2px;
+                background-color: #F1F1F1;
+                border-radius: 2px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+            .progress-status-box{
+                height: 2px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                border-radius: 2px;
+                z-index: 1;
+            }
+            @media screen and (min-width: 992px){
+                .progress-status {
+                    min-width: 10px;
+                    min-height: 10px;
+                    max-width: 10px;
+                    max-height: 10px;
+                    background: $primaryColor;
+                    border-radius: 50%;
+                    margin-top: -4px;
+                }
+            }
+            .progress-status-box.active{
+                @media screen and (max-width: 991px){
+                    background: $primaryColor;
+                }
+                @media screen and (min-width: 992px){
+                    .progress-status{
+                        background: $colorWhite;
+                        border: 11px solid $primaryColor;
+                        margin-top: -15px;
+                        min-width: 32px;
+                        min-height: 32px;
+                        max-width: 32px;
+                        max-height: 32px;
+                    }
+                }
+            }
+            .progress-status{
+                position: absolute;
+            }
+            .progress-status-label{
+                display: inline-block;
+                margin-top: 24px;
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+
+    .cart-body{
+        width: 100%;
+        max-width: 844px;
+    }
+    .payment{
+        padding: 68px 46px 68px 65px;
+        background-color: $colorWhite;
+        border-radius: 11px 11px 21px 21px;
+        @media screen and (max-width: 991px){
+            padding: 38px 26px;
+        }
+        ul {
+            margin: 12px;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            max-width: 320px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            li {
+                margin: 16px 0;
+                position: relative;
+            }
+        }
+    }
+
+    .cart-footer{
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 844px;
+        .btn-back,.btn-next{
+            display: flex;
+            align-items: baseline;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 14px 21px 15px;
+            margin-bottom: 0;
+        }
+        .btn-next{
+            background-color: $colorWhite;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+#tooltip-descriptive-hover{
+    .modal-outer-box {
+        max-width: calc(650px + 2rem);
+        background: $colorWhiteSmoke;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 450px;
+        padding-top: 116px;
+        padding-bottom: 113px;
+    }
+
+    .activity-detail-card{
+        background: $colorWhite;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 11px 11px 21px 21px;
+        margin-bottom: 21px;
+        padding: 27px 31px 30px;
+    }
+
+    .booking-checkin-mode-btn-proceed {
+        color: $colorWhite;
+        background: $primaryColor;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        text-align: center;
+        width: 100%;
+        max-width: 372px;
+        height: 48px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 }
 

@@ -5,10 +5,107 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #F1F1F1;
   overflow-x: hidden;
 }
 
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='radio'] {
+    --active: #690FAD;
+    --active-inner: #fff;
+    --focus: 2px #680fad2d;
+    --border: #D9D9D9;
+    --border-hover: #680fad7c;
+    --background: #D9D9D9;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s, -webkit-box-shadow .2s;
+  }
+  input[type='radio']:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  input[type='radio']:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  input[type='radio']:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: .9;
+  }
+  input[type='radio']:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  input[type='radio']:disabled + label {
+    cursor: not-allowed;
+  }
+  input[type='radio']:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  input[type='radio']:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+            box-shadow: 0 0 0 var(--focus);
+  }
+  input[type='radio']:not(.switch) {
+    width: 21px;
+  }
+  input[type='radio']:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  input[type='radio']:not(.switch):checked {
+    --o: 1;
+  }
+  input[type='radio'] + label {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  input[type='radio'] {
+    border-radius: 50%;
+  }
+  input[type='radio']:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    -webkit-transform: scale(var(--s, 0.7));
+            transform: scale(var(--s, 0.7));
+  }
+  input[type='radio']:checked {
+    --s: .5;
+  }
+}
 button:focus {
   outline: none;
 }
@@ -7471,6 +7568,228 @@ button:focus {
   text-align: center;
   margin-top: 24px;
   margin-bottom: 35px;
+}
+
+#cart {
+  padding-top: 58px;
+  padding-bottom: 98px;
+}
+#cart .cart-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 193px;
+  max-width: 844px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background: #FFFFFF;
+  margin-bottom: 13px;
+  border-radius: 21px;
+}
+@media screen and (max-width: 991px) {
+  #cart .cart-header {
+    height: 94px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 28px 15px 11px;
+  }
+}
+#cart .cart-header .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+#cart .cart-header .progress-bar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: 604px;
+  height: 2px;
+  background-color: #F1F1F1;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+#cart .cart-header .progress-bar .progress-status-box {
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+  z-index: 1;
+}
+@media screen and (min-width: 992px) {
+  #cart .cart-header .progress-bar .progress-status {
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    background: #690FAD;
+    border-radius: 50%;
+    margin-top: -4px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #cart .cart-header .progress-bar .progress-status-box.active {
+    background: #690FAD;
+  }
+}
+@media screen and (min-width: 992px) {
+  #cart .cart-header .progress-bar .progress-status-box.active .progress-status {
+    background: #FFFFFF;
+    border: 11px solid #690FAD;
+    margin-top: -15px;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
+#cart .cart-header .progress-bar .progress-status {
+  position: absolute;
+}
+#cart .cart-header .progress-bar .progress-status-label {
+  display: inline-block;
+  margin-top: 24px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#cart .cart-body {
+  width: 100%;
+  max-width: 844px;
+}
+#cart .payment {
+  padding: 68px 46px 68px 65px;
+  background-color: #FFFFFF;
+  border-radius: 11px 11px 21px 21px;
+}
+@media screen and (max-width: 991px) {
+  #cart .payment {
+    padding: 38px 26px;
+  }
+}
+#cart .payment ul {
+  margin: 12px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+#cart .payment ul li {
+  margin: 16px 0;
+  position: relative;
+}
+#cart .cart-footer {
+  margin-top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 844px;
+}
+#cart .cart-footer .btn-back, #cart .cart-footer .btn-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 14px 21px 15px;
+  margin-bottom: 0;
+}
+#cart .cart-footer .btn-next {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#tooltip-descriptive-hover .modal-outer-box {
+  max-width: calc(650px + 2rem);
+  background: #F1F1F1;
+}
+#tooltip-descriptive-hover .form-container {
+  width: 100%;
+  max-width: 450px;
+  padding-top: 116px;
+  padding-bottom: 113px;
+}
+#tooltip-descriptive-hover .activity-detail-card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 11px 11px 21px 21px;
+  margin-bottom: 21px;
+  padding: 27px 31px 30px;
+}
+#tooltip-descriptive-hover .booking-checkin-mode-btn-proceed {
+  color: #FFFFFF;
+  background: #690FAD;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: center;
+  width: 100%;
+  max-width: 372px;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 #footer {
