@@ -29,7 +29,7 @@ body {
         --disabled-inner: #E1E6F9;
         -webkit-appearance: none;
         -moz-appearance: none;
-        height: 21px;
+        height: 12px;
         outline: none;
         display: inline-block;
         vertical-align: top;
@@ -43,8 +43,8 @@ body {
         &:after {
             content: '';
             display: block;
-            left: 0;
-            top: 0;
+            left: 1px;
+            top: 1px;
             position: absolute;
             transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
         }
@@ -85,7 +85,7 @@ body {
         }
 
         &:not(.switch) {
-            width: 21px;
+            width: 12px;
 
             &:after {
                 opacity: var(--o, 0);
@@ -97,12 +97,17 @@ body {
         }
 
         &+label {
-            font-size: 14px;
-            line-height: 21px;
             display: inline-block;
             vertical-align: top;
             cursor: pointer;
-            margin-left: 4px;
+            margin-left: 11px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
         }
     }
 
@@ -110,8 +115,8 @@ body {
         border-radius: 50%;
 
         &:after {
-            width: 19px;
-            height: 19px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: var(--active-inner);
             opacity: 0;
@@ -936,6 +941,7 @@ button:focus {
         letter-spacing: 0em;
         text-align: left;
         margin-bottom: 0;
+        text-transform: uppercase;
     }
     .package-current-price{
         font-family: 'Montserrat', sans-serif;
@@ -944,7 +950,7 @@ button:focus {
         font-weight: 700;
         line-height: 22px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: right;
         margin-bottom: 0;
     }
     .package-prev-price{
@@ -954,7 +960,7 @@ button:focus {
         font-weight: 400;
         line-height: 17px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: right;
         text-decoration: line-through;
         margin-top: 5px;
         margin-bottom: 0;
@@ -969,6 +975,17 @@ button:focus {
         text-align: left;
         margin-top: 30px;
         margin-bottom: 24px;
+    }
+    .session-available{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: -16px;
+        margin-bottom: 11px;
     }
     .class-pass{
         font-family: 'Montserrat', sans-serif;
@@ -1161,7 +1178,7 @@ button:focus {
 
             svg,
             path {
-                fill: $primaryColor;
+                fill: $colorBlack;
             }
         }
     }
@@ -1648,6 +1665,88 @@ button:focus {
 
 .swiper-container{
     overflow-x: hidden;
+}
+
+.payment-detail-card{
+    padding: 31.15px 24.4px 32.23px 28px;
+    max-width: 342px;
+    height: 188px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    background: radial-gradient(141.97% 92.29% at 3.67% 12.86%, #690FAD 0%, #3E0867 90.74%);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    .card-title{
+        color: $colorWhite;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.63px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card-number{
+        color: $colorWhite;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.07px;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 7px;
+    }
+    .cardholder-name{
+        color: $colorWhite;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.07px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card-icon-box span{
+        min-width: 22.56px;
+        min-height: 22.56px;
+    }
+    .card-icon-box .first-icon{
+        background: #FFFFFFF2;
+        margin-right: -7px;
+    }
+    .card-icon-box .second-icon{
+        background: #F1F1F1A6;
+    }
+}
+
+.add-payment-info-box{
+    .form-label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 9px;
+        text-transform: uppercase;
+    }
+    .form-control::placeholder{
+        color: #272727;
+    }
+    .form-control{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 12px 13px;
+        color: $colorBlack;
+        background-color: $colorWhiteSmoke;
+        border-radius: 11px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
 
 #header {
@@ -7322,19 +7421,8 @@ button:focus {
                 display: none;
             }
         }
-        .card-icon-box span{
-            min-width: 22.56px;
-            min-height: 22.56px;
-        }
-        .card-icon-box .first-icon{
-            background: #FFFFFFF2;
-            margin-right: -7px;
-        }
-        .card-icon-box .second-icon{
-            background: #F1F1F1A6;
-        }
         .payment-detail-card-inner-box{
-            // width: 351px;
+            max-width: 342px;
             // margin-right: 17px;
             margin-bottom: 21px;
         }
@@ -7354,44 +7442,6 @@ button:focus {
         .btn-delete-payment-detail{
             margin-top: 12px;
             margin-left: auto;
-        }
-        .payment-detail-card{
-            padding: 31.15px 24.4px 32.23px 28px;
-            // width: 342px;
-            height: 188px;
-            border-radius: 11px;
-            -webkit-border-radius: 11px;
-            -moz-border-radius: 11px;
-            -ms-border-radius: 11px;
-            -o-border-radius: 11px;
-            background: radial-gradient(141.97% 92.29% at 3.67% 12.86%, #690FAD 0%, #3E0867 90.74%);;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-left: auto;
-            margin-right: auto;
-            .card-title{
-                color: $colorWhite;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: 14.63px;
-                font-family: 'Montserrat', sans-serif;
-            }
-            .card-number{
-                color: $colorWhite;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 17.07px;
-                font-family: 'Montserrat', sans-serif;
-                word-spacing: 7px;
-            }
-            .cardholder-name{
-                color: $colorWhite;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 17.07px;
-                font-family: 'Montserrat', sans-serif;
-            }
         }
         .btn-add-payment-detail{
             padding: 31.15px 24.4px 32.23px 28px;
@@ -7762,31 +7812,57 @@ button:focus {
                 border-radius: 2px;
                 z-index: 1;
             }
-            @media screen and (min-width: 992px){
-                .progress-status {
-                    min-width: 10px;
-                    min-height: 10px;
-                    max-width: 10px;
-                    max-height: 10px;
-                    background: $primaryColor;
-                    border-radius: 50%;
-                    margin-top: -4px;
+            .progress-status {
+                min-width: 10px;
+                min-height: 10px;
+                max-width: 10px;
+                max-height: 10px;
+                background: $primaryColor;
+                border-radius: 50%;
+                margin-top: -4px;
+            }
+            .progress-status-box.done{
+                .progress-status{
+                    border: 11px solid $primaryColor;
+                    margin-top: -15px;
+                    min-width: 32px;
+                    min-height: 32px;
+                    max-width: 32px;
+                    max-height: 32px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: -2px;
+                        right: 1px;
+                        top: 3px;
+                        bottom: -1px;
+                        border-left: 2px solid white;
+                        transform: rotate(
+                    322deg);
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: -6px;
+                        right: -1px;
+                        top: -8px;
+                        bottom: 0px;
+                        border-left: 2px solid white;
+                        transform: rotate( 
+                    225deg);
+                    }
                 }
             }
             .progress-status-box.active{
-                @media screen and (max-width: 991px){
-                    background: $primaryColor;
-                }
-                @media screen and (min-width: 992px){
-                    .progress-status{
-                        background: $colorWhite;
-                        border: 11px solid $primaryColor;
-                        margin-top: -15px;
-                        min-width: 32px;
-                        min-height: 32px;
-                        max-width: 32px;
-                        max-height: 32px;
-                    }
+                .progress-status{
+                    background: $colorWhite;
+                    border: 11px solid $primaryColor;
+                    margin-top: -15px;
+                    min-width: 32px;
+                    min-height: 32px;
+                    max-width: 32px;
+                    max-height: 32px;
                 }
             }
             .progress-status{
@@ -7811,26 +7887,356 @@ button:focus {
         width: 100%;
         max-width: 844px;
     }
+
+    .select-package-box{
+        margin-top: 45px;
+        .select-package-section{
+            margin-bottom: 45px;
+        }
+        .package-card-box{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(275px,415px));
+            column-gap: 13px;
+            row-gap: 19px
+        }
+        .package-card{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .select-package-title{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 19px;
+        }
+        .choose-package-box .btn-package-buy,
+        .gift-code-box .btn-package-buy{
+            background-color: $primaryColor;
+            color: $colorWhite;
+        }
+        .gift-code-desc{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 6px;
+            margin-bottom: 11px;
+        }
+        .form-control::placeholder{
+            color: #272727;
+        }
+        .form-control{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 12px 7px 12px 22px ;
+            color: $colorBlack;
+            background-color: $colorWhiteSmoke;
+            border-radius: 11px;
+            width: 100%;
+        }
+    }
+
     .payment{
         padding: 68px 46px 68px 65px;
         background-color: $colorWhite;
         border-radius: 11px 11px 21px 21px;
+        @media screen and (min-width: 992px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 69px;
+        }
         @media screen and (max-width: 991px){
             padding: 38px 26px;
+            .cart-item-box{
+                display: none;
+            }
         }
-        ul {
-            margin: 12px;
+        .cart-item-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $colorBlack;
+            margin-bottom: 10px;
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+            }
+        }
+        .cart-item-body{
+            height: 300px;
+            overflow-y: auto;
+            scrollbar-width: 4px;
+            padding: 19px 15px;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #C4C4C4;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            .cart-item-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            .cart-item-info-label{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 2px;
+                text-transform: uppercase;
+            }
+            .cart-item-info-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+            .cart-item-package-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .cart-item-package-desc{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        .cart-item-footer{
+            margin-top: 20px;
+            .cart-item-notice{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                background: $colorWhite;
+                padding: 12px 17px 11px;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 7px;
+                margin-bottom: 10px;
+            }
+            .cart-item-footer-title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding-bottom: 12px;
+                border-bottom: 1px solid $colorBlack;
+                text-transform: uppercase;
+            }
+            .cart-item-footer-price{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: right;
+                margin-top: 33px;
+                text-transform: uppercase;
+            }
+        }
+        .my-card-list{
+            height: 396px;
+            overflow-y: auto;
+            scrollbar-width: 4px;
+            padding-right: 5px;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #C4C4C4;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+        }
+        .payment-option-list {
+            margin: 0;
             padding: 0;
             list-style: none;
             width: 100%;
             max-width: 320px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 10px;
-            li {
-                margin: 16px 0;
-                position: relative;
+            display: flex;
+            align-items: center;
+            @media screen and (min-width: 992px){
+                margin-bottom: 24px;
             }
+            @media screen and (max-width: 991px){
+                margin-bottom: 31px;
+            }
+            .payment-option-item {
+                position: relative;
+                display: flex;
+                align-items: baseline;
+                @media screen and (min-width: 992px){
+                    margin-right: 24px;
+                }
+                @media screen and (max-width: 991px){
+                    margin-right: 41px;
+                }
+            }
+        }
+        .cart-payment-title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            @media screen and (min-width: 992px){
+                margin-bottom: 34px;
+            }
+            @media screen and (max-width: 991px){
+                margin-bottom: 14px;
+            }
+        }
+        .my-card-box{
+            margin-bottom: 14px;
+        }
+        .checkbox-field-box{
+            .form-group label{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        .stripe-info{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding-left: 30px;
+        }
+    }
+
+    .purchase-confirmation{
+        padding: 78px 38px 105px;
+        background-color: $colorWhite;
+        border-radius: 11px 11px 21px 21px;
+        .success-message-title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-top: 44px;
+            margin-bottom: 17px;
+        }
+        .success-message-desc{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            max-width: 358px;
+            margin-bottom: 36px;
+        }
+        .btn-share,.btn-calendar{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: center;
+            border-radius: 11px;
+            display: block;
+            width: 252px;
+            height: 37px;
+        }
+        .btn-share{
+            margin-bottom: 9px;
+            color: $colorBlack;
+            background-color: $colorWhiteSmoke;
+        }
+        .btn-calendar{
+            color: $colorWhite;
+            background-color: $primaryColor;
         }
     }
 
@@ -7852,12 +8258,27 @@ button:focus {
             line-height: 16px;
             letter-spacing: 0em;
             text-align: center;
-            padding: 14px 21px 15px;
             margin-bottom: 0;
         }
+        .btn-back{
+            @media screen and (min-width: 992px){
+                padding: 14px 21px 15px;
+            }
+            @media screen and (max-width: 991px){
+                padding: 14px 10px 15px;
+            }
+        }
         .btn-next{
+            padding: 14px 21px 15px;
             background-color: $colorWhite;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            &:hover{
+                background-color: $primaryColor;
+                color: $colorWhite;
+                svg,path{
+                    fill: $colorWhite;
+                }
+            }
         }
     }
 }

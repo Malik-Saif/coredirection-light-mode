@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
+    <title>Cart | Dubai Fitness Challenge</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="" id="body">
+
+    <div class="wrapper">
+
+        <!-- app-header -->
+        <header id="app-header" class="">
+            <div class="container-fluid px-5 flex items-center">
+
+                <!-- start logo-box -->
+                <button class="navbar-brand mr-auto">
+                    <img src="./assets/images/logo.png" alt="brand-logo" class="navbar-brand-logo">
+                </button>
+                <!-- end logo-box -->
+
+                <nav class="navbar">
+                    <!-- start navigation menu -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link">
+                                <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.53786 1.23047C4.08415 1.23047 0.460938 4.91116 0.460938 9.43551C0.460938 10.925 1.11849 12.5269 1.14605 12.5945C1.35843 13.1065 1.77748 13.902 2.07965 14.3682L7.61757 22.8923C7.84419 23.2417 8.17963 23.442 8.53786 23.442C8.8961 23.442 9.23153 23.2417 9.45815 22.8927L14.9965 14.3682C15.2992 13.902 15.7178 13.1065 15.9301 12.5945C15.9577 12.5274 16.6148 10.9255 16.6148 9.43551C16.6148 4.91116 12.9916 1.23047 8.53786 1.23047ZM15.054 12.2199C14.8645 12.6789 14.4744 13.4188 14.2031 13.8368L8.66472 22.3614C8.55544 22.5298 8.52076 22.5298 8.41148 22.3614L2.87309 13.8368C2.6018 13.4188 2.21173 12.6784 2.02216 12.2194C2.01408 12.1996 1.41116 10.7252 1.41116 9.43551C1.41116 5.44352 4.6082 2.19577 8.53786 2.19577C12.4675 2.19577 15.6646 5.44352 15.6646 9.43551C15.6646 10.7271 15.0602 12.2054 15.054 12.2199Z" fill="black" stroke="black" stroke-width="0.5"/>
+                                    <path d="M8.53773 5.09229C6.17975 5.09229 4.26172 7.04123 4.26172 9.43614C4.26172 11.831 6.17975 13.78 8.53773 13.78C10.8957 13.78 12.8137 11.831 12.8137 9.43614C12.8137 7.04123 10.8957 5.09229 8.53773 5.09229ZM8.53773 12.8147C6.70427 12.8147 5.21194 11.2992 5.21194 9.43614C5.21194 7.57311 6.70427 6.05759 8.53773 6.05759C10.3712 6.05759 11.8635 7.57311 11.8635 9.43614C11.8635 11.2992 10.3712 12.8147 8.53773 12.8147Z" fill="black" stroke="black" stroke-width="0.5"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.84746 13.8867C7.60004 14.1044 7.412 14.2727 7.21406 14.4409C6.67962 14.9061 6.06601 15.1337 5.36333 15.1931C4.4726 15.2723 3.58188 15.2723 2.69115 15.1733C1.5629 15.0545 0.850315 14.2232 0.909696 13.0553C0.959181 12.0063 1.78063 11.2442 2.89899 11.3135C3.95796 11.3729 4.65075 10.9473 5.17529 10.0566C5.75921 9.07677 6.4322 8.14646 7.33282 7.42398C7.7287 7.10728 8.16417 6.86975 8.64912 6.73119C9.18355 6.57284 9.21325 6.51346 8.95592 6.01861C8.29283 4.71222 8.34231 3.43551 9.22314 2.25777C10.0743 1.14931 11.2223 0.684155 12.5782 0.911785C14.0034 1.14931 14.9238 2.04004 15.3593 3.41571C15.6562 4.34603 15.4978 5.22686 15.0129 6.0582C14.7852 6.44418 14.8347 6.59264 15.2603 6.7015C16.2203 6.95882 16.9725 7.53285 17.5663 8.29491C18.1997 9.11636 18.7935 9.9576 19.3873 10.8087C19.6248 11.1452 19.902 11.3135 20.3176 11.2838C20.6343 11.264 20.9609 11.2739 21.2776 11.2838C22.2178 11.3234 23.0294 12.0657 23.0888 12.9465C23.168 14.144 22.6236 14.9259 21.5548 15.1238C20.3869 15.3415 19.2092 15.3218 18.0413 15.0941C17.5366 14.9952 17.1011 14.7477 16.7448 14.3914C16.5766 14.2232 16.438 14.0253 16.2896 13.8471C16.25 13.8669 16.2005 13.8966 16.1609 13.9164C16.1609 14.3024 16.1609 14.6883 16.1609 15.0743C16.1609 15.5494 16.1708 16.0244 16.1609 16.4995C16.1609 16.8063 16.2896 16.8954 16.5865 16.836C17.2595 16.7073 17.9325 16.549 18.6352 16.5688C20.3473 16.6183 21.7329 18.0038 21.7923 19.7754C21.8517 21.4579 20.5947 22.883 18.8925 23.0513C18.6055 23.081 18.3184 23.0909 18.0413 23.0909C14.0628 23.0909 10.0941 23.0909 6.1155 23.0909C5.50189 23.0909 4.87838 23.0909 4.28456 22.8632C2.8495 22.309 2.00826 20.7849 2.27548 19.231C2.5328 17.7465 3.89858 16.5886 5.42271 16.5688C6.06601 16.5589 6.69942 16.6479 7.32293 16.8063C7.7188 16.9053 7.83757 16.8261 7.83757 16.4203C7.85736 15.5989 7.84746 14.7675 7.84746 13.8867ZM9.22314 14.2628C9.22314 15.1238 9.23304 15.975 9.22314 16.836C9.22314 17.1428 9.34191 17.3308 9.62892 17.4298C10.9056 17.9049 12.1922 18.1622 13.5283 17.6673C13.7658 17.5783 14.0133 17.5288 14.2508 17.4694C14.6863 17.3506 14.8347 17.1725 14.8149 16.737C14.7555 15.1238 14.805 13.5007 14.7951 11.8875C14.7951 11.6995 14.8149 11.5015 14.8644 11.3234C14.9931 10.8681 15.5275 10.6999 15.8937 11.0067C16.0322 11.1254 16.151 11.2838 16.2698 11.4322C16.6953 12.0063 17.111 12.5902 17.5267 13.1642C17.784 13.5205 18.1205 13.7778 18.556 13.8174C19.4467 13.8966 20.3374 13.8768 21.2282 13.8273C21.5647 13.8075 21.7725 13.5502 21.7725 13.2335C21.7725 12.897 21.5943 12.709 21.2578 12.6595C20.8224 12.5803 20.377 12.6001 19.9415 12.6298C19.2982 12.6694 18.8628 12.3923 18.5065 11.8776C17.9424 11.0562 17.309 10.2743 16.7547 9.44296C16.0125 8.31471 14.9634 7.85945 13.6471 7.80996C12.5188 7.77038 11.3906 7.82976 10.2623 7.82976C9.0252 7.82976 8.0652 8.3246 7.35262 9.33409C6.70931 10.2446 6.03632 11.1452 5.39302 12.0558C5.1159 12.4417 4.77941 12.61 4.29446 12.5704C3.8392 12.5308 3.36414 12.511 2.90888 12.61C2.44373 12.709 2.26558 12.9168 2.30517 13.3325C2.34476 13.6789 2.57239 13.857 3.01775 13.8669C3.71054 13.8768 4.39343 13.8669 5.08621 13.8768C5.66024 13.8768 6.1155 13.6393 6.48168 13.2038C6.60045 13.0553 6.70931 12.897 6.81818 12.7485C7.18437 12.2339 7.55056 11.7193 7.92664 11.2145C8.11468 10.9572 8.372 10.8186 8.6986 10.8978C9.0351 10.9869 9.16376 11.2442 9.20335 11.5609C9.22314 11.6896 9.22314 11.8182 9.22314 11.9568C9.23304 12.709 9.22314 13.4908 9.22314 14.2628ZM9.94562 21.7845C11.3213 21.7845 12.7069 21.7845 14.0826 21.7845C14.2706 21.7845 14.4586 21.7647 14.6467 21.7053C14.9535 21.5964 15.1613 21.3985 15.191 21.0719C15.2306 20.7156 15.1118 20.4385 14.7852 20.2702C14.617 20.1812 14.4388 20.1218 14.2508 20.0723C11.9943 19.4488 9.73778 18.8352 7.48128 18.2216C6.82808 18.0434 6.16498 17.895 5.48209 17.9148C4.09652 17.9642 3.20579 19.3201 3.73033 20.5671C4.11631 21.4579 4.85858 21.7845 5.7691 21.7944C7.16457 21.7944 8.55015 21.7845 9.94562 21.7845ZM14.7061 18.7065C15.0228 18.8748 15.2603 18.9836 15.478 19.1123C16.2005 19.5181 16.5568 20.1218 16.5172 20.9531C16.5073 21.1313 16.5073 21.3094 16.5172 21.4876C16.5271 21.6558 16.6162 21.7647 16.7745 21.7647C17.5069 21.7647 18.2492 21.8636 18.9716 21.6756C19.9317 21.4282 20.4562 20.6364 20.4067 19.6071C20.3572 18.756 19.704 18.083 18.7638 17.9543C17.3683 17.7663 16.1213 18.4096 14.7061 18.7065ZM12.0042 2.24787C10.7374 2.24787 9.88624 3.09901 9.89614 4.34603C9.90603 5.53366 10.8561 6.50356 12.0141 6.50356C13.172 6.50356 14.1815 5.47428 14.1716 4.32623C14.1518 3.11881 13.2413 2.23798 12.0042 2.24787Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.1836 11.6797C15.7445 11.6797 16.1992 11.225 16.1992 10.6641C16.1992 10.1031 15.7445 9.64844 15.1836 9.64844C14.6227 9.64844 14.168 10.1031 14.168 10.6641C14.168 11.225 14.6227 11.6797 15.1836 11.6797Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.1836 16.0977C15.7445 16.0977 16.1992 15.6429 16.1992 15.082C16.1992 14.5211 15.7445 14.0664 15.1836 14.0664C14.6227 14.0664 14.168 14.5211 14.168 15.082C14.168 15.6429 14.6227 16.0977 15.1836 16.0977Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.6016 11.6797C20.1625 11.6797 20.6172 11.225 20.6172 10.6641C20.6172 10.1031 20.1625 9.64844 19.6016 9.64844C19.0406 9.64844 18.5859 10.1031 18.5859 10.6641C18.5859 11.225 19.0406 11.6797 19.6016 11.6797Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.9843 12.6953C25.5453 12.6953 26 12.2406 26 11.6797V6.09374C26 3.85368 24.1775 2.03125 21.9375 2.03125H20.6171V1.01562C20.6171 0.454694 20.1625 0 19.6015 0C19.0406 0 18.5859 0.454694 18.5859 1.01562V2.03125H13.9648V1.01562C13.9648 0.454694 13.5101 0 12.9492 0C12.3883 0 11.9336 0.454694 11.9336 1.01562V2.03125H7.36327V1.01562C7.36327 0.454694 6.90857 0 6.34764 0C5.78672 0 5.33202 0.454694 5.33202 1.01562V2.03125H4.06249C1.82243 2.03125 0 3.85368 0 6.09374V21.9375C0 24.1775 1.82243 26 4.06249 26H16.8593C16.8939 26 16.9281 25.9982 16.9618 25.9948C16.9952 25.9981 17.0287 26 17.0622 26C17.333 26 17.5988 25.8916 17.794 25.6888L25.7159 17.4623C25.9984 17.1689 26.0784 16.735 25.919 16.3603C25.7596 15.9855 25.3916 15.7422 24.9843 15.7422H20.1093C17.8693 15.7422 16.0468 17.5646 16.0468 19.8046V23.9687H4.06249C2.94246 23.9687 2.03125 23.0575 2.03125 21.9375V6.09374C2.03125 4.97371 2.94246 4.06249 4.06249 4.06249H5.33202V5.07812C5.33202 5.63904 5.78672 6.09374 6.34764 6.09374C6.90857 6.09374 7.36327 5.63904 7.36327 5.07812V4.06249H11.9336V5.07812C11.9336 5.63904 12.3883 6.09374 12.9492 6.09374C13.5101 6.09374 13.9648 5.63904 13.9648 5.07812V4.06249H18.5859V5.07812C18.5859 5.63904 19.0406 6.09374 19.6015 6.09374C20.1625 6.09374 20.6171 5.63904 20.6171 5.07812V4.06249H21.9375C23.0575 4.06249 23.9687 4.97371 23.9687 6.09374V11.6797C23.9687 12.2406 24.4234 12.6953 24.9843 12.6953ZM18.0781 19.8046C18.0781 18.6846 18.9893 17.7734 20.1093 17.7734H22.5963L18.0781 22.4655V19.8046Z"
+                                        fill="white" />
+                                    <path
+                                        d="M6.34765 11.6797C6.90857 11.6797 7.36328 11.225 7.36328 10.6641C7.36328 10.1031 6.90857 9.64844 6.34765 9.64844C5.78674 9.64844 5.33203 10.1031 5.33203 10.6641C5.33203 11.225 5.78674 11.6797 6.34765 11.6797Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.7656 16.0977C11.3265 16.0977 11.7812 15.6429 11.7812 15.082C11.7812 14.5211 11.3265 14.0664 10.7656 14.0664C10.2047 14.0664 9.75 14.5211 9.75 15.082C9.75 15.6429 10.2047 16.0977 10.7656 16.0977Z"
+                                        fill="white" />
+                                    <path
+                                        d="M6.34765 20.5156C6.90857 20.5156 7.36328 20.0609 7.36328 19.5C7.36328 18.9391 6.90857 18.4844 6.34765 18.4844C5.78674 18.4844 5.33203 18.9391 5.33203 19.5C5.33203 20.0609 5.78674 20.5156 6.34765 20.5156Z"
+                                        fill="white" />
+                                    <path
+                                        d="M6.34765 16.0977C6.90857 16.0977 7.36328 15.6429 7.36328 15.082C7.36328 14.5211 6.90857 14.0664 6.34765 14.0664C5.78674 14.0664 5.33203 14.5211 5.33203 15.082C5.33203 15.6429 5.78674 16.0977 6.34765 16.0977Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.7656 20.5156C11.3265 20.5156 11.7812 20.0609 11.7812 19.5C11.7812 18.9391 11.3265 18.4844 10.7656 18.4844C10.2047 18.4844 9.75 18.9391 9.75 19.5C9.75 20.0609 10.2047 20.5156 10.7656 20.5156Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.7656 11.6797C11.3265 11.6797 11.7812 11.225 11.7812 10.6641C11.7812 10.1031 11.3265 9.64844 10.7656 9.64844C10.2047 9.64844 9.75 10.1031 9.75 10.6641C9.75 11.225 10.2047 11.6797 10.7656 11.6797Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link">
+                                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4273 4.26814H23.5709C23.5709 4.19845 23.5699 4.1371 23.569 4.08134C23.5674 3.9765 23.566 3.89144 23.5721 3.80785C23.7151 1.80746 22.5188 -0.0464126 19.7351 0.00088595C15.9061 0.0645401 12.0724 0.0514137 8.23738 0.0382826C6.65115 0.0328514 5.06469 0.0274193 3.47822 0.0274193C1.33594 0.0274193 0.0242692 1.26872 0.0161938 3.396C0.00885254 5.92927 0.00985367 8.46254 0.0108548 10.9957C0.012056 14.0355 0.0132573 17.0751 4.30864e-05 20.1143C-0.00918591 22.2024 1.46515 23.5914 3.51514 23.574C11.1629 23.5387 18.811 23.5387 26.4596 23.574C28.5511 23.5833 29.9747 22.2255 29.9827 20.1709C29.9838 19.8836 29.9848 19.5964 29.9859 19.3091C30.0001 15.427 30.0144 11.544 29.9747 7.66095C29.9539 5.56136 28.5384 4.26814 26.4273 4.26814ZM2.13079 19.7152V6.47041V6.4681H26.1423C26.392 6.46151 26.6419 6.47346 26.8899 6.50387C27.5174 6.60423 27.8139 6.9134 27.837 7.54213C27.8545 8.00391 27.8506 8.46569 27.8465 8.95937C27.8447 9.18348 27.8428 9.41417 27.8428 9.65442C27.6066 9.65442 27.3728 9.65286 27.1406 9.65131C26.6807 9.64824 26.227 9.64522 25.7732 9.65442C24.3946 9.68556 23.2167 10.1678 22.3596 11.2822C21.3236 12.6296 21.1114 14.1282 21.8035 15.6729C22.4957 17.2176 23.7647 18.0459 25.4559 18.1785C26.0893 18.2176 26.7244 18.2214 27.3582 18.1901C27.7412 18.1785 27.8681 18.3251 27.8508 18.6965C27.8384 18.9635 27.8412 19.2311 27.844 19.4987C27.8467 19.7503 27.8494 20.0018 27.8393 20.2528C27.8082 20.9726 27.4032 21.3822 26.6857 21.4468C26.5542 21.4582 26.4227 21.4569 26.2911 21.4556C26.2496 21.4552 26.2081 21.4548 26.1666 21.4548H3.84738C2.44111 21.4537 2.13079 21.1387 2.13079 19.7152ZM19.5297 2.17316C21.2567 2.17316 21.4932 2.43042 21.3606 4.23815L2.14463 4.23469C2.12698 3.86681 2.12968 3.49825 2.15271 3.13067C2.21154 2.61961 2.52648 2.29775 3.03984 2.20777C3.26914 2.17635 3.50073 2.16477 3.73202 2.17316H19.5297ZM27.8428 13.2664V13.9586C27.8431 14.1097 27.8451 14.2607 27.8472 14.4118C27.8529 14.8375 27.8587 15.2633 27.8255 15.689C27.8139 15.8355 27.582 16.0732 27.4378 16.0836C26.8441 16.1257 26.2481 16.1257 25.6543 16.0836C24.6738 16.0143 23.7959 15.3049 23.609 14.4835C23.3829 13.496 23.7693 12.5154 24.7199 12.0609C25.194 11.8336 25.7905 11.8059 26.335 11.7932C27.8428 11.7598 27.8428 11.7817 27.8428 13.2664ZM4.29852 18.7505C4.29988 18.9089 4.30126 19.0698 4.30126 19.2341C4.3921 19.2382 4.47666 19.2434 4.55727 19.2483C4.70088 19.2572 4.83193 19.2652 4.96345 19.2652H8.12438C9.74752 19.2652 9.74753 19.2652 9.65293 17.6282C9.65007 17.6111 9.65173 17.5918 9.65329 17.5737C9.65551 17.5478 9.65753 17.5244 9.64601 17.5129C9.61014 17.4757 9.5738 17.4306 9.53709 17.385C9.44392 17.2693 9.34829 17.1506 9.25147 17.1506C7.71945 17.1264 6.18629 17.1287 4.65427 17.1506C4.57496 17.1715 4.50234 17.2123 4.44335 17.2693C4.38437 17.3262 4.341 17.3974 4.31742 17.4759C4.29115 17.8936 4.29475 18.3126 4.29852 18.7505Z" fill="#690FAD"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search-box">
+                    <input type="search" class="rounded-full" placeholder="Search All">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.9023 14.9597L11.2545 10.3118C12.136 9.22342 12.6667 7.8398 12.6667 6.33336C12.6667 2.84116 9.82552 0 6.33333 0C2.84113 0 0 2.84116 0 6.33336C0 9.82555 2.84116 12.6667 6.33336 12.6667C7.8398 12.6667 9.22342 12.136 10.3118 11.2545L14.9597 15.9024C15.0899 16.0325 15.3009 16.0325 15.4311 15.9024L15.9024 15.4311C16.0325 15.3009 16.0325 15.0898 15.9023 14.9597ZM6.33336 11.3334C3.5762 11.3334 1.33335 9.09052 1.33335 6.33336C1.33335 3.5762 3.5762 1.33335 6.33336 1.33335C9.09052 1.33335 11.3334 3.5762 11.3334 6.33336C11.3334 9.09052 9.09052 11.3334 6.33336 11.3334Z"
+                            fill="#555555" />
+                    </svg>
+                </div>
+
+                <ul class="account-controlls flex items-center">
+                    <li class="notifications account-controlls-item mx-1.5">
+                        <div class="account-controlls-link  rounded-full">
+                            <svg width="24" height="24" viewBox="0 0 14 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5399 14.952C1.93516 14.952 1.33042 14.9595 0.725685 14.952C0.181421 14.9444 0 14.7553 0 14.2181C0 13.6734 0 13.1362 0 12.5915C0 12.2359 0.166303 12.0392 0.521586 11.9636C1.25483 11.8122 1.45893 11.5626 1.45893 10.8287C1.45893 9.75438 1.43625 8.68763 1.46649 7.61331C1.52696 5.38144 2.56258 3.75483 4.59601 2.80156C4.8379 2.68807 4.93617 2.55189 4.92105 2.28709C4.89837 1.68941 4.90593 1.10685 5.35193 0.615084C5.88107 0.0400946 6.50849 -0.12635 7.23417 0.093054C7.89938 0.297326 8.45877 0.932841 8.40585 1.64401C8.35294 2.40058 8.65531 2.73346 9.29028 3.09662C11.0138 4.07258 11.8529 5.63867 11.8831 7.62087C11.9058 8.69519 11.8831 9.76195 11.8907 10.8363C11.8907 11.555 12.1099 11.8198 12.7978 11.9636C13.2286 12.0543 13.3496 12.1905 13.3496 12.6369C13.3571 13.1665 13.3571 13.6961 13.3496 14.2257C13.3496 14.7628 13.1606 14.952 12.6239 14.952C11.4295 14.9595 10.2276 14.9595 9.03327 14.952C8.72334 14.952 8.60239 15.0201 8.5646 15.3605C8.46633 16.3138 7.63481 17.0098 6.66723 17.0098C5.69965 17.0098 4.86814 16.3138 4.77743 15.353C4.73963 15.0049 4.60357 14.9444 4.30876 14.952C3.71914 14.9671 3.12952 14.952 2.5399 14.952ZM6.68235 2.35518C7.34 2.35518 7.34 2.35518 7.34756 1.9542C7.34756 1.38678 7.12834 1.10685 6.68235 1.10685C6.24392 1.10685 6.0247 1.37921 6.01714 1.92394C6.00958 2.35518 6.00958 2.35518 6.68235 2.35518ZM6.69747 14.952C6.53117 14.952 6.37242 14.9444 6.20612 14.952C5.86595 14.9595 5.7828 15.0806 5.90375 15.4059C6.03226 15.7539 6.31951 15.9279 6.65967 15.9431C6.99984 15.9506 7.28709 15.7842 7.43827 15.4437C7.58946 15.0957 7.49875 14.9595 7.11323 14.952C6.97716 14.952 6.83353 14.952 6.69747 14.952Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="counter ">
+                            <span>1</span>
+                        </div>
+                    </li>
+                    <div class="notification-window ">
+                        <div class="notification-header flex items-center justify-between">
+                            <p class="notification-header-title">Notification Center</p>
+                            <button class="">Mark All As Read</button>
+                        </div>
+                        <div class="notification-divider"></div>
+                        <div class="notification-body">
+                            <ul class="notification-list">
+                                <li class="notification-item flex">
+                                    <div class="notification-icon-box">
+                                        <div class="notification-outer-icon-box">
+                                            <div class="notification-inner-icon-box rounded-full">
+                                                <img class="rounded-full" src="./assets/images/gym-logo/gym-logo-01.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content-box">
+                                        <div class="notification-content-outer-box">
+                                            <div class="notification-content-inner-box">
+                                                <p class="notification-content-title">GYM Club</p>
+                                                <p class="notification-content-desc">Sent invitations Lorem ipsum dolor
+                                                    sit amet consectetur.</p>
+                                            </div>
+                                            <div class="notification-content-button-box flex items-center">
+                                                <button class="btn-accept mr-2">Accept</button>
+                                                <button class="btn-decline text-white">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-status-box">
+                                        <div class="notification-status-outer-box">
+                                            <div class="notification-status-inner-box flex items-center">
+                                                <div class="seen-status active"></div>
+                                                <p class="delivered-time">1d</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification-item flex">
+                                    <div class="notification-icon-box">
+                                        <div class="notification-outer-icon-box">
+                                            <div class="notification-inner-icon-box rounded-full">
+                                                <img class="rounded-full" src="./assets/images/gym-logo/gym-logo-01.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content-box">
+                                        <div class="notification-content-outer-box">
+                                            <div class="notification-content-inner-box">
+                                                <p class="notification-content-title">GYM Club</p>
+                                                <p class="notification-content-desc">Sent invitations Lorem ipsum dolor
+                                                    sit amet consectetur.</p>
+                                            </div>
+                                            <div class="notification-content-button-box flex items-center hidden">
+                                                <button class="btn-accept mr-2">Accept</button>
+                                                <button class="btn-decline text-white">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-status-box">
+                                        <div class="notification-status-outer-box">
+                                            <div class="notification-status-inner-box flex items-center">
+                                                <div class="seen-status"></div>
+                                                <p class="delivered-time">1d</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification-item flex">
+                                    <div class="notification-icon-box">
+                                        <div class="notification-outer-icon-box">
+                                            <div class="notification-inner-icon-box rounded-full">
+                                                <img class="rounded-full" src="./assets/images/gym-logo/gym-logo-01.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content-box">
+                                        <div class="notification-content-outer-box">
+                                            <div class="notification-content-inner-box">
+                                                <p class="notification-content-title">GYM Club</p>
+                                                <p class="notification-content-desc">Sent invitations Lorem ipsum dolor
+                                                    sit amet consectetur.</p>
+                                            </div>
+                                            <div class="notification-content-button-box flex items-center hidden">
+                                                <button class="btn-accept mr-2">Accept</button>
+                                                <button class="btn-decline text-white">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-status-box">
+                                        <div class="notification-status-outer-box">
+                                            <div class="notification-status-inner-box flex items-center">
+                                                <div class="seen-status active"></div>
+                                                <p class="delivered-time">1d</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification-item flex">
+                                    <div class="notification-icon-box">
+                                        <div class="notification-outer-icon-box">
+                                            <div class="notification-inner-icon-box rounded-full">
+                                                <div
+                                                    class="notification-alert rounded-full  flex items-center justify-center">
+                                                    <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.28693 19.3496C2.50433 19.3496 1.72172 19.3594 0.939122 19.3496C0.234781 19.3398 0 19.0951 0 18.3999C0 17.695 0 16.9998 0 16.2949C0 15.8347 0.215215 15.5802 0.674994 15.4822C1.6239 15.2864 1.88803 14.9633 1.88803 14.0136C1.88803 12.6233 1.85868 11.2428 1.89781 9.85251C1.97607 6.96422 3.31627 4.85919 5.94777 3.62554C6.26081 3.47868 6.38799 3.30244 6.36842 2.95977C6.33907 2.18629 6.34886 1.43239 6.92602 0.795991C7.6108 0.0518871 8.42275 -0.163511 9.36187 0.120423C10.2227 0.384775 10.9466 1.20721 10.8782 2.12754C10.8097 3.10663 11.201 3.53742 12.0227 4.00738C14.2531 5.2704 15.339 7.2971 15.3781 9.8623C15.4075 11.2526 15.3781 12.6331 15.3879 14.0234C15.3879 14.9535 15.6716 15.2962 16.5618 15.4822C17.1194 15.5997 17.2759 15.776 17.2759 16.3536C17.2857 17.039 17.2857 17.7243 17.2759 18.4097C17.2759 19.1049 17.0314 19.3496 16.3368 19.3496C14.7912 19.3594 13.2358 19.3594 11.6901 19.3496C11.289 19.3496 11.1325 19.4377 11.0836 19.8783C10.9564 21.112 9.88035 22.0127 8.62818 22.0127C7.37602 22.0127 6.29994 21.112 6.18255 19.8685C6.13364 19.4182 5.95756 19.3398 5.57604 19.3496C4.813 19.3692 4.04996 19.3496 3.28693 19.3496ZM8.64775 3.04788C9.49883 3.04788 9.49883 3.04788 9.50861 2.52897C9.50861 1.79466 9.22492 1.43239 8.64775 1.43239C8.08036 1.43239 7.79667 1.78486 7.78689 2.4898C7.7771 3.04788 7.7771 3.04788 8.64775 3.04788ZM8.66731 19.3496C8.4521 19.3496 8.24667 19.3398 8.03145 19.3496C7.59124 19.3594 7.48363 19.5161 7.64015 19.9371C7.80645 20.3875 8.17819 20.6126 8.6184 20.6322C9.05861 20.642 9.43035 20.4266 9.626 19.986C9.82165 19.5357 9.70426 19.3594 9.20535 19.3496C9.02927 19.3496 8.8434 19.3496 8.66731 19.3496Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content-box">
+                                        <div class="notification-content-outer-box">
+                                            <div class="notification-content-inner-box">
+                                                <p class="notification-content-title">GYM Club</p>
+                                                <p class="notification-content-desc">Sent invitations Lorem ipsum dolor
+                                                    sit amet consectetur.</p>
+                                            </div>
+                                            <div class="notification-content-button-box flex items-center hidden">
+                                                <button class="btn-accept mr-2">Accept</button>
+                                                <button class="btn-decline text-white">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-status-box">
+                                        <div class="notification-status-outer-box">
+                                            <div class="notification-status-inner-box flex items-center">
+                                                <div class="seen-status active"></div>
+                                                <p class="delivered-time">1d</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification-item flex">
+                                    <div class="notification-icon-box">
+                                        <div class="notification-outer-icon-box">
+                                            <div class="notification-inner-icon-box rounded-full">
+                                                <img class="rounded-full" src="./assets/images/gym-logo/gym-logo-01.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-content-box">
+                                        <div class="notification-content-outer-box">
+                                            <div class="notification-content-inner-box">
+                                                <p class="notification-content-title">GYM Club</p>
+                                                <p class="notification-content-desc">Sent invitations Lorem ipsum dolor
+                                                    sit amet consectetur.</p>
+                                            </div>
+                                            <div class="notification-content-button-box flex items-center hidden">
+                                                <button class="btn-accept mr-2">Accept</button>
+                                                <button class="btn-decline text-white">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-status-box">
+                                        <div class="notification-status-outer-box">
+                                            <div class="notification-status-inner-box flex items-center">
+                                                <div class="seen-status"></div>
+                                                <p class="delivered-time">1d</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="profile account-controlls-item">
+                        <div class="account-controlls-link  rounded-full">
+                            <div class="profile-img rounded-full">
+                                <img src="./assets/images/profile.jpeg" class="rounded-full" alt="">
+                            </div>
+                        </div>
+                        <div class="profile-window ">
+                            <div class="profile-header flex items-center">
+                                <div class="profile-img rounded-full">
+                                    <img src="./assets/images/profile.jpeg" class="rounded-full" alt="">
+                                </div>
+                                <div class="user-info-box">
+                                    <p class="user-name">Clifford Tindell</p>
+                                    <button class="btn-user-info">View Profile</button>
+                                </div>
+                            </div>
+                            <div class="profile-divider"></div>
+                            <div class="profile-body">
+                                <ul class="profile-list">
+                                    <li class="profile-item">
+                                        <button>Setting</button>
+                                    </li>
+                                    <li class="profile-item">
+                                        <button>Log Out</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- start small screen menu toggle button -->
+                <div id="toggler" class="cursor-pointer ml-5">
+                    <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="btn-open">
+                        <path
+                            d="M27.7343 4.31555H2.25175C1.02098 4.31555 0 3.46659 0 2.41718V1.89837C0 0.860753 1.00699 0 2.25175 0H27.7483C28.979 0 30 0.848962 30 1.89837V2.41718C29.986 3.46659 28.979 4.31555 27.7343 4.31555Z"
+                            fill="black" />
+                        <path
+                            d="M27.7343 21.0001H2.25175C1.02098 21.0001 0 20.1511 0 19.1017V18.5947C0 17.557 1.00699 16.6963 2.25175 16.6963H27.7483C28.979 16.6963 30 17.5453 30 18.5947V19.1135C29.986 20.1511 28.979 21.0001 27.7343 21.0001Z"
+                            fill="black" />
+                        <path
+                            d="M27.7343 12.6637H2.25175C1.02098 12.6637 0 11.8147 0 10.7653V10.2465C0 9.2089 1.00699 8.34814 2.25175 8.34814H27.7483C28.979 8.34814 30 9.19711 30 10.2465V10.7653C29.986 11.8029 28.979 12.6637 27.7343 12.6637Z"
+                            fill="black" />
+                    </svg>
+                    <svg width="30" height="21" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="btn-close hidden">
+                        <path
+                            d="M19.7409 23.6684L1.72008 5.64758C0.849699 4.7772 0.728051 3.45481 1.47018 2.71268L1.83707 2.34579C2.57086 1.61201 3.89169 1.71542 4.77196 2.59569L22.8026 20.6264C23.673 21.4968 23.7947 22.8191 23.0526 23.5613L22.6857 23.9282C21.9336 24.6604 20.6211 24.5486 19.7409 23.6684Z"
+                            fill="black" />
+                        <path
+                            d="M22.6543 5.43637L4.63544 23.4591C3.76516 24.3296 2.44291 24.4513 1.70087 23.709L1.34235 23.3505C0.608644 22.6166 0.712051 21.2956 1.59223 20.4152L19.621 2.38261C20.4913 1.51213 21.8135 1.39047 22.5555 2.13268L22.9224 2.49961C23.6462 3.24337 23.5345 4.55601 22.6543 5.43637Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <!-- end small screen menu toggle button -->
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+
+            <!-- cart -->
+            <section id="cart">
+                <div class="container">
+                    <div class="cart-header mx-auto">
+                        <div class="progress-bar">
+                            <div class="package-membership-tab progress-status-box done">
+                                <div class="progress-status">
+                                </div>
+                                <button class="progress-status-label">Select package</button>
+                            </div>
+                            <div class="booking-history-tab progress-status-box active">
+                                <div class="progress-status">
+                                </div>
+                                <button class="progress-status-label">Payment</button>
+                            </div>
+                            <div class="payment-details-tab progress-status-box">
+                                <div class="progress-status">
+                                </div>
+                                <button class="progress-status-label">Confirmation</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-body mx-auto">
+                        <div class="payment">
+                            <div class="cart-item-box">
+                                <div class="card-item">
+                                    <div class="cart-item-header">
+                                        <p>selected</p>
+                                        <p>price</p>
+                                    </div>
+                                    <div class="cart-item-body">
+                                        <p class="cart-item-title">1 Class Pass</p>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">Package Type</p>
+                                                <p class="cart-item-info-title">Package</p>
+                                            </div>
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">Payment Type</p>
+                                                <p class="cart-item-info-title">Once Off Purchase</p>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">No. of Sessions</p>
+                                                <p class="cart-item-info-title">1</p>
+                                            </div>
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">Validity</p>
+                                                <p class="cart-item-info-title">30 Days</p>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">Valid From</p>
+                                                <p class="cart-item-info-title">Tue, 16 January 2021</p>
+                                            </div>
+                                            <div class="cart-item-info-box">
+                                                <p class="cart-item-info-label">Valid To</p>
+                                                <p class="cart-item-info-title">Wed, 17 February 2021</p>
+                                            </div>
+                                        </div>
+                                        <p class="cart-item-package-title">Package Description</p>
+                                        <p class="cart-item-package-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    </div>
+                                    <div class="cart-item-footer">
+                                        <p class="cart-item-notice flex items-center">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="#690FAD"/>
+                                                <path d="M6.3829 5.40783C7.15134 5.40783 7.52112 5.81228 7.42868 6.56917C7.3709 7.04872 7.18023 7.49361 7.06468 7.96161C7.01268 8.18695 6.94912 8.4065 6.90868 8.63761C6.85668 8.94384 6.98379 9.09406 7.29001 9.11717C7.40557 9.12295 7.52112 9.10561 7.63668 9.11139C7.71757 9.11717 7.84468 9.00161 7.87934 9.15184C7.90823 9.26161 7.86779 9.38295 7.76957 9.46384C7.38246 9.78162 6.36557 9.88561 5.9149 9.64873C5.56824 9.46961 5.40646 9.16917 5.44112 8.7705C5.48735 8.22739 5.69535 7.72472 5.82823 7.20472C5.88601 6.97361 5.97268 6.7425 5.97846 6.49983C5.99001 6.17628 5.87446 6.0665 5.5509 6.0665C5.47579 6.0665 5.3949 6.08961 5.31979 6.08383C5.22157 6.07806 5.07135 6.2225 5.0309 6.05494C5.00201 5.91628 5.05401 5.74872 5.2389 5.68517C5.61446 5.55228 5.97846 5.39628 6.3829 5.40783Z" fill="#690FAD"/>
+                                                <path d="M7.99544 4.01526C7.99544 4.44859 7.59678 4.80681 7.13455 4.79526C6.68389 4.7837 6.291 4.4197 6.28522 4.01526C6.27944 3.59348 6.67811 3.2237 7.14611 3.2237C7.61411 3.21792 7.99544 3.57615 7.99544 4.01526Z" fill="#690FAD"/>
+                                            </svg> 
+                                            This purchase will recur every XX days.
+                                        </p>
+                                        <p class="cart-item-footer-title">Total</p>
+                                        <p class="cart-item-footer-price">100.00 AED</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-payment-box">
+                                <ul class="payment-option-list">
+                                    <li class="payment-option-item">
+                                        <input id="my-card" type="radio" name="radio" value="1">
+                                        <label for="my-card">My card</label>
+                                    </li>
+                                    <li class="payment-option-item">
+                                        <input id="credit-card" type="radio" name="radio" value="2" checked>
+                                        <label for="credit-card">Credit card</label>
+                                    </li>
+                                </ul>
+                                <p class="cart-payment-title">Payment information</p>
+                                <div class="add-payment-info-box">
+                                    <div class="form-control-box">
+                                        <label for="card-holder-name" class="form-label block">name on card</label>
+                                        <input type="text" class="form-control block" id="card-holder-name" placeholder="Clifford Tindell">
+                                    </div>
+                                    <div class="form-control-box">
+                                        <label for="card-holder-email" class="form-label block">Email</label>
+                                        <input type="text" class="form-control block" id="card-holder-email" placeholder="XX-XXX-XXX-XX">
+                                    </div>
+                                    <div class="form-control-box">
+                                        <label for="card-info" class="form-label block">Card information</label>
+                                        <input type="text" class="form-control block" id="card-info" placeholder="XX-XXX-XXX-XX">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="form-control-box">
+                                            <label for="card-expiry-date" class="form-label block">Expiry Date</label>
+                                            <input type="text" class="form-control block" id="card-expiry-date" placeholder="DD-YY">
+                                        </div>
+                                        <div class="form-control-box">
+                                            <label for="card-cvc" class="form-label block">CVc</label>
+                                            <input type="text" class="form-control block" id="card-cvc">
+                                        </div>
+                                    </div>
+                                    <ul class="payment-mode-list flex items-center mt-3">
+                                        <li class="paymment-mode-item mr-auto">
+                                            <img src="./assets/images/payment-icons/payment-01.png" alt="">
+                                        </li>
+                                        <li class="paymment-mode-item mr-1">
+                                            <img src="./assets/images/payment-icons/payment-02.png" alt="">
+                                        </li>
+                                        <li class="paymment-mode-item mr-1">
+                                            <img src="./assets/images/payment-icons/payment-03.png" alt="">
+                                        </li>
+                                        <li class="paymment-mode-item mr-1">
+                                            <img src="./assets/images/payment-icons/payment-04.png" alt="">
+                                        </li>
+                                        <li class="paymment-mode-item">
+                                            <img src="./assets/images/payment-icons/payment-05.png" alt="">
+                                        </li>
+                                    </ul>
+                                    <div class="checkbox-field-box mt-5 mb-2">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="promotionalEmail">
+                                            <label for="promotionalEmail">Save information to pay faster next time</label>
+                                        </div>
+                                    </div>
+                                    <p class="stripe-info">Use Link with Stripe to securely save your payment information and pay faster on future purchases with Core Direction and other supporting sites. You’ll receive a verification text to get started.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer mx-auto">
+                        <button class="btn-back">
+                            <svg class="mr-2" width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.14355 2.31191C6.43407 2.03175 6.43519 1.57644 6.14603 1.29495C5.85684 1.01338 5.38688 1.01241 5.09639 1.29251L1.21832 5.03185L1.21765 5.03253L1.14894 6.12324L1.14947 6.12375L5.02702 9.86259C5.35641 10.1802 5.88793 10.179 6.21582 9.85981C6.54545 9.53892 6.54416 9.01856 6.213 8.69921L6.14358 8.7712L6.21299 8.69921L3.78762 6.36066H19.2578C19.7199 6.36066 20.1 5.9969 20.1 5.54155C20.1 5.08621 19.7199 4.72245 19.2578 4.72245H3.78765L6.21296 2.38389L6.14355 2.31191ZM6.14355 2.31191L6.21296 2.38389C6.54412 2.06454 6.54541 1.54419 6.21579 1.2233C5.88788 0.904042 5.35632 0.90297 5.02698 1.22052L1.15356 4.9554M6.14355 2.31191L1.15356 4.9554M1.15356 4.9554L1.1489 4.95986L1.15356 4.9554ZM1.14813 4.96065L1.14884 4.95992L1.14813 4.96065ZM1.14813 4.96065C0.817204 5.28067 0.817816 5.80156 1.14673 6.12107L1.14813 4.96065Z" fill="black" stroke="black" stroke-width="0.2"/>
+                            </svg> 
+                            Back to Previous
+                        </button>
+                        <button class="btn-next rounded-full">
+                            Continue to Payment 
+                            <svg class="ml-2" width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8565 2.2704C14.5659 1.99024 14.5648 1.53494 14.854 1.25345C15.1432 0.971881 15.6131 0.970911 15.9036 1.251L19.7817 4.99035L19.7824 4.99103L19.8511 6.08174L19.8505 6.08225L15.973 9.82108C15.6436 10.1387 15.1121 10.1375 14.7842 9.8183C14.4545 9.49741 14.4558 8.97706 14.787 8.65771L14.8564 8.72969L14.787 8.6577L17.2124 6.31915H1.74219C1.28005 6.31915 0.9 5.95539 0.9 5.50005C0.9 5.0447 1.28005 4.68094 1.74219 4.68094H17.2123L14.787 2.34239L14.8565 2.2704ZM14.8565 2.2704L14.787 2.34239C14.4559 2.02304 14.4546 1.50269 14.7842 1.18179C15.1121 0.862538 15.6437 0.861466 15.973 1.17901L19.8464 4.9139M14.8565 2.2704L19.8464 4.9139M19.8464 4.9139L19.8511 4.91836L19.8464 4.9139ZM19.8519 4.91914L19.8512 4.91842L19.8519 4.91914ZM19.8519 4.91914C20.1828 5.23916 20.1822 5.76005 19.8533 6.07956L19.8519 4.91914Z" fill="#690FAD" stroke="#690FAD" stroke-width="0.2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="custom-container pb-4 flex flex-wrap">
+                <div class="info mb-10">
+                    <img src="assets/images/footer-logo.png" alt="">
+                    <p class="text-xs text-justify">A fitness, health & wellness company powered by technology committed to finding the most inspiring businesses, events, activities, classes and passes in an effort to inspire fitness, health & happiness globally.</p>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">Company</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>Home</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>About Us</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Corporate Wellness</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Contact Us</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">Explore</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>Locations</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Activity Listings</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Partner with Us</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links mb-10">
+                    <p class="font-bold mb-4">FAQ & Legal</p>
+                    <ul>
+                        <li class="mb-2">
+                            <button>FAQ</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Privacy Policy</button>
+                        </li>
+                        <li class="mb-2">
+                            <button>Terms & Conditions</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="custom-container copyright text-center">
+                Copyright© (2021). Core Direction Holding Ltd. All right reserved
+            </p>
+        </footer>
+    </div>
+
+
+    <!-- signin-modal -->
+    <div id="signin-modal" class="custom-modal m-auto hidden">
+        <div class="modal-center">
+            <div class="modal-outer-box">
+                <div class="modal-inner-box">
+                    <div class="modal-header">
+                        <div class="btn-modal-close ml-auto">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.7336 5.26685C23.7103 -1.75497 12.2885 -1.75497 5.2652 5.26685C-1.75507 12.2887 -1.75507 23.7135 5.2652 30.7353C8.77685 34.2455 13.3885 35.9997 18.0002 35.9997C22.6119 35.9997 27.222 34.2454 30.7336 30.7353C37.7555 23.7135 37.7555 12.2887 30.7336 5.26685ZM25.4271 23.3068C26.0139 23.8936 26.0139 24.842 25.4271 25.4288C25.1345 25.7214 24.7503 25.8685 24.3661 25.8685C23.982 25.8685 23.5977 25.7214 23.3051 25.4288L18.0001 20.1223L12.6966 25.4272C12.4025 25.7199 12.0183 25.867 11.6356 25.867C11.2515 25.867 10.8672 25.7199 10.5746 25.4272C9.98785 24.8405 9.98785 23.8905 10.5746 23.3053L15.8781 18.0003L10.5731 12.6953C9.98637 12.1086 9.98637 11.1586 10.5731 10.5734C11.1584 9.98661 12.1083 9.98661 12.6951 10.5734L18.0001 15.8783L23.305 10.5734C23.8918 9.98661 24.8402 9.98661 25.427 10.5734C26.0137 11.1586 26.0137 12.1086 25.427 12.6953L20.122 18.0003L25.4271 23.3068Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-body px-5">
+                        <div class="form-container mx-auto">
+                            <h3 class="modal-title text-center mt-10">Sign in</h3>
+                            <p class="modal-desc text-center my-10">Sign in to your account</p>
+                            <!-- <form action=""> -->
+                            <div class="email-field-box mb-8">
+                                <div class="group">
+                                    <label for="signInEmail">Email</label>
+                                    <input id="signInEmail" type="email" class="cool border-b-1 border-black" />
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.9246 13.5754C16.7811 12.4318 15.4198 11.5853 13.9346 11.0726C15.5252 9.97705 16.5703 8.14365 16.5703 6.07031C16.5703 2.72303 13.8473 0 10.5 0C7.15271 0 4.42969 2.72303 4.42969 6.07031C4.42969 8.14365 5.47477 9.97705 7.06535 11.0726C5.58018 11.5849 4.21887 12.4318 3.07535 13.5754C1.09225 15.5585 0 18.1954 0 21H1.64062C1.64062 16.115 5.61504 12.1406 10.5 12.1406C15.385 12.1406 19.3594 16.115 19.3594 21H21C21 18.1954 19.9078 15.5585 17.9246 13.5754ZM10.5 10.5C8.05752 10.5 6.07031 8.51279 6.07031 6.07031C6.07031 3.62783 8.05752 1.64062 10.5 1.64062C12.9425 1.64062 14.9297 3.62783 14.9297 6.07031C14.9297 8.51279 12.9425 10.5 10.5 10.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="password-field-box mb-8">
+                                <div class="group">
+                                    <label for="signInPassword">Password</label>
+                                    <input id="signInPassword" type="email" class="cool border-b-1 border-black" />
+                                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.8633 15.0117C14.3163 15.0117 14.6836 14.6445 14.6836 14.1914C14.6836 13.7384 14.3163 13.3711 13.8633 13.3711C13.4102 13.3711 13.043 13.7384 13.043 14.1914C13.043 14.6445 13.4102 15.0117 13.8633 15.0117Z"
+                                            fill="#C0D731" />
+                                        <path
+                                            d="M17.5547 14.8477C18.0079 14.8477 18.375 14.4806 18.375 14.0273V10.9922C18.375 9.18299 16.9029 7.71094 15.0938 7.71094H14.1077V4.81811C14.1077 2.16111 11.8999 0 9.18586 0C6.47186 0 4.26398 2.16111 4.26398 4.81811V7.71094H3.28125C1.47205 7.71094 0 9.18299 0 10.9922V17.7188C0 19.5279 1.47205 21 3.28125 21H15.0938C16.9029 21 18.375 19.5279 18.375 17.7188C18.375 17.2655 18.0079 16.8984 17.5547 16.8984C17.1015 16.8984 16.7344 17.2655 16.7344 17.7188C16.7344 18.6236 15.9986 19.3594 15.0938 19.3594H3.28125C2.37645 19.3594 1.64062 18.6236 1.64062 17.7188V10.9922C1.64062 10.0874 2.37645 9.35156 3.28125 9.35156H15.0938C15.9986 9.35156 16.7344 10.0874 16.7344 10.9922V14.0273C16.7344 14.4806 17.1015 14.8477 17.5547 14.8477ZM12.4671 7.71094H5.90461V4.81811C5.90461 3.06633 7.37666 1.64062 9.18586 1.64062C10.9951 1.64062 12.4671 3.06592 12.4671 4.81811V7.71094Z"
+                                            fill="#C0D731" />
+                                        <path
+                                            d="M7.66992 15.0117C8.12297 15.0117 8.49023 14.6445 8.49023 14.1914C8.49023 13.7384 8.12297 13.3711 7.66992 13.3711C7.21688 13.3711 6.84961 13.7384 6.84961 14.1914C6.84961 14.6445 7.21688 15.0117 7.66992 15.0117Z"
+                                            fill="#C0D731" />
+                                        <path
+                                            d="M4.59375 15.0117C5.0468 15.0117 5.41406 14.6445 5.41406 14.1914C5.41406 13.7384 5.0468 13.3711 4.59375 13.3711C4.1407 13.3711 3.77344 13.7384 3.77344 14.1914C3.77344 14.6445 4.1407 15.0117 4.59375 15.0117Z"
+                                            fill="#C0D731" />
+                                        <path
+                                            d="M10.7461 15.0117C11.1992 15.0117 11.5664 14.6445 11.5664 14.1914C11.5664 13.7384 11.1992 13.3711 10.7461 13.3711C10.2931 13.3711 9.92578 13.7384 9.92578 14.1914C9.92578 14.6445 10.2931 15.0117 10.7461 15.0117Z"
+                                            fill="#C0D731" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="btn-submit bg-gradient rounded-full mb-3">Sign In</button>
+                            <!-- </form> -->
+                            <div class="account-btn-box flex items-center justify-between mb-8">
+                                <button class="underline btn-signup">Create New
+                                    Account</button>
+                                <button class="underline">Forget Password?</button>
+                            </div>
+                            <div class="social-account-box pb-20">
+                                <h4 class="social-title text-center mb-4">Sign in With</h4>
+                                <ul class="social-login flex items-center justify-center">
+                                    <li class="social-item mr-2">
+                                        <button class="social-link rounded-full">
+                                            <img src="./assets/images/social-icons/google.png" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="social-item ml-2">
+                                        <button class="social-link rounded-full">
+                                            <img src="./assets/images/social-icons/apple.png" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
