@@ -7722,7 +7722,6 @@ button:focus {
   min-height: 32px;
   max-width: 32px;
   max-height: 32px;
-  position: relative;
 }
 #cart .cart-header .progress-bar .progress-status-box.done .progress-status::before {
   position: absolute;
