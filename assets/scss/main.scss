@@ -4389,6 +4389,12 @@ button:focus {
     background-color: $colorWhite;
     .business-profile-header {
 
+        .custom-container{
+            @media screen and (max-width: 991px) {
+                padding: 0;
+            }
+        }
+
         .business-profile-banner-box,
         .business-profile-map-box {
             width: 100%;
@@ -4400,8 +4406,8 @@ button:focus {
                 width: 100%;
                 border-radius: 0 0 7px 7px;
                 height: 331px;
-                // object-fit: cover;
-                // object-position: center;
+                object-fit: cover;
+                object-position: center;
             }
         }
 
@@ -4418,6 +4424,9 @@ button:focus {
 
         .business-profile-short-info-box {
             padding-bottom: 15px;
+            @media screen and (max-width: 991px) {
+                padding-bottom: 30px;
+            }
         }
 
         .business-profile-logo-box {
@@ -4426,10 +4435,18 @@ button:focus {
             outline: 3px solid #fff;
 
             img {
-                width: 110px;
-                height: 110px;
+                min-width: 110px;
+                max-width: 110px;
+                min-height: 110px;
+                max-height: 110px;
                 outline: 4px solid $primaryColor;
                 border: 3px solid $colorWhite;
+                @media screen and (max-width: 991px) {
+                    min-width: 75px;
+                    max-width: 75px;
+                    min-height: 75px;
+                    max-height: 75px;
+                }
             }
         }
 
@@ -4442,6 +4459,12 @@ button:focus {
                 margin-bottom: 4px;
                 width: 100%;
                 max-width: 349px;
+                @media screen and (max-width: 991px) {
+                    font-size: 18px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin: 0;
+                }
             }
 
             .business-profile-brand-subtitle {
@@ -4451,12 +4474,20 @@ button:focus {
                 line-height: 17.07px;
                 width: 100%;
                 max-width: 349px;
+                @media screen and (max-width: 991px) {
+                    font-size: 12px;
+                }
             }
         }
 
         .business-profile-contact-info-box {
             @media screen and (max-width: 991px) {
-                display: none;
+                flex-wrap: wrap;
+                .btn-brand-number,
+                .btn-brand-map,
+                .btn-business-map{
+                    margin-bottom: 16px;
+                }
             }
 
             .btn-brand-number,
@@ -4495,50 +4526,34 @@ button:focus {
 
     .business-profile-menu-tab-swiper-container {
         max-width: 800px;
-        .swiper-wrapper {
-            .swiper-slide {
-                max-width: max-content;
-                max-height: max-content;
-            }
+        @media screen and (min-width: 992px) {
+            justify-content: space-between;
         }
     }
 
-    .business-profile-menu-tab-list {
+    .business-profile-menu-tab-item {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.07px;
+        margin-right: 15px;
+        background-color: $colorWhite;
+        color: $colorBlack;
+        padding: 13.28px 29.13px 14.01px;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        height: 48px;
 
-        .business-profile-menu-tab-item {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 17.07px;
-            margin-right: 15px;
-            background-color: $colorWhite;
-            color: $colorBlack;
-            padding: 13.28px 29.13px 14.01px;
-            border-bottom: 2px solid transparent;
-            cursor: pointer;
-            height: 48px;
-
-            svg,img {
-                margin-right: 4.8px;
-            }
-
-            svg,
-            path {
-                fill: $colorBlack;
-            }
-
-            &:hover {
-                border-color: $primaryColor;
-                color: $primaryColor;
-
-                svg,
-                path {
-                    fill: $primaryColor;
-                }
-            }
+        svg,img {
+            margin-right: 4.8px;
         }
 
-        .active {
+        svg,
+        path {
+            fill: $colorBlack;
+        }
+
+        &:hover {
             border-color: $primaryColor;
             color: $primaryColor;
 
@@ -4546,6 +4561,16 @@ button:focus {
             path {
                 fill: $primaryColor;
             }
+        }
+    }
+
+    .active {
+        border-color: $primaryColor;
+        color: $primaryColor;
+
+        svg,
+        path {
+            fill: $primaryColor;
         }
     }
 
