@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
+    <title>Add My Card | Dubai Fitness Challenge</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</head>
+
+<body class="" id="body">
+
+    <div class="wrapper">
+
+        <!-- add-my-card -->
+        <div id="add-my-card" class="custom-modal m-auto overflow-y-auto">
+            <div class="modal-center">
+                <div class="modal-outer-box">
+                    <div class="modal-inner-box">
+                        <div class="modal-header">
+                            <div class="btn-modal-close ml-auto">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7336 5.26636C23.7103 -1.75545 12.2885 -1.75545 5.2652 5.26636C-1.75507 12.2882 -1.75507 23.713 5.2652 30.7348C8.77685 34.245 13.3885 35.9992 18.0002 35.9992C22.6119 35.9992 27.222 34.2449 30.7336 30.7348C37.7555 23.7131 37.7555 12.2882 30.7336 5.26636ZM25.4271 23.3063C26.0139 23.8931 26.0139 24.8415 25.4271 25.4283C25.1345 25.7209 24.7503 25.868 24.3661 25.868C23.982 25.868 23.5977 25.7209 23.3051 25.4283L18.0001 20.1218L12.6966 25.4267C12.4025 25.7194 12.0183 25.8665 11.6356 25.8665C11.2515 25.8665 10.8672 25.7194 10.5746 25.4267C9.98785 24.84 9.98785 23.89 10.5746 23.3048L15.8781 17.9998L10.5731 12.6948C9.98637 12.1081 9.98637 11.1581 10.5731 10.5729C11.1584 9.98612 12.1083 9.98612 12.6951 10.5729L18.0001 15.8778L23.305 10.5729C23.8918 9.98612 24.8402 9.98612 25.427 10.5729C26.0137 11.1581 26.0137 12.1081 25.427 12.6948L20.122 17.9998L25.4271 23.3063Z" fill="#C4C4C4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal-body px-5">
+                            <div class="form-container mx-auto">
+                                <!-- <form action=""> -->
+                                    <div class="add-payment-info-box">
+                                        <div class="add-my-card-icon-box">
+                                            <svg class="mx-auto" width="92" height="80" viewBox="0 0 92 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M42.0819 0C53.1885 0 64.2952 0 75.4019 0C78.5052 0 80.7919 1.30667 82.2619 3.92C82.9152 5.06333 83.2419 6.20667 83.2419 7.51333C83.2419 9.47333 83.2419 11.5967 83.2419 13.5567C83.2419 14.7 83.4052 15.8433 83.5685 17.15C84.2219 21.07 84.8752 24.8267 85.6919 28.7467C86.3452 32.0133 86.8352 35.28 87.4885 38.5467C88.1419 42.4667 88.7952 46.2233 89.6119 50.1433C90.1019 52.92 90.5919 55.86 91.0819 58.6367C91.8985 63.0467 88.9585 67.13 84.8752 67.9467C82.7519 68.2733 80.6285 68.7633 78.3419 69.09C75.4019 69.58 72.4619 70.07 69.5219 70.7233C65.9285 71.3767 62.1719 72.03 58.5785 72.6833C55.1485 73.3367 51.5552 73.99 48.1252 74.48C44.5319 75.1333 41.1019 75.7867 37.5085 76.44C34.0785 77.0933 30.4852 77.7467 27.0552 78.2367C24.2785 78.7267 21.5019 79.2167 18.7252 79.7067C15.9485 80.0333 13.6619 79.2167 11.7019 77.0933C10.5585 75.7867 9.90521 74.1533 9.74187 72.52C9.25187 69.4167 8.59854 66.4767 8.10854 63.3733C7.94521 62.0667 7.61854 60.76 7.45521 59.29C7.45521 58.9633 7.29187 58.8 6.96521 58.8C3.86187 57.9833 1.90187 55.86 1.08521 52.7567C0.921875 52.2667 0.921875 51.6133 0.921875 51.1233C0.921875 47.53 0.921875 44.1 0.921875 40.5067C0.921875 29.7267 0.921875 18.9467 0.921875 8.16667C0.921875 5.06333 2.22854 2.77667 4.84188 1.14333C6.14854 0.326666 7.45521 0 8.92521 0C14.3152 0 19.5419 0 24.9319 0C30.6485 0 36.3652 0 42.0819 0ZM42.0819 23.6833C35.5485 23.6833 29.0152 23.6833 22.3185 23.6833C16.6019 23.6833 10.8852 23.6833 5.16854 23.6833C5.00521 23.6833 4.84188 23.6833 4.84188 24.01C4.84188 32.9933 4.84188 41.9767 4.84188 50.96C4.84188 52.1033 5.16854 53.0833 5.98521 53.7367C6.80187 54.7167 7.94521 55.0433 9.25187 55.0433C31.1385 55.0433 53.0252 55.0433 75.0752 55.0433C75.2385 55.0433 75.2385 55.0433 75.4019 55.0433C76.2185 55.0433 77.0352 54.88 77.8519 54.39C78.9952 53.5733 79.4852 52.2667 79.4852 50.7967C79.4852 41.9767 79.4852 32.9933 79.4852 24.1733V24.01C79.4852 23.8467 79.4852 23.8467 79.3219 23.8467C79.1585 23.8467 79.1585 23.8467 78.9952 23.8467C66.5819 23.6833 54.3319 23.6833 42.0819 23.6833ZM83.4052 38.22C83.4052 42.4667 83.4052 46.7133 83.4052 50.96C83.4052 52.92 82.7519 54.5533 81.6085 56.0233C79.9752 57.82 78.0152 58.8 75.5652 58.8C61.1919 58.8 46.8185 58.8 32.2819 58.8C25.5852 58.8 18.7252 58.8 12.0285 58.8C11.5385 58.8 11.5385 58.8 11.7019 59.1267C12.3552 62.72 13.0085 66.3133 13.6619 69.9067C13.8252 70.8867 13.9885 71.7033 14.1519 72.6833C14.6419 74.48 16.4385 75.7867 18.8885 75.46C22.8085 74.8067 26.5652 74.1533 30.4852 73.3367C34.5685 72.6833 38.6519 71.8667 42.7352 71.2133C46.9819 70.3967 51.0652 69.7433 55.3119 68.9267C59.0685 68.2733 62.9885 67.62 66.7452 66.9667C69.5219 66.4767 72.1352 65.9867 74.9119 65.4967C78.0152 65.0067 81.1185 64.3533 84.2219 63.8633C86.3452 63.5367 87.6519 61.5767 87.3252 59.29C86.9985 57.4933 86.6719 55.86 86.3452 54.0633C85.5285 49.6533 84.7119 45.2433 83.8952 40.8333C83.7319 40.0167 83.5685 39.2 83.4052 38.22ZM42.0819 13.72C45.8385 13.72 49.4319 13.72 53.1885 13.72C61.8452 13.72 70.3385 13.72 78.9952 13.72C79.3219 13.72 79.3219 13.72 79.3219 13.3933C79.3219 11.5967 79.3219 9.96333 79.3219 8.16667C79.3219 7.02333 78.9952 5.88 78.0152 5.06333C77.1985 4.24667 76.0552 4.08333 74.9119 4.08333C53.1885 4.08333 31.4652 4.08333 9.57854 4.08333C9.08854 4.08333 8.76188 4.08333 8.27187 4.08333C7.29187 4.08333 6.47521 4.57333 5.82188 5.55333C5.16854 6.20667 5.00521 7.18667 5.00521 8.16667C5.00521 9.8 5.00521 11.5967 5.00521 13.23C5.00521 13.72 5.00521 13.72 5.49521 13.72C17.5819 13.72 29.8319 13.72 42.0819 13.72Z" fill="black"/>
+                                                <path d="M30.3206 29.3999C35.384 29.3999 40.4473 29.3999 45.5106 29.3999C46.0006 29.3999 46.0006 29.3999 46.0006 29.8899C46.0006 30.8699 46.0006 32.0132 46.0006 32.9932C46.0006 33.3199 45.8373 33.3199 45.674 33.3199C35.384 33.3199 25.2573 33.3199 14.9673 33.3199C14.6406 33.3199 14.6406 33.3199 14.6406 32.9932C14.6406 32.0132 14.6406 30.8699 14.6406 29.8899C14.6406 29.3999 14.6406 29.3999 15.1306 29.3999C20.194 29.3999 25.2573 29.3999 30.3206 29.3999Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <p class="add-my-card-title">Add your card details</p>
+                                        <div class="form-control-box">
+                                            <label for="card-holder-name" class="form-label block">name on card</label>
+                                            <input type="text" class="form-control block" id="card-holder-name" placeholder="Clifford Tindell">
+                                        </div>
+                                        <div class="form-control-box">
+                                            <label for="card-holder-email" class="form-label block">Email</label>
+                                            <input type="text" class="form-control block" id="card-holder-email" placeholder="XX-XXX-XXX-XX">
+                                        </div>
+                                        <div class="form-control-box">
+                                            <label for="card-info" class="form-label block">Card information</label>
+                                            <input type="text" class="form-control block" id="card-info" placeholder="XX-XXX-XXX-XX">
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="form-control-box">
+                                                <label for="card-expiry-date" class="form-label block">Expiry Date</label>
+                                                <input type="text" class="form-control block" id="card-expiry-date" placeholder="DD-YY">
+                                            </div>
+                                            <div class="form-control-box">
+                                                <label for="card-cvc" class="form-label block">CVc</label>
+                                                <input type="text" class="form-control block" id="card-cvc">
+                                            </div>
+                                        </div>
+                                        <ul class="payment-mode-list flex items-center mt-3">
+                                            <li class="paymment-mode-item mr-auto">
+                                                <img src="./assets/images/payment-icons/payment-01.png" alt="">
+                                            </li>
+                                            <li class="paymment-mode-item mr-1">
+                                                <img src="./assets/images/payment-icons/payment-02.png" alt="">
+                                            </li>
+                                            <li class="paymment-mode-item mr-1">
+                                                <img src="./assets/images/payment-icons/payment-03.png" alt="">
+                                            </li>
+                                            <li class="paymment-mode-item mr-1">
+                                                <img src="./assets/images/payment-icons/payment-04.png" alt="">
+                                            </li>
+                                            <li class="paymment-mode-item">
+                                                <img src="./assets/images/payment-icons/payment-05.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="checkbox-field-box mt-5 mb-2">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="promotionalEmail">
+                                                <label for="promotionalEmail">Save information to pay faster next time</label>
+                                            </div>
+                                        </div>
+                                        <p class="stripe-info">Use Link with Stripe to securely save your payment information and pay faster on future purchases with Core Direction and other supporting sites. You’ll receive a verification text to get started.</p>
+                                    </div>
+    
+                                <button class="booking-checkin-mode-btn-proceed btn-modal-close rounded-full capitalize">Add My Card</button>
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

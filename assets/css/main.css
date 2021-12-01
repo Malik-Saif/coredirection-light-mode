@@ -8218,8 +8218,18 @@ button:focus {
 #tooltip-descriptive-hover .form-container {
   width: 100%;
   max-width: 450px;
-  padding-top: 116px;
-  padding-bottom: 113px;
+}
+@media screen and (min-width: 992px) {
+  #tooltip-descriptive-hover .form-container {
+    padding-top: 116px;
+    padding-bottom: 113px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #tooltip-descriptive-hover .form-container {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
 }
 #tooltip-descriptive-hover .activity-detail-card {
   background: #FFFFFF;
@@ -8228,6 +8238,102 @@ button:focus {
   border-radius: 11px 11px 21px 21px;
   margin-bottom: 21px;
   padding: 27px 31px 30px;
+}
+#tooltip-descriptive-hover .activity-detail-header {
+  border-bottom: 1px solid #690FAD;
+  padding-bottom: 24px;
+  margin-bottom: 15px;
+}
+#tooltip-descriptive-hover .brand-img {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+#tooltip-descriptive-hover .brand-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+#tooltip-descriptive-hover .brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#tooltip-descriptive-hover .package-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+#tooltip-descriptive-hover .package-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#tooltip-descriptive-hover .package-info-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+#tooltip-descriptive-hover .package-info-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+#tooltip-descriptive-hover .package-t-c {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#tooltip-descriptive-hover .package-t-c-list {
+  list-style: inside;
+  list-style-type: disc;
+}
+#tooltip-descriptive-hover .package-t-c--item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 #tooltip-descriptive-hover .booking-checkin-mode-btn-proceed {
   color: #FFFFFF;
@@ -8239,6 +8345,75 @@ button:focus {
   text-align: center;
   width: 100%;
   max-width: 372px;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#add-my-card .modal-outer-box {
+  max-width: calc(450px + 2rem);
+  background: #F1F1F1;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+}
+#add-my-card .form-container {
+  width: 100%;
+  max-width: 307px;
+  padding-top: 12px;
+  padding-bottom: 55px;
+}
+#add-my-card .add-my-card-icon-box {
+  margin-bottom: 32px;
+}
+#add-my-card .add-my-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+#add-my-card .form-control {
+  margin-bottom: 13px;
+}
+#add-my-card .checkbox-field-box {
+  margin-bottom: 8px;
+}
+#add-my-card .checkbox-field-box .form-group label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#add-my-card .stripe-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 21px;
+}
+#add-my-card .booking-checkin-mode-btn-proceed {
+  color: #FFFFFF;
+  background: #690FAD;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: center;
+  width: 100%;
+  max-width: 205px;
   height: 48px;
   display: block;
   margin-left: auto;
