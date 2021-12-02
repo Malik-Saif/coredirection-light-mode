@@ -8531,6 +8531,95 @@ button:focus {
     }
 }
 
+#location-details{
+    .modal-outer-box {
+        max-width: calc(415px + 2rem);
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .location-detail-box{
+        background: $colorWhite;
+        border-radius: 11px;
+        padding-bottom: 18px;
+    }
+
+    .location-detail-header{
+        background-color: $primaryColor;
+        padding: 10px 25px;
+    }
+
+    .current-day,.current-date{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: $colorWhite;
+    }
+
+    .activity-item{
+        padding: 22px 23px 8px;
+    }
+    .current-day{
+        text-align: left;
+    }
+    .current-date{
+        text-align: right;
+    }
+
+    .activity-info-box{
+        border-left: 2px solid rgba(34, 34, 34, 0.45);
+        padding-top: 4px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+    }
+
+    .activity-time{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .activity-name{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $primaryColor;
+        text-transform: uppercase;
+    }
+
+    .activity-place{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    .btn-activity-detail{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: right;
+        text-decoration: underline;
+    }
+}
+
 #footer {
     padding-top: 65px;
     background-color: $colorWhite;
