@@ -321,11 +321,6 @@ button:focus {
         }
 
         .booking-card-header {
-            border-bottom: 1px solid #D6D6D6;
-            margin-left: -29px;
-            margin-right: -29px;
-            padding-left: 29px;
-            padding-right: 29px;
             padding-bottom: 18px;
             margin-bottom: 15.51px;
 
@@ -642,13 +637,24 @@ button:focus {
 }
 
 .booking-card {
-    padding: 14px 29px;
+    padding: 21px 30px 24px;
     box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
     background-color: $colorWhite;
     border-radius: 11px;
 
     .booking-card-header {
-        margin-bottom: 33.51px;
+        border-bottom: 1px solid #D6D6D6;
+        padding-bottom: 18px;
+        margin-bottom: 15.51px;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @media screen and (max-width: 991px) {
+            padding-bottom: 21px;
+            margin-bottom: 9.5px;
+        }
 
         .business-logo-box {
             width: 100%;
@@ -665,7 +671,7 @@ button:focus {
             font-size: 14px;
             line-height: 17.07px;
             font-weight: 500;
-            padding-top: 5px;
+            padding-top: 4px;
         }
     }
 
@@ -737,6 +743,9 @@ button:focus {
         line-height: 14.63px;
         font-weight: 400;
         margin-bottom: 18.29px;
+        strong{
+            font-weight: 700;
+        }
     }
 
     .booking-activity-info-item {
@@ -746,6 +755,9 @@ button:focus {
         font-weight: 400;
         margin-bottom: 12.26px;
         padding-left: 20px;
+        strong{
+            font-weight: 700;
+        }
 
         .booking-activity-info-item-icon-box {
             position: absolute;
@@ -763,23 +775,81 @@ button:focus {
             font-weight: 700;
             margin-right: 5px;
         }
+
+        .tag{
+            padding: 2px 5px;
+            color: $colorWhite;
+            background-color: $primaryColor;
+            border-radius: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: 10px;
+            margin-right: 7px;
+        }
+        .subscription-tag{
+            padding: 2px 5px;
+            color: $colorWhite;
+            background-color: $primaryColor;
+            border-radius: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .booking-activity-info-item.expire-soon {
+        color: #FFAB07;
+        .booking-activity-info-item-icon-box {
+            svg,circle {
+                fill: #FFAB07;
+            }
+        }
+    }
+    .booking-activity-info-item.status-active {
+        color: #3AC617;
+        .booking-activity-info-item-icon-box {
+            svg,circle {
+                fill: #3AC617;
+            }
+        }
     }
 
     .booking-card-footer {
         text-align: center;
-        margin-top: 28px;
-        margin-bottom: 24px;
+        margin-top: 24px;
+        margin-bottom: 0px;
 
         .btn-book-now {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
-            line-height: 21.94px;
-            font-weight: 500;
+            font-weight: 700;
             width: 100%;
             max-width: 262.47px;
-            height: 44.82px;
+            min-height: 44.82px;
             background-color: $primaryColor;
             color: $colorWhite;
+            text-align: center;
+        }
+        .btn-book-secondary {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            width: 100%;
+            max-width: 262.47px;
+            min-height: 44.82px;
+            background-color: $colorWhiteSmoke;
+            color: $primaryColor;
+            text-align: center;
         }
     }
 }
@@ -7152,8 +7222,9 @@ button:focus {
     }
 }
 
-#my-account{
-    .my-account-header{
+#wallet{
+    margin-bottom: 115px;
+    .wallet-header{
         background: $colorWhite;
         margin-top: 41px;
         margin-bottom: 19px;
@@ -7235,7 +7306,7 @@ button:focus {
         }
     }
 
-    .my-account-table-header{
+    .wallet-table-header{
         padding: 22px 39px 20px;
         background-color: $primaryColor;
         border-radius: 11px 11px 0px 0px;
@@ -7244,7 +7315,7 @@ button:focus {
             border-radius: 10px 10px 0px 0px;
             box-shadow: 0px 4px 4px 0px #00000040;
         }
-        .my-account-selected-tab-heading{
+        .wallet-selected-tab-heading{
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: 500;
@@ -7254,8 +7325,8 @@ button:focus {
                 display: none;
             }
         }
-        .my-account-table-heading-list{
-            .my-account-table-heading-item{
+        .wallet-table-heading-list{
+            .wallet-table-heading-item{
                 font-family: 'Roboto', sans-serif;
                 font-size: 12px;
                 font-weight: 700;
@@ -7269,28 +7340,27 @@ button:focus {
     }
 
     .package-membership-content-box{
-        .my-account-table-heading-list {
+        .wallet-table-heading-list {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             width: 100%;
         }
-        .my-account-table-heading-item:last-child{
+        .wallet-table-heading-item:last-child{
             text-align: right;
         }
     }
 
     .booking-history-content-box{
-        .my-account-table-heading-list {
+        .wallet-table-heading-list {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             width: 100%;
         }
     }
 
-    .my-account-table-body{
+    .wallet-table-body{
         max-height: 353px;
         overflow-y: scroll;
-        margin-bottom: 76px;
 
         /* width */
         &::-webkit-scrollbar {
@@ -7309,12 +7379,12 @@ button:focus {
             border-radius: 11px;
         }
 
-        .my-account-table-row{
+        .wallet-table-row{
             background-color: $colorWhite;
             padding: 18px 24px 19px;
+            margin-bottom: 1px;
             @media screen and (max-width: 991px) {
                 padding: 10px 13px 11px;
-                margin-bottom: 1px;
             }
         }
         .small-screen-accordion-box{
@@ -7339,7 +7409,7 @@ button:focus {
             color: $colorBlack;
             padding-top: 11px;
         }
-        .my-account-table-content-item{
+        .wallet-table-content-item{
             font-family: 'Roboto', sans-serif;
             font-size: 12px;
             line-height: 14.0px;
@@ -7382,35 +7452,486 @@ button:focus {
     }
 
     .package-membership-content-box{
-        .my-account-table-content-list{
-            @media screen and (min-width: 992px) {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
+        .business-profile-activities-filter {
+            margin-top: 0px;
+            margin-bottom: 19px;
+
+            .filter-box {
                 width: 100%;
+                max-width: 1173px;
+                padding: 42px 72px;
+                box-shadow: 0px 22px 40px 0px #0000001A;
+                background-color: $colorWhite;
+
+                @media screen and (max-width: 991px) {
+                    padding: 29px 16px calc(30px - 1rem) 19px;
+                    flex-wrap: wrap;
+                }
+
+                .input-field-search-box,
+                .input-field-category-box,
+                .input-field-date-box {
+                    width: 100%;
+
+                    @media screen and (max-width: 991px) {
+                        margin-bottom: 1rem;
+                    }
+
+                    input,
+                    select {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        line-height: 18.5px;
+                        font-weight: 400;
+                        width: 100%;
+                        padding: 11px 13px 12px 18px;
+                        display: inline-block;
+                        white-space: nowrap;
+                        overflow: hidden !important;
+                        text-overflow: ellipsis;
+                        padding-right: 28px;
+                        background-color: $colorWhiteSmoke;
+                    }
+                }
+
+                .input-field-search-box {
+                    max-width: 295px;
+                    position: relative;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: calc(50% - .5rem);
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                        top: 13px;
+                        cursor: pointer;
+                    }
+
+                    .manual-location-field-box {
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        box-shadow: 0px 4px 4px rgba($color: #121212, $alpha: .25);
+                        border-radius: 20px 20px 0 0;
+                        -webkit-border-radius: 20px 20px 0 0;
+                        -moz-border-radius: 20px 20px 0 0;
+                        -ms-border-radius: 20px 20px 0 0;
+                        -o-border-radius: 20px 20px 0 0;
+                        z-index: 2;
+                        background-color: $colorWhite;
+
+                        @media screen and (min-width: 992px) {
+                            left: 0;
+                            top: 2.9rem;
+                            border-radius: 0;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            width: calc(100% + 66px);
+                            top: 2.9rem;
+                            right: 0;
+                            border-radius: 0;
+                        }
+
+                        .manual-location-field-body {
+                            padding-top: 17px;
+                            padding-bottom: 17px;
+                            padding-left: 8px;
+                            padding-right: 8px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+
+                            .location-list {
+                                height: 100%;
+                                max-height: 193px;
+                                overflow-y: scroll;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+
+                                /* width */
+                                &::-webkit-scrollbar {
+                                    width: 7px;
+                                }
+
+                                /* Track */
+                                &::-webkit-scrollbar-track {
+                                    background: $colorWhiteSmoke;
+                                    border-radius: 11px;
+                                }
+
+                                /* Handle */
+                                &::-webkit-scrollbar-thumb {
+                                    background: rgba(0, 0, 0, 0.45);
+                                    border-radius: 11px;
+                                }
+
+                                .location-item {
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 18.75px;
+                                    margin-bottom: 19px;
+                                    cursor: pointer;
+                                }
+
+                                .location-item:last-child {
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .input-field-category-box {
+                    max-width: 295px;
+                    position: relative;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: calc(50% - .5rem);
+                    }
+
+                    select {
+                        appearance: none;
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                        top: 17px;
+                        cursor: pointer;
+                        background-color: transparent;
+                    }
+
+                    svg,
+                    path {
+                        fill: $colorEerieBlack;
+                    }
+
+                    .svg-category-icon.active {
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                    }
+
+                    .category-field-box {
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        box-shadow: 0px 4px 4px rgba($color: #121212, $alpha: .25);
+                        border-radius: 20px 20px 0 0;
+                        -webkit-border-radius: 20px 20px 0 0;
+                        -moz-border-radius: 20px 20px 0 0;
+                        -ms-border-radius: 20px 20px 0 0;
+                        -o-border-radius: 20px 20px 0 0;
+                        z-index: 2;
+                        background-color: $colorWhite;
+
+                        @media screen and (min-width: 992px) {
+                            left: 0;
+                            top: 2.9rem;
+                            border-radius: 0;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            left: 0;
+                            border-radius: 0;
+                            width: calc(100% + 66px);
+                            top: 2.9rem;
+                            border-radius: 0px;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            -ms-border-radius: 0px;
+                            -o-border-radius: 0px;
+                        }
+
+                        .category-field-body {
+                            padding-top: 17px;
+                            padding-bottom: 17px;
+                            padding-left: 8px;
+                            padding-right: 8px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+
+                            @media screen and (max-width: 991px) {
+                                border-top: none;
+                            }
+
+                            .category-list {
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                height: 100%;
+                                max-height: 193px;
+                                overflow-y: scroll;
+
+                                /* width */
+                                &::-webkit-scrollbar {
+                                    width: 7px;
+                                }
+
+                                /* Track */
+                                &::-webkit-scrollbar-track {
+                                    background: $colorWhiteSmoke;
+                                    border-radius: 11px;
+                                }
+
+                                /* Handle */
+                                &::-webkit-scrollbar-thumb {
+                                    background: rgba(0, 0, 0, 0.45);
+                                    border-radius: 11px;
+                                }
+
+                                .category-item {
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 18.75px;
+                                    margin-bottom: 19px;
+                                    cursor: pointer;
+                                }
+
+                                .category-item:last-child {
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .input-field-date-box {
+                    max-width: 256px;
+                    position: relative;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: calc(65% - .5rem);
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                        top: 13px;
+                        cursor: pointer;
+                    }
+
+                    svg,
+                    path {
+                        fill: $colorBlack;
+                    }
+
+                    .calendar-field-box {
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        box-shadow: 0 4px 4px rgba($color: #121212, $alpha: .25);
+                        z-index: 2;
+                        background-color: $colorWhite;
+                        width: calc(100% + 75px);
+
+                        @media screen and (min-width: 992px) {
+                            right: 0;
+                            top: 2.9rem;
+                            border-radius: 0;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            top: 2.9rem;
+                            left: 0;
+                            border-radius: 0;
+                        }
+
+                        .calendar-header {
+                            padding: 32px 27px 32px 32px;
+
+                            .selected-calendar-from,
+                            .selected-calendar-to {
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 11px;
+                                line-height: 13.41px;
+                                font-weight: 400;
+                                color: $colorBlack;
+                            }
+                        }
+
+                        .calendar-filter {
+                            height: 215px;
+                        }
+
+                        .calendar-field-body {
+
+                            @media screen and (max-width: 991px) {
+                                border-top: none;
+                            }
+
+                            .calendar {
+                                color: $colorBlack;
+                                background-color: $colorWhite;
+                                padding-bottom: 25px;
+
+                                .current-calendar-info-box {
+                                    padding-left: 32px;
+                                    padding-right: 27px;
+                                    margin-bottom: 17px;
+                                }
+
+                                .selected-calendar-month,
+                                .selected-calendar-year {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: 24px;
+                                    line-height: 29.26px;
+                                    font-weight: 400;
+                                }
+
+                                table {
+                                    width: calc(100% - 40px);
+                                    margin-left: auto;
+                                    margin-right: 19px;
+
+                                    tr {
+
+                                        th,
+                                        td {
+                                            font-family: 'Montserrat', sans-serif;
+                                            font-size: 11px;
+                                            line-height: 13.41px;
+                                            font-weight: 400;
+                                            padding-bottom: 15px;
+                                            cursor: pointer;
+                                            text-align: center;
+                                        }
+                                    }
+
+                                    tr:last-child {
+                                        td {
+                                            padding-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .calendar-footer {
+                            margin-top: 23px;
+                            padding: 21px 31px 22px;
+                            box-shadow: 0px -4px 4px 0px #0000001A;
+
+                            .btn-calendar-cancel,
+                            .btn-calendar-apply {
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 12px;
+                                line-height: 14.63px;
+                                font-weight: 500;
+                            }
+
+                            .btn-calendar-cancel {
+                                color: $colorBlack;
+                                margin-right: 31px;
+                            }
+
+                            .btn-calendar-apply {
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+
+                .search-btn-box {
+                    max-width: 122.59px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media screen and (max-width: 991px) {
+                        max-width: calc(35% - .5rem);
+                        margin-left: auto;
+                    }
+
+                    width: 100%;
+
+                    button {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        line-height: 18.5px;
+                        font-weight: 500;
+                        width: 100%;
+                        padding: 11px 13px;
+                        color: $colorWhite;
+                        background-color: $primaryColor;
+                    }
+
+                    .btn-map {
+                        min-width: 41px;
+                        min-height: 42px;
+                        max-width: 41px;
+                        max-height: 42px;
+                        background-color: $colorWhiteSmoke;
+                        margin-left: 17.41px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                    }
+                }
+
+                .form-group {
+                    label {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        line-height: 18.75px;
+                        font-weight: 400;
+                        color: $colorBlack;
+
+                        &::before {
+                            filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+                        }
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                    input:checked+label:after {
+                        top: -1px;
+                    }
+
+                    &:hover {
+                        label {
+                            color: $primaryColor;
+
+                            &::before {
+                                filter: unset;
+                            }
+                        }
+                    }
+                }
             }
-            @media screen and (max-width: 991px) {
+        }
+
+        @media screen and (min-width: 992px) {
+            .wallet-table-header{
                 display: none;
             }
         }
-        .my-account-table-content-item:last-child{
-            @media screen and (min-width: 992px) {
-                .table-data{
-                    margin-left: auto;
-                }
-            }
+
+        .booking-card-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            row-gap: 8px;
+            column-gap: 6px;
         }
-        .my-account-table-content-item:nth-last-child(2){
-            @media screen and (min-width: 992px) {
-                .table-data{
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
+        .booking-card{
+            box-shadow: unset;
         }
     }
 
     .booking-history-content-box{
-        .my-account-table-content-list{
+        .wallet-table-content-list{
             @media screen and (min-width: 992px) {
                 display: grid;
                 grid-template-columns: repeat(7, 1fr);
@@ -7424,7 +7945,7 @@ button:focus {
 
     .payment-detail-content-box{
         margin-bottom: 182px;
-        .my-account-table-header{
+        .wallet-table-header{
             background-color: transparent;
             @media screen and (max-width: 991px){
                 background-color: $primaryColor;
@@ -7497,6 +8018,40 @@ button:focus {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
         column-gap: 10px;
+    }
+
+    .pagination-box{
+        margin-top: 35px;
+        overflow-x: auto;
+    }
+    .pagination-item{
+        padding: 6px;
+    }
+    .btn-pagination{
+        color: $colorBlack;
+        background-color: $colorWhite;
+        width: 30px;
+        height: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .btn-pagination.active{
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+    }
+    .btn-pagination-prev,
+    .btn-pagination-next{
+        background-color: $primaryColor;
+        width: 40px;
+        height: 40px;
+        svg{
+            margin: auto;
+        }
     }
 }
 
@@ -8369,6 +8924,10 @@ button:focus {
         text-align: left;
     }
 
+    .package-short-info-box{
+        margin-bottom: 20px;
+    }
+
     .package-name{
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
@@ -8377,7 +8936,6 @@ button:focus {
         line-height: 22px;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 20px;
     }
 
     .package-price{
@@ -8388,7 +8946,15 @@ button:focus {
         line-height: 22px;
         letter-spacing: 0em;
         text-align: right;
-        margin-bottom: 20px;
+    }
+    .package-label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: right;
     }
 
     .package-info-label{
@@ -8441,6 +9007,22 @@ button:focus {
         text-align: left;
     }
 
+    .booking-checkin-mode-btn-cancel {
+        color: $colorBlack;
+        background: $colorWhite;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        text-align: center;
+        width: 100%;
+        max-width: 372px;
+        height: 48px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
     .booking-checkin-mode-btn-proceed {
         color: $colorWhite;
         background: $primaryColor;

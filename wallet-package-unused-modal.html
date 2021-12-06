@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
+    <title>Wallet Package Unused Modal | Dubai Fitness Challenge</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</head>
+
+<body class="" id="body">
+
+    <div class="wrapper">
+
+        <!-- tooltip-descriptive-hover -->
+        <div id="tooltip-descriptive-hover" class="custom-modal m-auto overflow-y-auto">
+            <div class="modal-center">
+                <div class="modal-outer-box">
+                    <div class="modal-inner-box">
+                        <div class="modal-header">
+                            <div class="btn-modal-close ml-auto">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.7336 5.26636C23.7103 -1.75545 12.2885 -1.75545 5.2652 5.26636C-1.75507 12.2882 -1.75507 23.713 5.2652 30.7348C8.77685 34.245 13.3885 35.9992 18.0002 35.9992C22.6119 35.9992 27.222 34.2449 30.7336 30.7348C37.7555 23.7131 37.7555 12.2882 30.7336 5.26636ZM25.4271 23.3063C26.0139 23.8931 26.0139 24.8415 25.4271 25.4283C25.1345 25.7209 24.7503 25.868 24.3661 25.868C23.982 25.868 23.5977 25.7209 23.3051 25.4283L18.0001 20.1218L12.6966 25.4267C12.4025 25.7194 12.0183 25.8665 11.6356 25.8665C11.2515 25.8665 10.8672 25.7194 10.5746 25.4267C9.98785 24.84 9.98785 23.89 10.5746 23.3048L15.8781 17.9998L10.5731 12.6948C9.98637 12.1081 9.98637 11.1581 10.5731 10.5729C11.1584 9.98612 12.1083 9.98612 12.6951 10.5729L18.0001 15.8778L23.305 10.5729C23.8918 9.98612 24.8402 9.98612 25.427 10.5729C26.0137 11.1581 26.0137 12.1081 25.427 12.6948L20.122 17.9998L25.4271 23.3063Z" fill="#C4C4C4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal-body px-5">
+                            <div class="form-container mx-auto">
+                                <!-- <form action=""> -->
+                                <div class="activity-detail-card">
+                                    <div class="activity-detail-header flex items-center">
+                                        <div class="brand-img rounded-full">
+                                            <img class="rounded-full" src="./assets/images/dubai-fitness-challenge-logo.png" alt="">
+                                        </div>
+                                        <div class="brand-info-box">
+                                            <p class="brand-label">Provider Name</p>
+                                            <p class="brand-name">Snap Fitness 24-7</p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-detail-body">
+                                        <div class="package-short-info-box grid grid-cols-3 gap-2">
+                                            <div class="package-name col-span-2">Package Name</div>
+                                            <div class="">
+                                                <p class="package-price">99.99 AED</p>
+                                                <p class="package-label">Bought for</p>
+                                            </div>
+                                        </div>
+                                        <div class="package-info-box">
+                                            <p class="package-info-label">Type</p>
+                                            <p class="package-info-title">Package</p>
+                                        </div>
+                                        <div class="package-info-box">
+                                            <p class="package-info-label">Payment Type</p>
+                                            <p class="package-info-title">One time purchase</p>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="package-info-box">
+                                                <p class="package-info-label">Total No. of Sessions</p>
+                                                <p class="package-info-title">10</p>
+                                            </div>
+                                            <div class="package-info-box">
+                                                <p class="package-info-label">Used No. of Sessions</p>
+                                                <p class="package-info-title">0/10</p>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="package-info-box">
+                                                <p class="package-info-label">Validity</p>
+                                                <p class="package-info-title">30 Days</p>
+                                            </div>
+                                            <div class="package-info-box">
+                                                <p class="package-info-label">Expiry Date</p>
+                                                <p class="package-info-title">30-12-2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="package-info-box">
+                                            <p class="package-t-c">Package Terms & Conditions</p>
+                                            <ol class="package-t-c-list">
+                                                <li class="package-t-c--item">Access to the Pool & Beach for 1 adult</li>
+                                                <li class="package-t-c--item">Free access for two kids under 6  years of age</li>
+                                                <li class="package-t-c--item">AED 100 spend redeemable against Food & Beverage</li>
+                                                <li class="package-t-c--item">20% Discount at all F&B outlets</li>
+                                                <li class="package-t-c--item">Provided beach towel & water</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="grid grid-cols-2 gap-4">
+                                    <button class="booking-checkin-mode-btn-cancel btn-modal-close rounded-full capitalize">Cancel</button>
+                                    <button class="booking-checkin-mode-btn-proceed btn-modal-close rounded-full capitalize">Use</button>
+                                </div>
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

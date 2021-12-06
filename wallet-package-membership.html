@@ -353,10 +353,10 @@
 
         <!-- main -->
         <main id="main">
-            <!-- my-account section -->
-            <section id="my-account">
+            <!-- wallet section -->
+            <section id="wallet">
                 <div class="custom-container">
-                    <div class="my-account-header">
+                    <div class="wallet-header">
                         <ul class="flex items-center justify-between">
                             <li>
                                 <button class="package-membership-tab-btn active">
@@ -412,502 +412,635 @@
                             </div>
                         </div>
                     </div>
-                    <div class="my-account-body">
+                    <div class="wallet-body">
                         <!-- package-membership-tab -->
                         <div class="package-membership-content-box">
-                            <div class="my-account-table-header">
-                                <p class="my-account-selected-tab-heading">Packages & Membership</p>
-                                <ul class="my-account-table-heading-list">
-                                    <li class="my-account-table-heading-item">Name</li>
-                                    <li class="my-account-table-heading-item">Provider</li>
-                                    <li class="my-account-table-heading-item">Type</li>
-                                    <li class="my-account-table-heading-item">Price</li>
-                                    <li class="my-account-table-heading-item">Available Sessions</li>
-                                    <li class="my-account-table-heading-item">Expiry Date</li>
-                                </ul>
+                            <div class="wallet-table-header">
+                                <p class="wallet-selected-tab-heading">Packages & Membership</p>
                             </div>
-                            <div class="my-account-table-body">
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                            <!-- business-profile-activities-filter -->
+                            <div class="business-profile-activities-filter">
+                                <div class="filter-box flex  mx-auto justify-between items-center rounded">
+                                    <div class="input-field-category-box mr-2">
+                                        <select class=" rounded-full" disabled>
+                                            <option value="">Select Provider Name</option>
+                                        </select>
+                                        <svg class="svg-category-icon" width="15" height="10" viewBox="0 0 15 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.8843 1.7895C14.891 2.05545 14.7906 2.27108 14.6164 2.45077C12.4464 4.77959 10.283 7.1084 8.11295 9.43003C7.6776 9.89723 7.21546 9.89004 6.77341 9.42284C4.61006 7.1084 2.4534 4.79396 0.296738 2.47233C-0.0850307 2.06263 -0.0984261 1.53074 0.256552 1.09948C0.430692 0.891039 0.631623 0.696972 0.839252 0.517279C1.14735 0.258522 1.5693 0.287273 1.8774 0.560406C1.94437 0.617907 2.00465 0.689783 2.06493 0.754473C3.75275 2.55859 5.44057 4.35551 7.13509 6.15962C7.44988 6.49745 7.44988 6.49745 7.77807 6.15244C9.4324 4.37707 11.0867 2.60171 12.7411 0.833537C12.8683 0.704159 13.0023 0.581969 13.1496 0.474153C13.2769 0.380713 13.4309 0.337586 13.5917 0.337586C14.1007 0.351961 14.891 1.22167 14.8843 1.7895Z"
+                                                fill="white" />
+                                        </svg>
+                                        <div class="category-field-box">
+                                            <div class="category-field-body">
+                                                <ul class="category-list">
+                                                    <li class="category-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="activities-type">
+                                                            <label for="activities-type">Select All</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="category-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="activities-type-2">
+                                                            <label for="activities-type-2">Fitness for life</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="category-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="activities-type-3">
+                                                            <label for="activities-type-3">Snap Fitness - Dubai Media City</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="category-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="activities-type-4">
+                                                            <label for="activities-type-4">CoreDirection</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="input-field-search-box">
+                                        <input type="text" class="location rounded-full" placeholder="Select Status">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 0C2.69118 0 0 2.55676 0 5.70031C0 6.73559 0.489706 7.84631 0.507353 7.89661C0.666176 8.25288 0.975 8.80615 1.2 9.12889L5.31618 15.0472C5.48382 15.2903 5.73529 15.4286 6 15.4286C6.26471 15.4286 6.51618 15.2903 6.68382 15.0472L10.8 9.12469C11.025 8.80196 11.3338 8.24869 11.4926 7.89242C11.5147 7.84631 12 6.7314 12 5.69612C12 2.55676 9.30882 0 6 0ZM6 8.71813C4.24853 8.71813 2.82353 7.3643 2.82353 5.70031C2.82353 4.03632 4.24853 2.6825 6 2.6825C7.75147 2.6825 9.17647 4.03632 9.17647 5.70031C9.17647 7.3643 7.75147 8.71813 6 8.71813Z"
+                                                fill="black" />
+                                        </svg>
+                                        <div class="manual-location-field-box">
+                                            <div class="manual-location-field-body">
+                                                <ul class="location-list">
+                                                    <li class="location-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="zone-1">
+                                                            <label for="zone-1">Select All</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="location-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="zone-2">
+                                                            <label for="zone-2">Active</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="location-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="zone-3">
+                                                            <label for="zone-3">Expiring Soon</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="location-item">
+                                                        <div class="form-group">
+                                                            <input type="checkbox" id="zone-4">
+                                                            <label for="zone-4">Expired</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="input-field-date-box lg:mr-4 ml-2">
+                                        <input type="text" class="calendar rounded-full" placeholder="Select Date">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.75977 6.73828C9.08337 6.73828 9.3457 6.47595 9.3457 6.15234C9.3457 5.82874 9.08337 5.56641 8.75977 5.56641C8.43616 5.56641 8.17383 5.82874 8.17383 6.15234C8.17383 6.47595 8.43616 6.73828 8.75977 6.73828Z"
+                                                fill="white" />
+                                            <path
+                                                d="M8.75977 9.28711C9.08337 9.28711 9.3457 9.02478 9.3457 8.70117C9.3457 8.37757 9.08337 8.11523 8.75977 8.11523C8.43616 8.11523 8.17383 8.37757 8.17383 8.70117C8.17383 9.02478 8.43616 9.28711 8.75977 9.28711Z"
+                                                fill="white" />
+                                            <path
+                                                d="M11.3086 6.73828C11.6322 6.73828 11.8945 6.47595 11.8945 6.15234C11.8945 5.82874 11.6322 5.56641 11.3086 5.56641C10.985 5.56641 10.7227 5.82874 10.7227 6.15234C10.7227 6.47595 10.985 6.73828 11.3086 6.73828Z"
+                                                fill="white" />
+                                            <path
+                                                d="M14.4141 7.32422C14.7377 7.32422 15 7.06189 15 6.73828V3.51562C15 2.22328 13.9486 1.17188 12.6563 1.17188H11.8945V0.585938C11.8945 0.262324 11.6322 0 11.3086 0C10.985 0 10.7227 0.262324 10.7227 0.585938V1.17188H8.05664V0.585938C8.05664 0.262324 7.79432 0 7.4707 0C7.14709 0 6.88477 0.262324 6.88477 0.585938V1.17188H4.24805V0.585938C4.24805 0.262324 3.98572 0 3.66211 0C3.3385 0 3.07617 0.262324 3.07617 0.585938V1.17188H2.34375C1.05141 1.17188 0 2.22328 0 3.51562V12.6562C0 13.9486 1.05141 15 2.34375 15H9.72656C9.74651 15 9.76623 14.999 9.78566 14.997C9.80496 14.9989 9.8243 15 9.8436 15C9.99984 15 10.1532 14.9375 10.2658 14.8205L14.8361 10.0744C14.9991 9.90513 15.0452 9.65484 14.9533 9.43863C14.8613 9.22242 14.6491 9.08203 14.4141 9.08203H11.6016C10.3092 9.08203 9.25781 10.1334 9.25781 11.4258V13.8281H2.34375C1.69758 13.8281 1.17188 13.3024 1.17188 12.6562V3.51562C1.17188 2.86945 1.69758 2.34375 2.34375 2.34375H3.07617V2.92969C3.07617 3.2533 3.3385 3.51562 3.66211 3.51562C3.98572 3.51562 4.24805 3.2533 4.24805 2.92969V2.34375H6.88477V2.92969C6.88477 3.2533 7.14709 3.51562 7.4707 3.51562C7.79432 3.51562 8.05664 3.2533 8.05664 2.92969V2.34375H10.7227V2.92969C10.7227 3.2533 10.985 3.51562 11.3086 3.51562C11.6322 3.51562 11.8945 3.2533 11.8945 2.92969V2.34375H12.6563C13.3024 2.34375 13.8281 2.86945 13.8281 3.51562V6.73828C13.8281 7.06189 14.0905 7.32422 14.4141 7.32422ZM10.4297 11.4258C10.4297 10.7796 10.9554 10.2539 11.6016 10.2539H13.0364L10.4297 12.9609V11.4258Z"
+                                                fill="white" />
+                                            <path
+                                                d="M3.66211 6.73828C3.98571 6.73828 4.24805 6.47595 4.24805 6.15234C4.24805 5.82874 3.98571 5.56641 3.66211 5.56641C3.33851 5.56641 3.07617 5.82874 3.07617 6.15234C3.07617 6.47595 3.33851 6.73828 3.66211 6.73828Z"
+                                                fill="white" />
+                                            <path
+                                                d="M6.21094 9.28711C6.53454 9.28711 6.79688 9.02478 6.79688 8.70117C6.79688 8.37757 6.53454 8.11523 6.21094 8.11523C5.88733 8.11523 5.625 8.37757 5.625 8.70117C5.625 9.02478 5.88733 9.28711 6.21094 9.28711Z"
+                                                fill="white" />
+                                            <path
+                                                d="M3.66211 11.8359C3.98571 11.8359 4.24805 11.5736 4.24805 11.25C4.24805 10.9264 3.98571 10.6641 3.66211 10.6641C3.33851 10.6641 3.07617 10.9264 3.07617 11.25C3.07617 11.5736 3.33851 11.8359 3.66211 11.8359Z"
+                                                fill="white" />
+                                            <path
+                                                d="M3.66211 9.28711C3.98571 9.28711 4.24805 9.02478 4.24805 8.70117C4.24805 8.37757 3.98571 8.11523 3.66211 8.11523C3.33851 8.11523 3.07617 8.37757 3.07617 8.70117C3.07617 9.02478 3.33851 9.28711 3.66211 9.28711Z"
+                                                fill="white" />
+                                            <path
+                                                d="M6.21094 11.8359C6.53454 11.8359 6.79688 11.5736 6.79688 11.25C6.79688 10.9264 6.53454 10.6641 6.21094 10.6641C5.88733 10.6641 5.625 10.9264 5.625 11.25C5.625 11.5736 5.88733 11.8359 6.21094 11.8359Z"
+                                                fill="white" />
+                                            <path
+                                                d="M6.21094 6.73828C6.53454 6.73828 6.79688 6.47595 6.79688 6.15234C6.79688 5.82874 6.53454 5.56641 6.21094 5.56641C5.88733 5.56641 5.625 5.82874 5.625 6.15234C5.625 6.47595 5.88733 6.73828 6.21094 6.73828Z"
+                                                fill="white" />
+                                        </svg>
+                                        <div class="calendar-field-box">
+                                            <div class="calendar-field-body">
+                                                <div class="calendar-header flex items-center justify-between">
+                                                    <p class="selected-calendar-from">Wed, October 29 </p>
+                                                    <p class="selected-calendar-to">Tue, November 04</p>
+                                                </div>
+                                                <!-- Swiper -->
+                                                <div class="swiper calendar-filter">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="calendar">
+                                                                <div
+                                                                    class="current-calendar-info-box flex items-center justify-between">
+                                                                    <p class="selected-calendar-month">November</p>
+                                                                    <p class="selected-calendar-year">2021</p>
+                                                                </div>
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Mon</th>
+                                                                            <th>Tue</th>
+                                                                            <th>Wed</th>
+                                                                            <th>Thu</th>
+                                                                            <th>Fri</th>
+                                                                            <th>Sat</th>
+                                                                            <th>Sun</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>2</td>
+                                                                            <td>3</td>
+                                                                            <td>4</td>
+                                                                            <td>5</td>
+                                                                            <td>6</td>
+                                                                            <td>7</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>8</td>
+                                                                            <td>9</td>
+                                                                            <td>10</td>
+                                                                            <td>11</td>
+                                                                            <td>12</td>
+                                                                            <td>13</td>
+                                                                            <td>14</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>15</td>
+                                                                            <td>16</td>
+                                                                            <td>17</td>
+                                                                            <td>18</td>
+                                                                            <td>19</td>
+                                                                            <td>20</td>
+                                                                            <td>21</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>22</td>
+                                                                            <td>23</td>
+                                                                            <td>24</td>
+                                                                            <td>25</td>
+                                                                            <td>26</td>
+                                                                            <td>27</td>
+                                                                            <td>28</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>29</td>
+                                                                            <td>30</td>
+                                                                            <td>31</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="calendar">
+                                                                <div
+                                                                    class="current-calendar-info-box flex items-center justify-between">
+                                                                    <p class="selected-calendar-month">December</p>
+                                                                    <p class="selected-calendar-year">2021</p>
+                                                                </div>
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Mon</th>
+                                                                            <th>Tue</th>
+                                                                            <th>Wed</th>
+                                                                            <th>Thu</th>
+                                                                            <th>Fri</th>
+                                                                            <th>Sat</th>
+                                                                            <th>Sun</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>2</td>
+                                                                            <td>3</td>
+                                                                            <td>4</td>
+                                                                            <td>5</td>
+                                                                            <td>6</td>
+                                                                            <td>7</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>8</td>
+                                                                            <td>9</td>
+                                                                            <td>10</td>
+                                                                            <td>11</td>
+                                                                            <td>12</td>
+                                                                            <td>13</td>
+                                                                            <td>14</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>15</td>
+                                                                            <td>16</td>
+                                                                            <td>17</td>
+                                                                            <td>18</td>
+                                                                            <td>19</td>
+                                                                            <td>20</td>
+                                                                            <td>21</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>22</td>
+                                                                            <td>23</td>
+                                                                            <td>24</td>
+                                                                            <td>25</td>
+                                                                            <td>26</td>
+                                                                            <td>27</td>
+                                                                            <td>28</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>29</td>
+                                                                            <td>30</td>
+                                                                            <td>31</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="calendar-footer flex items-center">
+                                                    <button class="btn-calendar-cancel ml-auto">Cancel</button>
+                                                    <button class="btn-calendar-apply">Done</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
+                                    <div class="search-btn-box lg:mb-0 mb-4">
+                                        <button class=" rounded-full">Search</button>
+                                    </div>
                                 </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                            </div>
+                            <div class="booking-card-box">
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap expire-soon">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Membership</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap status-active">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Packages</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap status-active">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Membership</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <div class="my-account-table-row flex">
-                                    <div class="small-screen-accordion-box flex">
-                                        <div class="small-screen-accordion-icon-box">
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <ellipse cx="18.499" cy="18.5" rx="18.5" ry="18.5" fill="#C0D731"/>
-                                                <path d="M25.8853 16.0126C25.892 16.2786 25.7915 16.4942 25.6174 16.6739C23.4473 19.0027 21.284 21.3315 19.1139 23.6532C18.6786 24.1204 18.2164 24.1132 17.7744 23.646C15.611 21.3315 13.4544 19.0171 11.2977 16.6955C10.9159 16.2858 10.9026 15.7539 11.2575 15.3226C11.4317 15.1142 11.6326 14.9201 11.8402 14.7404C12.1483 14.4817 12.5703 14.5104 12.8784 14.7836C12.9453 14.8411 13.0056 14.9129 13.0659 14.9776C14.7537 16.7817 16.4415 18.5787 18.1361 20.3828C18.4509 20.7206 18.4509 20.7206 18.779 20.3756C20.4334 18.6002 22.0877 16.8249 23.742 15.0567C23.8693 14.9273 24.0033 14.8051 24.1506 14.6973C24.2779 14.6039 24.4319 14.5607 24.5926 14.5607C25.1017 14.5751 25.892 15.4448 25.8853 16.0126Z" fill="black"/>
-                                            </svg>
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
                                         </div>
-                                        <p class="small-screen-accordion-title">Fitness For Life</p>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
                                     </div>
-                                    <ul class="my-account-table-content-list">
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Name</span>
-                                            <span class="table-data">Open Gym</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Provider</span>
-                                            <span class="table-data">Fitness For Life</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Type</span>
-                                            <span class="table-data">Core Pass</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Price</span>
-                                            <span class="table-data">1000.00 AED</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center available-session-box">
-                                            <span class="table-small-screen-heading">Available Sessions</span>
-                                            <span class="table-data">5/10</span>
-                                        </li>
-                                        <li class="my-account-table-content-item flex items-center">
-                                            <span class="table-small-screen-heading">Expiry Date</span>
-                                            <span class="table-data">30-12-2025</span>
-                                        </li>
-                                    </ul>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap status-active">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Membership</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
+                                        </div>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
+                                    </div>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap status-active">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Membership</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="booking-card">
+                                    <div class="booking-card-header flex items-start">
+                                        <div class="business-logo-box">
+                                            <img src="./assets/images/dubai-fitness-challenge-logo.png" alt="" width="27px" height="27px">
+                                        </div>
+                                        <h3 class="business-name text-left">Dubai Fitness Challenge Kite beach
+                                            fitness village</h3>
+                                    </div>
+                                    <div class="booking-card-body">
+                                        <div class="booking-info-box flex items-baseline">
+                                            <p class="booking-title">Upper Body HIIT</p>
+                                            <div class="booking-more-info-box">
+                                                <button class="booking-desc-icon-box">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.28 13.5117C6.76 13.5117 6.24 13.5117 5.72 13.5117C5.66222 13.5002 5.61022 13.4828 5.55244 13.4771C3.79022 13.1939 2.36311 12.3504 1.28267 10.9348C0.566222 10.0046 0.179111 8.9415 0 7.79172C0 7.25439 0 6.71127 0 6.17394C0.0288889 6.04105 0.0577778 5.91394 0.0866667 5.78105C0.427556 4.05927 1.32311 2.69572 2.74444 1.67305C3.63422 1.03172 4.64533 0.685052 5.72 0.511719C6.24 0.511719 6.76 0.511719 7.28 0.511719C7.33778 0.523274 7.38978 0.540608 7.44756 0.552163C9.81067 0.968163 11.492 2.26239 12.4916 4.44061C12.7631 5.02416 12.8844 5.65394 13 6.2895C13 6.79216 13 7.28905 13 7.79172C12.9827 7.87839 12.9653 7.95927 12.948 8.04594C12.6187 9.87172 11.7 11.3277 10.1804 12.3966C9.308 13.0091 8.32578 13.3384 7.28 13.5117ZM6.5 12.8935C9.78756 12.8473 12.376 10.2299 12.376 7.03483C12.376 3.93216 9.93778 1.10105 6.46533 1.12994C3.07956 1.15883 0.652889 3.81661 0.618222 6.86727C0.577778 10.2588 3.24711 12.9397 6.5 12.8935Z" fill="black"></path>
+                                                        <path d="M6.38485 5.91857C7.1533 5.91857 7.52308 6.32302 7.43063 7.07991C7.37285 7.55947 7.18219 8.00435 7.06663 8.47236C7.01463 8.69769 6.95108 8.91724 6.91063 9.14836C6.85863 9.45458 6.98574 9.6048 7.29196 9.62791C7.40752 9.63369 7.52307 9.61636 7.63863 9.62213C7.71952 9.62791 7.84663 9.51236 7.8813 9.66258C7.91019 9.77236 7.86974 9.89369 7.77152 9.97458C7.38441 10.2924 6.36752 10.3964 5.91685 10.1595C5.57019 9.98036 5.40841 9.67991 5.44308 9.28124C5.4893 8.73813 5.6973 8.23547 5.83019 7.71547C5.88797 7.48435 5.97463 7.25324 5.98041 7.01058C5.99197 6.68702 5.87641 6.57724 5.55285 6.57724C5.47774 6.57724 5.39686 6.60035 5.32174 6.59458C5.22352 6.5888 5.0733 6.73324 5.03286 6.56569C5.00397 6.42702 5.05597 6.25946 5.24086 6.19591C5.61641 6.06302 5.98041 5.90702 6.38485 5.91857Z" fill="black"></path>
+                                                        <path d="M7.9974 4.526C7.9974 4.95933 7.59873 5.31756 7.13651 5.306C6.68584 5.29445 6.29295 4.93045 6.28717 4.526C6.28139 4.10422 6.68006 3.73444 7.14806 3.73444C7.61606 3.72867 7.9974 4.08689 7.9974 4.526Z" fill="black"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="booking-desc-box">
+                                                    <p class="booking-desc">Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has
+                                                        been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and
+                                                        scrambled it to make a type specimen book.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="booking-activity-time">
+                                            <strong>Sessions</strong> | 5/10
+                                        </p>
+                                        <ul class="booking-activity-info-list">
+                                            <li class="booking-activity-info-item flex items-center flex-wrap status-active">
+                                                <span class="booking-activity-info-item-icon-box flex justify-center">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="5" cy="5.00049" r="5" fill="#FFAB07"/>
+                                                    </svg>
+                                                </span>
+                                                <strong>
+                                                    Expires on 
+                                                </strong>
+                                                <span class="subscription-tag">Membership</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="booking-card-footer">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button class="btn-book-now uppercase rounded-full" type="button" name="button">Use Package</button>
+                                            <button class="btn-book-secondary uppercase rounded-full" type="button" name="button">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-box">
+                                <ul class="pagination-list flex items-center justify-center">
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination-prev rounded-full">
+                                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 16.4287L1 8.5391L9.6 1.00014" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination rounded-full">1</button>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination rounded-full active">2</button>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination rounded-full">3</button>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination rounded-full">4</button>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <button class="btn-pagination-next rounded-full">
+                                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 16.4287L10 8.5391L1.4 1.00014" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
