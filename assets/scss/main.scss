@@ -8104,18 +8104,59 @@ button:focus {
 #profile{
     background-color: $colorWhite;
     box-shadow: 0px -22px 40px rgba(0, 0, 0, 0.1);
-
     z-index: 9;
-    padding-top: 115px;
     padding-bottom: 145px;
+    .profile-banner{
+        width: 100%;
+        max-width: 1188px;
+        min-height: 335px;
+        max-height: 335px;
+        position: relative;
+        .profile-banner-img{
+            width: 100%;
+            min-height: 335px;
+            max-height: 335px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .custom-container{
+            position: absolute;
+            right: 0;
+            top: 13px;
+        }
+        .btn-banner-change{
+            margin-left: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 6px 12px 7px;
+            border-radius: 11px;
+            cursor: pointer;
+            color: $colorWhite;
+            background-color: $colorBlack;
+            opacity: .3;
+            img{
+                min-height: 22px;
+                margin-left: 9px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-right: 61px;
+            }
+        }
+    }
     .profile-img-box{
+        margin-top: -77px;
         .img-box {
             max-width: 150px;
             max-height: 150px;
             position: relative;
             border-radius: 50%;
             box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
-    
+            cursor: pointer;
             .profile-pic {
                 max-width: 175px;
                 max-height: 175px;
@@ -8152,8 +8193,8 @@ button:focus {
                 width: 34px;
                 height: 34px;
                 position: absolute;
-                right: 0;
-                bottom: 0;
+                right: 2px;
+                bottom: 2px;
                 border: 4px solid $colorWhiteSmoke;
                 background-color: $primaryColor;
     
@@ -8337,6 +8378,172 @@ button:focus {
         text-align: center;
         margin-top: 24px;
         margin-bottom: 35px;
+    }
+    @media screen and (max-width:991px) {
+        .sm-layout-shift{
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 35px;
+            .col-span-3{
+                order: 2;
+            }
+            .col-span-2{
+                order: 1;
+            }
+        }
+    }
+}
+
+#profile-img-upload,
+#profile-img-crop {
+    .modal-outer-box {
+        background: $colorWhite;
+        border-radius: 11px;
+        padding-top: 53px;
+        padding-bottom: 47px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .upload-img-title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .upload-img-desc{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+        em{
+            font-weight: 700;
+        }
+    }
+    .profile-img{
+        max-width: 234px;
+    }
+    .btn-img-upload{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 11px 30px 12px;
+        color: $colorWhite;
+        margin-top: 56px;
+    }
+}
+#profile-img-upload{
+    .modal-outer-box {
+        max-width: calc(396px + 2rem);
+    }
+    .form-container {
+        max-width: 278px;
+    }
+}
+#profile-img-crop {
+    .modal-outer-box {
+        max-width: calc(632px + 2rem);
+    }
+    .form-container {
+        max-width: 310px;
+    }
+    .range-filter {
+        input[type=range] {
+            -webkit-appearance: none;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            background: $colorBlack;
+            border-radius: 25px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 1px solid $colorBlack;
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            background: $colorWhite;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -9px;
+        }
+
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            background: $colorBlack;
+            border-radius: 25px;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 1px solid $colorBlack;
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            background: $colorWhite;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -9px;
+        }
+
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            background: $colorBlack;
+            border-radius: 25px;
+        }
+
+        input[type=range]::-ms-fill-lower {
+            background: #ac51b5;
+            border: 0px solid #000101;
+            border-radius: 50px;
+            box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+        }
+
+        input[type=range]::-ms-fill-upper {
+            background: #ac51b5;
+            border: 0px solid #000101;
+            border-radius: 50px;
+            box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+        }
+
+        input[type=range]::-ms-thumb {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 1px solid $colorBlack;
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            background: $colorWhite;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -9px;
+        }
     }
 }
 
