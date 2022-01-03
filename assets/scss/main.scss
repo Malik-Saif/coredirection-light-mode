@@ -8745,7 +8745,8 @@ button:focus {
         @media screen and (max-width: 991px){
             padding: 38px 26px;
             .cart-item-box{
-                display: none;
+                // display: none;
+                padding-bottom: 75px;
             }
         }
         .cart-item-header{
@@ -8952,6 +8953,11 @@ button:focus {
         }
         .my-card-box{
             margin-bottom: 14px;
+            opacity: .7;
+            cursor: pointer;
+        }
+        .my-card-box.active{
+            opacity: 1;
         }
         .checkbox-field-box{
             .form-group label{

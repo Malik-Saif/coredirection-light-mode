@@ -8644,7 +8644,7 @@ button:focus {
     padding: 38px 26px;
   }
   #cart .payment .cart-item-box {
-    display: none;
+    padding-bottom: 75px;
   }
 }
 #cart .payment .cart-item-header {
@@ -8870,6 +8870,11 @@ button:focus {
 }
 #cart .payment .my-card-box {
   margin-bottom: 14px;
+  opacity: .7;
+  cursor: pointer;
+}
+#cart .payment .my-card-box.active {
+  opacity: 1;
 }
 #cart .payment .checkbox-field-box .form-group label {
   font-family: 'Montserrat', sans-serif;
