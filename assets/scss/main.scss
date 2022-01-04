@@ -5925,7 +5925,7 @@ button:focus {
         .sidebar-menu-list{
             margin-top: 52px;
             list-style: none;
-            .sidebar-menu-item{
+            .sidebar-menu-item,.sidebar-menu-link{
                 position: relative;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 14px;
@@ -5977,6 +5977,10 @@ button:focus {
                 margin-top: 7px;
                 margin-bottom: 7px;
                 cursor: pointer;
+            }
+            .sidebar-submenu-list{
+                padding-left: 16px;
+                padding-top: 7px;
             }
         }
     }
@@ -6072,18 +6076,69 @@ button:focus {
             line-height: 22px;
             text-align: left;
             color: $colorBlack;
+            margin-bottom: 5px;
+        }
+        .sidebar-item-content-date{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+            color: $colorBlack;
             margin-bottom: 16px;
+            font-style: italic;
         }
         .sidebar-item-content-title.active{
             color: $primaryColor;
+        }
+        .sidebar-item-content-subtitle{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            text-align: left;
+            color: $colorBlack;
+            margin-bottom: 10px;
         }
         .sidebar-item-content-desc{
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 400;
-            line-height: 19px;
+            line-height: 20px;
             text-align: left;
             margin-bottom: 17px;
+            color: $colorBlack;
+        }
+        .section-title-list{
+            list-style: inside;
+            margin-bottom: 20px;
+        }
+        .external-link{
+            color: $primaryColor;
+            text-decoration: underline;
+        }
+        .section-title-item{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            margin-bottom: 16px;
+            color: $colorBlack;
+        }
+        .subsection-list{
+            list-style: inside;
+            list-style-type: circle;
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        .subsection-item{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            margin-bottom: 16px;
             color: $colorBlack;
         }
     }
