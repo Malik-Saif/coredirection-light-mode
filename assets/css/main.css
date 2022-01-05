@@ -5769,7 +5769,7 @@ button:focus {
 }
 #legal .legal-sidebar .legal-sidebar-outer-box {
   width: 299px;
-  padding: 55px 47px 25px;
+  padding: 55px 40px 25px;
 }
 @media screen and (max-width: 991px) {
   #legal .legal-sidebar .legal-sidebar-outer-box {
@@ -5779,6 +5779,30 @@ button:focus {
 #legal .legal-sidebar .sidebar-menu-list {
   margin-top: 52px;
   list-style: none;
+  overflow-y: auto;
+  max-height: 487px;
+  padding-right: 5px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+#legal .legal-sidebar .sidebar-menu-list::-webkit-scrollbar {
+}
+#legal .legal-sidebar .sidebar-menu-list::-webkit-scrollbar-track {
+  background: #F1F1F1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#legal .legal-sidebar .sidebar-menu-list::-webkit-scrollbar-thumb {
+  background: #690FAD;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 #legal .legal-sidebar .sidebar-menu-list .sidebar-menu-item, #legal .legal-sidebar .sidebar-menu-list .sidebar-menu-link {
   position: relative;
@@ -5954,12 +5978,14 @@ button:focus {
   color: #000000;
 }
 #legal .legal-content-body .section-title-list {
-  list-style: inside;
+  list-style: disc;
   margin-bottom: 20px;
+  padding-left: 17px;
 }
 #legal .legal-content-body .external-link {
   color: #690FAD;
   text-decoration: underline;
+  word-break: break-all;
 }
 #legal .legal-content-body .section-title-item {
   font-family: 'Montserrat', sans-serif;
@@ -5971,7 +5997,6 @@ button:focus {
   color: #000000;
 }
 #legal .legal-content-body .subsection-list {
-  list-style: inside;
   list-style-type: circle;
   padding-left: 20px;
   margin-bottom: 16px;
