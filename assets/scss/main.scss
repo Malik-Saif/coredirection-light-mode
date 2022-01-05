@@ -5917,7 +5917,7 @@ button:focus {
         transition: all .5s ease-in-out;
         .legal-sidebar-outer-box{
             width: 299px;
-            padding: 55px 40px 25px;
+            padding: 55px 41px 25px;
             @media screen and (max-width: 991px) {
                 padding: 55px 25px 25px;
             }
@@ -5993,7 +5993,7 @@ button:focus {
             list-style: none;
             margin-top: -10px;
             margin-bottom: 10px;
-            .sidebar-submenu-item{
+            .sidebar-submenu-item,.sidebar-submenu-link{
                 position: relative;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 12px;
@@ -6159,6 +6159,9 @@ button:focus {
             list-style-type: circle;
             padding-left: 20px;
             margin-bottom: 16px;
+            .subsection-list{
+                list-style-type: square;
+            }
         }
         .subsection-item{
             font-family: 'Montserrat', sans-serif;
