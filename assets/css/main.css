@@ -6014,6 +6014,11 @@ button:focus {
   margin-bottom: 16px;
   color: #000000;
 }
+#legal .legal-content-body .certified-privacy {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 17px;
+}
 #legal .legal-content-body table {
   width: 100%;
 }
