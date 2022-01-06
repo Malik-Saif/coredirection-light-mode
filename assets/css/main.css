@@ -6014,6 +6014,28 @@ button:focus {
   margin-bottom: 16px;
   color: #000000;
 }
+#legal .legal-content-body table {
+  width: 100%;
+}
+#legal .legal-content-body th {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 17px;
+  color: #000000;
+}
+#legal .legal-content-body td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #000000;
+}
 #legal .legal-content-footer {
   margin-top: 37px;
 }
@@ -6198,13 +6220,13 @@ button:focus {
 }
 @media screen and (min-width: 992px) {
   #customer-support .customer-support-live-chat {
-    background: linear-gradient(159.67deg, #690FAD 1.55%, #bed62f 106.93%);
+    background: linear-gradient(159.67deg, #00a5e1 1.55%, #bed62f 106.93%);
     max-width: 471px;
   }
 }
 @media screen and (max-width: 991px) {
   #customer-support .customer-support-live-chat .customer-support-live-chat-outer-box {
-    background: linear-gradient(159.67deg, #690FAD 1.55%, #bed62f 106.93%);
+    background: linear-gradient(159.67deg, #00a5e1 1.55%, #bed62f 106.93%);
     display: none;
   }
 }
