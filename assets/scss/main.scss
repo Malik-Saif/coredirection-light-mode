@@ -9543,11 +9543,13 @@ button:focus {
         width: 100%;
         // min-height: 50vh;
         height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
         @media (min-width: 992px) {
             flex: 0 0 45%;
         }
         @media (max-width: 991px) {
-            margin-top: 10%;
+            margin-top: 15%;
             margin-bottom: 10%;
         }
     }
