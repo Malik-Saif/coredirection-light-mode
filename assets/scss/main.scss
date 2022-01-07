@@ -9439,6 +9439,758 @@ button:focus {
     }
 }
 
+#services {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    @media screen and (min-width: 1050px) {
+        .btn-sm{
+            display: none;
+        }
+        .content-box{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            visibility: visible;
+            position: relative;
+        }
+        .section-header{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
+        .section-title{
+            width: 156px;
+            display: flex;
+            align-items: center;
+            .section-name{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $primaryColor;
+                margin: 0;
+            }
+            img{
+                width: 100%;
+                max-width: 38px;
+            }
+        }
+        .section-content-box{
+            .title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                margin-bottom: 17px;
+                color: $primaryColor;
+            }
+            .desc{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0em;
+                margin-bottom: 41px;
+            }
+            .btn-more{
+                display: inline-flex;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $colorWhite;
+                background-color: $primaryColor;
+                border-radius: 30px;
+                svg,img{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 21px;
+        }
+        .member-login{
+            min-height: 918px;
+            width: 100%;
+            // background-image: url("../images/marketplace.png");
+            background-color: #F3E5E5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // clip-path: polygon(0 0, 50% 0, 50% 54%, 0 87%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+            position: relative;
+            .content-box,.section-header{
+                margin-left: auto;
+                margin-top: 60px;
+                margin-right: 50px;
+            }
+            .section-title{
+                margin-right: auto;
+                img{
+                    margin-right: 9px;
+                }
+                .section-name{
+                    text-align: left;
+                }
+            }
+            .mockup{
+                max-width: 543px;
+                margin-left: auto;
+                margin-top: 45px;
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-right: auto;
+                .title{
+                    text-align: left;
+                }
+                .desc{
+                    text-align: left;
+                }
+                .btn-more{
+                    padding: 13px 51px;
+                    margin-right: auto;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                right: 0;
+                top: 58%;
+                bottom: 50%;
+                transform: translateY(-56%);
+                cursor: pointer;
+            }
+        }
+        .corporate-wellness{
+            min-height: 918px;
+            width: 100%;
+            // background-image: url("../images/corporate.png");
+            background-color: #EFE9E9;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+            position: relative;
+            .content-box,.section-header{
+                margin-right: auto;
+                margin-top: 60px;
+                margin-left: 50px;
+            }
+            .section-title{
+                margin-left: auto;
+                img{
+                    margin-left: 9px;
+                }
+                .section-name{
+                    text-align: right;
+                }
+            }
+            .mockup{
+                max-width: 424px;
+                margin-right: auto;
+                margin-top: 45px;
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-left: auto;
+                align-items: end;
+                text-align: right;
+                .title{
+                    text-align: right;
+                }
+                .desc{
+                    text-align: right;
+                }
+                .btn-more{
+                    padding: 13px 27px;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                left: 0;
+                top: 58%;
+                bottom: 50%;
+                transform: translateY(-56%);
+                cursor: pointer;
+            }
+        }
+        .event-consultancy{
+            min-height: 512px;
+            width: 100%;
+            // background-image: url("../images/event-consultancy.png");
+            background-color: #EFEFEF;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // clip-path: polygon(50% 60%, 0 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+            margin-top: -350px;
+            position: relative;
+            .content-box{
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 130px;
+                text-align: center;
+            }
+            .section-header{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding-bottom: 15px;
+            }
+            .section-title{
+                flex-direction: column;
+                margin: auto;
+                img{
+                    margin-top: 9px;
+                }
+                .section-name{
+                    text-align: center;
+                }
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 21px;
+                .title{
+                    text-align: center;
+                }
+                .desc{
+                    text-align: center;
+                }
+                .btn-more{
+                    padding: 13px 33px;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                top: 29px;
+                left: 50%;
+                right: 50%;
+                transform: translateX(-51%);
+                cursor: pointer;
+                z-index: 1;
+            }
+        }
+        .opacity{
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba($color: $colorWhite, $alpha: .7);
+                z-index: 11111;
+            }
+            .content-box{
+                visibility: hidden;
+            }
+        }
+        .overlay{
+            .content-box{
+                visibility: hidden;
+            }
+        }
+        .overlay.member-login{
+            background-image: url("../images/marketplace.png");
+        }
+        .overlay.corporate-wellness{
+            background-image: url("../images/corporate.png");
+        }
+        .overlay.event-consultancy{
+            background-image: url("../images/event-consultancy.png");
+        }
+    }
+    @media (max-width: 1049px) {
+        .content-box{
+            max-width: 304px;
+            padding-left: 15px;
+            padding-right: 15px;
+            visibility: visible;
+            position: relative;
+        }
+        .section-header{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            margin-right: auto;
+        }
+        .section-title{
+            width: 74px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 39px;
+            padding-bottom: 36px;
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../images/icon/Arrow-Left.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center left;
+                width: 32px;
+                height: 47px;
+                left: 0;
+                right: 0;
+            }
+            img{
+                display: none;
+            }
+            .section-name{
+                font-family: 'Montserrat', sans-serif;
+                color: $primaryColor;
+                margin: 0;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        .mockup{
+            display: none;
+        }
+        .section-content-box{
+            .title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 9px;
+                color: $primaryColor;
+            }
+            .desc{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .btn-lg{
+                display: none;
+            }
+            .btn-sm{
+                display: inline-flex;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $colorWhite;
+                background-color: $primaryColor;
+                border-radius: 30px;
+                padding: 7px 29px;
+                svg,img{
+                    margin-left: 8px;
+                }
+            }
+        }
+        .member-login,
+        .corporate-wellness,
+        .event-consultancy{
+            padding: 22px 3px 29px;
+            overflow: hidden;
+            opacity: .45;
+            filter: grayscale(1);
+            transition: .2s ease-in-out;
+        }
+        .member-login{
+            width: 100%;
+            position: relative;
+            background-color: #F3E5E5;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(45deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+                background-image: url("../images/mockup-01.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .corporate-wellness{
+            width: 100%;
+            position: relative;
+            background-color: #EFE9E9;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(315deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+                background-image: url("../images/mockup-02.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .event-consultancy{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            background-color: #EFEFEF;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(45deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+            }
+        }
+        .nav-icon{
+            display: none;
+        }
+        .active{
+            padding: 22px 3px 29px;
+            overflow: hidden;
+            opacity: 1;
+            filter: unset;
+            transition: .3s linear;
+        }
+        .active.member-login,
+        .active.corporate-wellness,
+        .active.event-consultancy{
+            .desc{
+                font-size: 14px;
+                line-height: 18.63px;
+            }
+            .section-content-box{
+                padding-top: 38px;
+                padding-bottom: 66px;
+            }
+            &::before{
+                width: 1px;
+                right: 32%;
+            }
+            &::after{
+                right: 5px;
+                background-position: left 80%;
+            }
+        }
+        .active.member-login{
+            &::before{
+                transform: rotate(26deg);
+            }
+        }
+        .active.corporate-wellness{
+            &::before{
+                transform: rotate(334deg);
+            }
+        }
+        .active.event-consultancy{
+            background-image: url("../images/event-consultancy.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            &::before{
+                width: 0;
+                transform: rotate(26deg);
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .content-box{
+            max-width: 204px;
+            padding-left: 15px;
+            padding-right: 15px;
+            visibility: visible;
+            position: relative;
+        }
+        .section-header{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            margin-right: auto;
+        }
+        .section-title{
+            width: 74px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 29px;
+            padding-bottom: 26px;
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../images/icon/Arrow-Left.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center left;
+                width: 22px;
+                height: 37px;
+                left: 0;
+                right: 0;
+            }
+            img{
+                display: none;
+            }
+            .section-name{
+                font-family: 'Montserrat', sans-serif;
+                color: $primaryColor;
+                margin: 0;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+        .mockup{
+            display: none;
+        }
+        .section-content-box{
+            .title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 9px;
+                color: $primaryColor;
+            }
+            .desc{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .btn-lg{
+                display: none;
+            }
+            .btn-sm{
+                display: inline-flex;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $colorWhite;
+                background-color: $primaryColor;
+                border-radius: 30px;
+                padding: 7px 29px;
+                svg,img{
+                    margin-left: 8px;
+                }
+            }
+        }
+        .member-login,
+        .corporate-wellness,
+        .event-consultancy{
+            padding: 22px 3px 29px;
+            overflow: hidden;
+            opacity: .45;
+            filter: grayscale(1);
+            transition: .2s ease-in-out;
+        }
+        .member-login{
+            width: 100%;
+            position: relative;
+            background-color: #F3E5E5;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(45deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+                background-image: url("../images/mockup-01.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .corporate-wellness{
+            width: 100%;
+            position: relative;
+            background-color: #EFE9E9;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(315deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+                background-image: url("../images/mockup-02.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .event-consultancy{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            background-color: #EFEFEF;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                right: 12%;
+                top: -100%;
+                bottom: -100%;
+                width: 60px;
+                background-color: #fff;
+                transform: rotate(45deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 42%;
+            }
+        }
+        .nav-icon{
+            display: none;
+        }
+        .active{
+            padding: 22px 3px 29px;
+            overflow: hidden;
+            opacity: 1;
+            filter: unset;
+            transition: .3s linear;
+        }
+        .active.member-login,
+        .active.corporate-wellness,
+        .active.event-consultancy{
+            .desc{
+                font-size: 12px;
+                line-height: 14.63px;
+            }
+            .section-content-box{
+                padding-top: 38px;
+                padding-bottom: 66px;
+            }
+            &::before{
+                width: 1px;
+                right: 32%;
+            }
+            &::after{
+                right: 5px;
+                background-position: left 80%;
+            }
+        }
+        .active.member-login{
+            &::before{
+                transform: rotate(26deg);
+            }
+        }
+        .active.corporate-wellness{
+            &::before{
+                transform: rotate(334deg);
+            }
+        }
+        .active.event-consultancy{
+            background-image: url("../images/event-consultancy.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            &::before{
+                width: 0;
+                transform: rotate(26deg);
+            }
+        }
+    }
+}
+
 #location-details{
     .modal-outer-box {
         max-width: calc(415px + 2rem);
@@ -9733,7 +10485,7 @@ button:focus {
                 color: $colorBlack;
             }
 
-            button {
+            button,a {
                 font-family: 'Roboto', sans-serif;
                 font-size: 16px;
                 font-weight: 400;
