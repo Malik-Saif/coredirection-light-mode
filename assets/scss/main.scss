@@ -7582,8 +7582,7 @@ button:focus {
                 }
 
                 .input-field-search-box,
-                .input-field-category-box,
-                .input-field-date-box {
+                .input-field-category-box {
                     width: 100%;
 
                     @media screen and (max-width: 991px) {
@@ -7608,11 +7607,12 @@ button:focus {
                 }
 
                 .input-field-search-box {
-                    max-width: 295px;
+                    max-width: 395px;
                     position: relative;
 
                     @media screen and (max-width: 991px) {
-                        max-width: calc(50% - .5rem);
+                        max-width: 100%;
+                        margin-right: 0;
                     }
 
                     svg {
@@ -7699,11 +7699,12 @@ button:focus {
                 }
 
                 .input-field-category-box {
-                    max-width: 295px;
+                    max-width: 395px;
                     position: relative;
 
                     @media screen and (max-width: 991px) {
-                        max-width: calc(50% - .5rem);
+                        max-width: 100%;
+                        margin-right: 0;
                     }
 
                     select {
@@ -7816,144 +7817,6 @@ button:focus {
                     }
                 }
 
-                .input-field-date-box {
-                    max-width: 256px;
-                    position: relative;
-
-                    @media screen and (max-width: 991px) {
-                        max-width: calc(65% - .5rem);
-                        margin-right: 0;
-                        margin-left: 0;
-                    }
-
-                    svg {
-                        position: absolute;
-                        right: 13px;
-                        top: 13px;
-                        cursor: pointer;
-                    }
-
-                    svg,
-                    path {
-                        fill: $colorBlack;
-                    }
-
-                    .calendar-field-box {
-                        display: none;
-                        position: absolute;
-                        width: 100%;
-                        box-shadow: 0 4px 4px rgba($color: #121212, $alpha: .25);
-                        z-index: 2;
-                        background-color: $colorWhite;
-                        width: calc(100% + 75px);
-
-                        @media screen and (min-width: 992px) {
-                            right: 0;
-                            top: 2.9rem;
-                            border-radius: 0;
-                        }
-
-                        @media screen and (max-width: 991px) {
-                            top: 2.9rem;
-                            left: 0;
-                            border-radius: 0;
-                        }
-
-                        .calendar-header {
-                            padding: 32px 27px 32px 32px;
-
-                            .selected-calendar-from,
-                            .selected-calendar-to {
-                                font-family: 'Montserrat', sans-serif;
-                                font-size: 11px;
-                                line-height: 13.41px;
-                                font-weight: 400;
-                                color: $colorBlack;
-                            }
-                        }
-
-                        .calendar-filter {
-                            height: 215px;
-                        }
-
-                        .calendar-field-body {
-
-                            @media screen and (max-width: 991px) {
-                                border-top: none;
-                            }
-
-                            .calendar {
-                                color: $colorBlack;
-                                background-color: $colorWhite;
-                                padding-bottom: 25px;
-
-                                .current-calendar-info-box {
-                                    padding-left: 32px;
-                                    padding-right: 27px;
-                                    margin-bottom: 17px;
-                                }
-
-                                .selected-calendar-month,
-                                .selected-calendar-year {
-                                    font-family: 'Montserrat', sans-serif;
-                                    font-size: 24px;
-                                    line-height: 29.26px;
-                                    font-weight: 400;
-                                }
-
-                                table {
-                                    width: calc(100% - 40px);
-                                    margin-left: auto;
-                                    margin-right: 19px;
-
-                                    tr {
-
-                                        th,
-                                        td {
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-size: 11px;
-                                            line-height: 13.41px;
-                                            font-weight: 400;
-                                            padding-bottom: 15px;
-                                            cursor: pointer;
-                                            text-align: center;
-                                        }
-                                    }
-
-                                    tr:last-child {
-                                        td {
-                                            padding-bottom: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .calendar-footer {
-                            margin-top: 23px;
-                            padding: 21px 31px 22px;
-                            box-shadow: 0px -4px 4px 0px #0000001A;
-
-                            .btn-calendar-cancel,
-                            .btn-calendar-apply {
-                                font-family: 'Montserrat', sans-serif;
-                                font-size: 12px;
-                                line-height: 14.63px;
-                                font-weight: 500;
-                            }
-
-                            .btn-calendar-cancel {
-                                color: $colorBlack;
-                                margin-right: 31px;
-                            }
-
-                            .btn-calendar-apply {
-                                color: $primaryColor;
-                            }
-                        }
-                    }
-                }
-
                 .search-btn-box {
                     max-width: 122.59px;
                     display: flex;
@@ -7961,8 +7824,8 @@ button:focus {
                     justify-content: space-between;
 
                     @media screen and (max-width: 991px) {
-                        max-width: calc(35% - .5rem);
-                        margin-left: auto;
+                        max-width: calc(50% - .5rem);
+                        // margin-left: auto;
                     }
 
                     width: 100%;
@@ -7989,6 +7852,23 @@ button:focus {
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
+                    }
+                }
+
+                .reset-btn-box button{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    padding: 11px 13px;
+                }
+                .reset-btn-box{
+                    @media screen and (max-width: 991px) {
+                        margin-right: auto;
+                        margin-left: 1rem;
                     }
                 }
 
