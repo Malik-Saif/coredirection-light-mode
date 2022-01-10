@@ -6233,7 +6233,7 @@ button:focus {
     background-size: cover;
 
     @media screen and (min-width: 992px) {
-        min-height: 100vh;
+        min-height: 50vh;
         height: 100%;
     }
 
@@ -6282,7 +6282,8 @@ button:focus {
 }
 #customer-support{
     .customer-support-box-container{
-        max-width: 1152px;
+        // max-width: 1152px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
         @media screen and (min-width: 992px) {
@@ -6370,6 +6371,34 @@ button:focus {
                 background-color: transparent !important;
             }
         }
+        .service-group{
+            margin-bottom: 31px;
+        
+            label {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+                padding: 0;
+                color: $colorBlack !important;
+                -webkit-transition: top .2s ease-in-out,
+                    font-size .2s ease-in-out;
+                transition: top .2s ease-in-out,
+                    font-size .2s ease-in-out;
+            }
+
+            select {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+                width: 100%;
+                color: $colorBlack;
+                background-color: transparent !important;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+                height: 43px;
+            }
+        }
 
         .btn-send-form{
             font-family: 'Roboto', sans-serif;
@@ -6382,373 +6411,6 @@ button:focus {
             padding: 10px 61px 11px;
             margin: auto;
             display: block;
-        }
-    }
-
-
-    .customer-support-live-chat{
-        @media screen and (min-width: 992px) {
-            background: linear-gradient(159.67deg, rgb(0, 165, 225) 1.55%, rgb(190, 214, 47) 106.93%);
-            max-width: 471px;
-        }
-
-        .customer-support-live-chat-outer-box{
-            @media screen and (max-width: 991px) {
-                background: linear-gradient(159.67deg, rgb(0, 165, 225) 1.55%, rgb(190, 214, 47) 106.93%);
-                display: none;
-            }
-            @media screen and (min-width: 992px) {
-                display: block !important;
-            }
-        }
-
-        .btn-chat-close{
-            position: absolute;
-            top: 13px;
-            right: 11px;
-            @media screen and (min-width: 992px) {
-                display: none;
-            }
-        }
-
-        .message-input-field{
-            width: 100%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 28px;
-            text-align: left;
-            padding: 10px 28px;
-            border: 1px solid $primaryColor;
-        }
-
-        .btn-message-send{
-            min-width: 48px;
-            max-width: 48px;
-            height: 48px;
-            background-color: $colorWhite;
-            margin-left: 15px;
-            svg,img{
-                max-width: 28px;
-                margin-left: -3px;
-            }
-        }
-
-        .customer-support-live-chat-inner-box{
-            @media screen and (max-width: 991px) {
-                position: relative;
-            }
-        }
-
-        // live-chat-signin
-        .live-chat-signin{
-            @media screen and (min-width: 992px) {
-                padding: 74px 64px 69px;
-                min-width: 471px;
-                max-width: 471px;
-            }
-            @media screen and (max-width: 991px) {
-                padding: 75px 24px 76px;
-                position: relative;
-            }
-            .live-chat-signin-title{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 28px;
-                margin-bottom: 53px;
-                color: $colorWhite;
-            }
-
-            .live-chat-signin-desc {
-                font-family: 'Roboto', sans-serif;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
-                color: $colorWhite;
-                margin-bottom: 65px;
-            }
-
-            label {
-                padding-left: 5px;
-            }
-
-            .active {
-                left: 0;
-                padding-left: 0px;
-            }
-
-            input {
-                padding-left: 5px;
-            }
-
-            .btn-submit{
-                display: block;
-                color: $colorWhite;
-                background-color: $primaryColor;
-                padding: 15px 20px 16px;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 17px;
-                text-align: center;
-                margin-top: 126px;
-                width: 100%;
-                @media screen and (max-width: 991px) {
-                    max-width: 241px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 85px;
-                }
-            }
-        }
-
-        // chat-customer
-        .chat-customer{
-            @media screen and (min-width: 992px) {
-                padding: 74px 28px 34px;
-                min-width: 471px;
-                max-width: 471px;
-            }
-            @media screen and (max-width: 991px) {
-                padding: 75px 29px 24px;
-                position: relative;
-
-            }
-            .live-chat-signin-title{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 28px;
-                margin-bottom: 13px;
-                color: $colorWhite;
-            }
-
-            .live-chat-signin-desc {
-                font-family: 'Roboto', sans-serif;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
-                color: $colorWhite;
-                margin-bottom: 69px;
-            }
-
-            .available-operator-profile-img-box{
-                width: 130px;
-                height: 130px;
-                position: relative;
-                margin-bottom: 13px;
-            }
-
-            .available-operator-status{
-                position: absolute;
-                right: 15px;
-                top: 5px;
-                border: 3px solid #68C4A8;
-                width: 18px;
-                height: 18px;
-            }
-
-            .available-operator-name{
-                font-family: 'Roboto', sans-serif;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 20px;
-                color: $colorWhite;
-            }
-
-            .available-operator-desc{
-                font-family: 'Roboto', sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 20px;
-                color: $colorWhite;
-                margin-bottom: 156px;
-            }
-        }
-
-        // chat-text
-        .chat-tech{
-            @media screen and (min-width: 992px) {
-                padding: 21px 28px 34px;
-                min-width: 471px;
-                max-width: 471px;
-            }
-            @media screen and (max-width: 991px) {
-                padding: 21px 22px 24px;
-                position: relative;
-            }
-
-            .chat-tech-header{
-                padding-bottom: 15px;
-                border-bottom: 2px solid $colorWhite;
-                margin-bottom: 16px;
-            }
-
-            .chat-tech-body{
-                // min-height: calc(100vh - 181px);
-                height: 430px;
-            }
-
-            .chat-tech-footer{
-                margin-top: 14px;
-            }
-
-            .chat-started-time,.chat-started-date{
-                font-family: 'Roboto', sans-serif;
-                font-size: 10px;
-                font-weight: 400;
-                line-height: 12px;
-                margin-bottom: 0;
-                color: $colorWhite;
-            }
-
-            .history-chat-body{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                overflow-x: hidden;
-                overflow-y: scroll;
-                padding-right: 14px;
-
-                /* width */
-                &::-webkit-scrollbar {
-                    width: 9px;
-                }
-
-                /* Track */
-                &::-webkit-scrollbar-track {
-                    background: #F1F1F173;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                }
-
-                /* Handle */
-                &::-webkit-scrollbar-thumb {
-                    background: $colorWhite;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                }
-            }
-
-            .session-break {
-                flex: 1 1 auto;
-                min-height: 12px;
-            }
-
-            .chat-sender-box,.chat-receiver-box{
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-
-            .customer-support-member-img-box{
-                margin-right: 21px;
-                img{
-                    min-width: 65px;
-                    max-width: 65px;
-                    height: 65px;
-                }
-            }
-
-            .customer-support-member-name{
-                font-family: 'Roboto', sans-serif;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 20px;
-                text-align: left;
-                margin: 0;
-                color: $colorWhite;
-                .customer-support-member-availability-status{
-                    min-width: 11px;
-                    max-width: 11px;
-                    height: 11px;
-                    background-color: #C0D731;
-                    margin-left: 9px;
-                }
-            }
-
-            .customer-support-member-status{
-                font-family: 'Roboto', sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 20px;
-                text-align: left;
-                margin: 0;
-                color: $colorWhite;
-            }
-
-            .chat-sender-message-box{
-                width: 100%;
-                max-width: 273px;
-                background: $colorWhite;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-                border-radius: 0px 22.5px 22.5px 22.5px;
-                margin-left: 10px;
-                padding: 8px 13px 9px;
-                p{
-                    color: $colorBlack;
-                    text-align: left;
-                }
-            }
-
-            .chat-receiver-message-box{
-                width: 100%;
-                max-width: 273px;
-                color: $colorWhite;
-                background: $primaryColor;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-                border-radius: 22.5px 0px 22.5px 22.5px;
-                // transform: matrix(-1, 0, 0, 1, 0, 0);
-                margin-right: 10px;
-                padding: 8px 13px 9px;
-                p{
-                    color: $colorWhite;
-                    text-align: right;
-                }
-            }
-
-            .person-img{
-                min-width: 45px;
-                max-width: 45px;
-                min-height: 45px;
-                max-height: 45px;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
-            }
-
-            .message{
-                font-family: 'Montserrat', sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 15px;
-            }
-
-        }
-    }
-
-    // customer-support-live-chat-chat-open
-    .customer-support-live-chat.chat-open{
-        @media screen and (max-width: 991px) {
-            // margin: 1rem;
-            // display: none;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 9999;
-            padding: 1rem;
-            background: #0000007d;
-            overflow-y: scroll;
-            width: 100%;
-            min-height: 100vh;
-            height: 100%;
         }
     }
 }
@@ -6800,7 +6462,7 @@ button:focus {
         padding: 37px 50px 44px;
 
         &:hover{
-            background: linear-gradient(159.67deg, rgba(0, 165, 225, 0.85) 1.55%, rgba(190, 214, 47, 0.85) 106.93%);
+            background: linear-gradient(159.67deg, rgba(242,245,234,1) 0%, rgba(105,15,173,1) 45%, rgba(105,15,173,1) 55%, rgba(242,245,234,1) 100%);
             p{
                 color: $colorWhite;
             }

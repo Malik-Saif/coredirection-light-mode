@@ -113,8 +113,7 @@
                         <div class="customer-support-form-outer-box">
                             <div class="customer-support-form-inner-box">
                                 <div class="form">
-                                    <p class="form-title">Send us Message</p>
-                                    
+                                    <p class="form-title">Send us a Message</p>
                                     <form action="">
                                         <div class="flexgroup">
                                             <div class="Name-field-box">
@@ -136,6 +135,17 @@
                                                 <input id="formSubject" type="text" class="cool border-b-1 border-black">
                                             </div>
                                         </div>
+                                        <div class="subject-field-box">
+                                            <div class="service-group">
+                                                <label for="formService" class="">Which services are you interested in:</label>
+                                                <select id="formService" class="cool border-b-1 border-black">
+                                                    <option>General Enquiry </option>
+                                                    <option>Corporate Wellness</option>
+                                                    <option>Event consultancy</option>
+                                                    <option>Industry Partnership</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class="message-field-box mb-6">
                                             <div class="group">
                                                 <label for="formMessage">Message</label>
@@ -150,93 +160,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="customer-support-live-chat">
-                        <div class="customer-support-live-chat-outer-box">
-                            <div class="customer-support-live-chat-inner-box">
-                                <div class="live-chat-signin">
-                                    <button class="btn-chat-close">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M30.7336 5.26685C23.7103 -1.75497 12.2885 -1.75497 5.2652 5.26685C-1.75507 12.2887 -1.75507 23.7135 5.2652 30.7353C8.77685 34.2455 13.3885 35.9997 18.0002 35.9997C22.6119 35.9997 27.222 34.2454 30.7336 30.7353C37.7555 23.7135 37.7555 12.2887 30.7336 5.26685ZM25.4271 23.3068C26.0139 23.8936 26.0139 24.842 25.4271 25.4288C25.1345 25.7214 24.7503 25.8685 24.3661 25.8685C23.982 25.8685 23.5977 25.7214 23.3051 25.4288L18.0001 20.1223L12.6966 25.4272C12.4025 25.7199 12.0183 25.867 11.6356 25.867C11.2515 25.867 10.8672 25.7199 10.5746 25.4272C9.98785 24.8405 9.98785 23.8905 10.5746 23.3053L15.8781 18.0003L10.5731 12.6953C9.98637 12.1086 9.98637 11.1586 10.5731 10.5734C11.1584 9.98661 12.1083 9.98661 12.6951 10.5734L18.0001 15.8783L23.305 10.5734C23.8918 9.98661 24.8402 9.98661 25.427 10.5734C26.0137 11.1586 26.0137 12.1086 25.427 12.6953L20.122 18.0003L25.4271 23.3068Z" fill="white"/>
-                                        </svg>
-                                    </button>
-                                    <h3 class="live-chat-signin-title text-center">Sign in</h3>
-                                    <p class="live-chat-signin-desc text-center">Sign in to your account to Chat Live
-                                        with our First Desk Officer to help you with your queries.</p>
-                                    <!-- <form action=""> -->
-                                    <div class="email-field-box mb-8">
-                                        <div class="group">
-                                            <label for="signInEmail">Email</label>
-                                            <input id="signInEmail" type="email" class="cool border-b-1 border-black" />
-                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M17.9246 13.5754C16.7811 12.4318 15.4198 11.5853 13.9346 11.0726C15.5252 9.97705 16.5703 8.14365 16.5703 6.07031C16.5703 2.72303 13.8473 0 10.5 0C7.15271 0 4.42969 2.72303 4.42969 6.07031C4.42969 8.14365 5.47477 9.97705 7.06535 11.0726C5.58018 11.5849 4.21887 12.4318 3.07535 13.5754C1.09225 15.5585 0 18.1954 0 21H1.64062C1.64062 16.115 5.61504 12.1406 10.5 12.1406C15.385 12.1406 19.3594 16.115 19.3594 21H21C21 18.1954 19.9078 15.5585 17.9246 13.5754ZM10.5 10.5C8.05752 10.5 6.07031 8.51279 6.07031 6.07031C6.07031 3.62783 8.05752 1.64062 10.5 1.64062C12.9425 1.64062 14.9297 3.62783 14.9297 6.07031C14.9297 8.51279 12.9425 10.5 10.5 10.5Z"
-                                                    fill="black"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="password-field-box mb-8">
-                                        <div class="group">
-                                            <label for="signInPassword">Password</label>
-                                            <input id="signInPassword" type="email" class="cool border-b-1 border-black" />
-                                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M13.8633 15.0117C14.3163 15.0117 14.6836 14.6445 14.6836 14.1914C14.6836 13.7384 14.3163 13.3711 13.8633 13.3711C13.4102 13.3711 13.043 13.7384 13.043 14.1914C13.043 14.6445 13.4102 15.0117 13.8633 15.0117Z"
-                                                    fill="#C0D731" />
-                                                <path
-                                                    d="M17.5547 14.8477C18.0079 14.8477 18.375 14.4806 18.375 14.0273V10.9922C18.375 9.18299 16.9029 7.71094 15.0938 7.71094H14.1077V4.81811C14.1077 2.16111 11.8999 0 9.18586 0C6.47186 0 4.26398 2.16111 4.26398 4.81811V7.71094H3.28125C1.47205 7.71094 0 9.18299 0 10.9922V17.7188C0 19.5279 1.47205 21 3.28125 21H15.0938C16.9029 21 18.375 19.5279 18.375 17.7188C18.375 17.2655 18.0079 16.8984 17.5547 16.8984C17.1015 16.8984 16.7344 17.2655 16.7344 17.7188C16.7344 18.6236 15.9986 19.3594 15.0938 19.3594H3.28125C2.37645 19.3594 1.64062 18.6236 1.64062 17.7188V10.9922C1.64062 10.0874 2.37645 9.35156 3.28125 9.35156H15.0938C15.9986 9.35156 16.7344 10.0874 16.7344 10.9922V14.0273C16.7344 14.4806 17.1015 14.8477 17.5547 14.8477ZM12.4671 7.71094H5.90461V4.81811C5.90461 3.06633 7.37666 1.64062 9.18586 1.64062C10.9951 1.64062 12.4671 3.06592 12.4671 4.81811V7.71094Z"
-                                                    fill="#C0D731" />
-                                                <path
-                                                    d="M7.66992 15.0117C8.12297 15.0117 8.49023 14.6445 8.49023 14.1914C8.49023 13.7384 8.12297 13.3711 7.66992 13.3711C7.21688 13.3711 6.84961 13.7384 6.84961 14.1914C6.84961 14.6445 7.21688 15.0117 7.66992 15.0117Z"
-                                                    fill="#C0D731" />
-                                                <path
-                                                    d="M4.59375 15.0117C5.0468 15.0117 5.41406 14.6445 5.41406 14.1914C5.41406 13.7384 5.0468 13.3711 4.59375 13.3711C4.1407 13.3711 3.77344 13.7384 3.77344 14.1914C3.77344 14.6445 4.1407 15.0117 4.59375 15.0117Z"
-                                                    fill="#C0D731" />
-                                                <path
-                                                    d="M10.7461 15.0117C11.1992 15.0117 11.5664 14.6445 11.5664 14.1914C11.5664 13.7384 11.1992 13.3711 10.7461 13.3711C10.2931 13.3711 9.92578 13.7384 9.92578 14.1914C9.92578 14.6445 10.2931 15.0117 10.7461 15.0117Z"
-                                                    fill="#C0D731" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <button class="btn-submit rounded-full">Sign In</button>
-                                    <!-- </form> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- btn-live-chat-toggle -->
-                        <div class="btn-live-chat-toggle chat-close flex justify-end">
-                            <div class="btn-live-chat-toggle-outer-box">
-                                <div class="btn-live-chat-toggle-inner-box flex items-center justify-center rounded-full">
-                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M41.9998 17.2374C41.9998 9.18893 34.1917 2.64111 24.5947 2.64111C14.9975 2.64111 7.18945 9.189 7.18945 17.2374C7.18945 25.2858 14.9975 31.8337 24.5947 31.8337C25.4017 31.8337 26.2114 31.787 27.0075 31.6948C30.704 34.043 33.4329 35.3284 35.1242 35.5163C35.183 35.5227 35.2422 35.5259 35.3002 35.5259C35.8435 35.5259 36.3463 35.2552 36.6457 34.8012C36.9804 34.2934 37.0022 33.6491 36.7041 33.1231C36.6903 33.098 35.385 30.7167 35.7616 28.4419C39.7325 25.6631 41.9998 21.6021 41.9998 17.2374ZM19.8678 19.4419C18.4437 19.4419 17.2896 18.2875 17.2896 16.8636C17.2896 15.4397 18.4437 14.2853 19.8678 14.2853C21.2916 14.2853 22.4462 15.4397 22.4462 16.8636C22.4463 18.2875 21.2917 19.4419 19.8678 19.4419ZM29.322 19.4419C27.8977 19.4419 26.7433 18.2875 26.7433 16.8636C26.7433 15.4397 27.8977 14.2853 29.322 14.2853C30.7458 14.2853 31.9002 15.4397 31.9002 16.8636C31.9002 18.2875 30.7458 19.4419 29.322 19.4419Z" fill="white"/>
-                                        <path d="M10.8667 28.9154C9.13967 27.4854 7.7783 25.8116 6.82095 23.9405C5.81151 21.9678 5.29976 19.8693 5.29976 17.7034C5.29976 15.5375 5.81158 13.4391 6.82095 11.4664C6.89823 11.3154 6.97914 11.1663 7.06156 11.0178C2.79863 13.4601 0 17.5363 0 22.1442C0 26.284 2.23005 30.1223 6.12596 32.7042C6.84552 35.533 5.17575 38.5257 5.15811 38.5563C5.0586 38.7318 5.06594 38.9484 5.17698 39.1168C5.27704 39.2686 5.446 39.3585 5.62532 39.3585C5.64516 39.3585 5.66492 39.3573 5.68496 39.3551C7.63412 39.1386 11.0665 37.1576 13.6668 35.4872C14.5426 35.6061 15.4378 35.6662 16.331 35.6662C19.747 35.6662 22.9207 34.7926 25.5453 33.302C24.9589 33.349 24.3683 33.374 23.7795 33.374C18.9251 33.374 14.3393 31.7906 10.8667 28.9154Z" fill="white"/>
-                                    </svg>
-                                    <!-- <svg width="150" height="172" viewBox="0 0 150 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_i)">
-                                        <path d="M86 110C111.405 110 132 89.4051 132 64C132 38.5949 111.405 18 86 18C60.5949 18 40 38.5949 40 64C40 89.4051 60.5949 110 86 110Z" fill="#690FAD"/>
-                                        </g>
-                                        <path d="M107 60.2374C107 52.1889 99.1917 45.6411 89.5947 45.6411C79.9975 45.6411 72.1895 52.189 72.1895 60.2374C72.1895 68.2858 79.9975 74.8337 89.5947 74.8337C90.4017 74.8337 91.2114 74.787 92.0075 74.6948C95.704 77.043 98.4329 78.3284 100.124 78.5163C100.183 78.5227 100.242 78.5259 100.3 78.5259C100.843 78.5259 101.346 78.2552 101.646 77.8012C101.98 77.2934 102.002 76.6491 101.704 76.1231C101.69 76.098 100.385 73.7167 100.762 71.4419C104.733 68.6631 107 64.6021 107 60.2374ZM84.8678 62.4419C83.4437 62.4419 82.2896 61.2875 82.2896 59.8636C82.2896 58.4397 83.4437 57.2853 84.8678 57.2853C86.2916 57.2853 87.4462 58.4397 87.4462 59.8636C87.4463 61.2875 86.2917 62.4419 84.8678 62.4419ZM94.322 62.4419C92.8977 62.4419 91.7433 61.2875 91.7433 59.8636C91.7433 58.4397 92.8977 57.2853 94.322 57.2853C95.7458 57.2853 96.9002 58.4397 96.9002 59.8636C96.9002 61.2875 95.7458 62.4419 94.322 62.4419Z" fill="white"/>
-                                        <path d="M75.8667 71.9154C74.1397 70.4854 72.7783 68.8116 71.821 66.9405C70.8115 64.9678 70.2998 62.8693 70.2998 60.7034C70.2998 58.5375 70.8116 56.4391 71.821 54.4664C71.8982 54.3154 71.9791 54.1663 72.0616 54.0178C67.7986 56.4601 65 60.5363 65 65.1442C65 69.284 67.23 73.1223 71.126 75.7042C71.8455 78.533 70.1757 81.5257 70.1581 81.5563C70.0586 81.7318 70.0659 81.9484 70.177 82.1168C70.277 82.2686 70.446 82.3585 70.6253 82.3585C70.6452 82.3585 70.6649 82.3573 70.685 82.3551C72.6341 82.1386 76.0665 80.1576 78.6668 78.4872C79.5426 78.6061 80.4378 78.6662 81.331 78.6662C84.747 78.6662 87.9207 77.7926 90.5453 76.302C89.9589 76.349 89.3683 76.374 88.7795 76.374C83.9251 76.374 79.3393 74.7906 75.8667 71.9154Z" fill="white"/>
-                                        <defs>
-                                        <filter id="filter0_i" x="40" y="18" width="92" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feOffset dy="22"/>
-                                        <feGaussianBlur stdDeviation="20"/>
-                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-                                        </filter>
-                                        </defs>
-                                    </svg> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -247,25 +170,23 @@
                     <div class="contact-information-outer-box">
                         <div class="contact-information-inner-box">
                             <div class="contact-info-card">
-                                <p class="contact-info-card-title text-center">Email</p>
-                                <p class="contact-info-card-subtitle text-center">Customer Support:</p>
-                                <p class="contact-info-card-desc text-center">Support@dubaifitnesschallenge.com</p>
-                                <p class="contact-info-card-subtitle text-center">Business Queries:</p>
-                                <p class="contact-info-card-desc text-center">Contact@dubaifitnesschallenge.com</p>
+                                <p class="contact-info-card-title text-center">Marketplace Support</p>
+                                <p class="contact-info-card-subtitle text-center">Phone</p>
+                                <p class="contact-info-card-desc text-center">+971 55 814 9704</p>
+                                <p class="contact-info-card-subtitle text-center">Email</p>
+                                <p class="contact-info-card-desc text-center">suport@coredirection.com</p>
                             </div>
                             <div class="contact-info-card">
-                                <p class="contact-info-card-title text-center">Phone</p>
-                                <p class="contact-info-card-subtitle text-center">Customer Support:</p>
-                                <p class="contact-info-card-desc text-center">+971 2345 678901 -01-06</p>
-                                <p class="contact-info-card-subtitle text-center">Business Queries:</p>
-                                <p class="contact-info-card-desc text-center">+971 2345 678901 -01-06</p>
+                                <p class="contact-info-card-title text-center">Business Enquiries</p>
+                                <p class="contact-info-card-subtitle text-center">General Enquiries:</p>
+                                <p class="contact-info-card-desc text-center">info@coredirection.com</p>
+                                <p class="contact-info-card-subtitle text-center">Corporate Enquiries:</p>
+                                <p class="contact-info-card-desc text-center">corporate@coredirection.com</p>
                             </div>
                             <div class="contact-info-card">
-                                <p class="contact-info-card-title text-center">Address</p>
-                                <p class="contact-info-card-address-title text-center">D94 - Umm SuqeimJumeirah 3</p>
-                                <p class="contact-info-card-address-desc text-center">Dubai - United Arab Emirates</p>
-                                <p class="contact-info-card--address-title text-center">Monday - Saturday</p>
-                                <p class="contact-info-card-address-desc text-center">06:00:00 HRS - 11:00:00 HRS</p>
+                                <p class="contact-info-card-title text-center">PR & Marketing</p>
+                                <p class="contact-info-card-subtitle text-center">Email</p>
+                                <p class="contact-info-card-desc text-center">marketing@coredirection.com</p>
                             </div>
                         </div>
                     </div>
@@ -278,42 +199,36 @@
                     <h3 class="contact-us-title">Social Media Links</h3>
                     <div class="social-media-link-outer-box">
                         <div class="social-media-link-inner-box">
-                            <button class="contact-info-card">
+                            <a href="#" target="_blank" class="contact-info-card">
                                 <p class="contact-info-card-title text-center uppercase">Instagram</p>
                                 <svg class="mx-auto" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M35.1445 29.5C35.1445 32.6185 32.6166 35.1465 29.498 35.1465C26.3795 35.1465 23.8516 32.6185 23.8516 29.5C23.8516 26.3815 26.3795 23.8535 29.498 23.8535C32.6166 23.8535 35.1445 26.3815 35.1445 29.5Z" fill="#690FAD"/>
                                     <path d="M42.706 19.5096C42.4345 18.7741 42.0015 18.1083 41.4388 17.5619C40.8924 16.9992 40.2271 16.5662 39.4911 16.2947C38.8942 16.0629 37.9976 15.787 36.346 15.7118C34.5594 15.6303 34.0238 15.6128 29.5008 15.6128C24.9774 15.6128 24.4418 15.6299 22.6556 15.7114C21.0041 15.787 20.107 16.0629 19.5105 16.2947C18.7746 16.5662 18.1088 16.9992 17.5628 17.5619C17.0001 18.1083 16.5671 18.7736 16.2952 19.5096C16.0634 20.1065 15.7875 21.0036 15.7123 22.6551C15.6308 24.4413 15.6133 24.9769 15.6133 29.5003C15.6133 34.0233 15.6308 34.5589 15.7123 36.3455C15.7875 37.9971 16.0634 38.8937 16.2952 39.4906C16.5671 40.2266 16.9997 40.8919 17.5624 41.4383C18.1088 42.001 18.7741 42.434 19.5101 42.7055C20.107 42.9377 21.0041 43.2137 22.6556 43.2888C24.4418 43.3703 24.977 43.3874 29.5004 43.3874C34.0242 43.3874 34.5599 43.3703 36.3456 43.2888C37.9971 43.2137 38.8942 42.9377 39.4911 42.7055C40.9684 42.1356 42.1361 40.968 42.706 39.4906C42.9378 38.8937 43.2137 37.9971 43.2893 36.3455C43.3708 34.5589 43.3879 34.0233 43.3879 29.5003C43.3879 24.9769 43.3708 24.4413 43.2893 22.6551C43.2142 21.0036 42.9382 20.1065 42.706 19.5096ZM29.5008 38.1983C24.6965 38.1983 20.802 34.3042 20.802 29.4999C20.802 24.6956 24.6965 20.8015 29.5008 20.8015C34.3047 20.8015 38.1992 24.6956 38.1992 29.4999C38.1992 34.3042 34.3047 38.1983 29.5008 38.1983ZM38.5431 22.4904C37.4205 22.4904 36.5103 21.5802 36.5103 20.4576C36.5103 19.335 37.4205 18.4248 38.5431 18.4248C39.6658 18.4248 40.5759 19.335 40.5759 20.4576C40.5755 21.5802 39.6658 22.4904 38.5431 22.4904Z" fill="#690FAD"/>
                                     <path d="M29.5 0C13.2101 0 0 13.2101 0 29.5C0 45.7899 13.2101 59 29.5 59C45.7899 59 59 45.7899 59 29.5C59 13.2101 45.7899 0 29.5 0ZM46.3373 36.4838C46.2553 38.2871 45.9686 39.5182 45.55 40.5958C44.67 42.8712 42.8712 44.67 40.5958 45.55C39.5186 45.9686 38.2871 46.2549 36.4843 46.3373C34.6779 46.4196 34.1008 46.4395 29.5005 46.4395C24.8996 46.4395 24.323 46.4196 22.5162 46.3373C20.7134 46.2549 19.4818 45.9686 18.4046 45.55C17.2739 45.1246 16.2503 44.458 15.404 43.596C14.5425 42.7502 13.8758 41.7261 13.4505 40.5958C13.0318 39.5186 12.7451 38.2871 12.6632 36.4843C12.5799 34.6774 12.5605 34.1004 12.5605 29.5C12.5605 24.8996 12.5799 24.3226 12.6627 22.5162C12.7447 20.7129 13.0309 19.4818 13.4496 18.4042C13.8749 17.2739 14.542 16.2498 15.404 15.404C16.2498 14.542 17.2739 13.8754 18.4042 13.45C19.4818 13.0314 20.7129 12.7451 22.5162 12.6627C24.3226 12.5804 24.8996 12.5605 29.5 12.5605C34.1004 12.5605 34.6774 12.5804 36.4838 12.6632C38.2871 12.7451 39.5182 13.0314 40.5958 13.4496C41.7261 13.8749 42.7502 14.542 43.5964 15.404C44.458 16.2503 45.1251 17.2739 45.55 18.4042C45.9691 19.4818 46.2553 20.7129 46.3377 22.5162C46.4201 24.3226 46.4395 24.8996 46.4395 29.5C46.4395 34.1004 46.4201 34.6774 46.3373 36.4838Z" fill="#690FAD"/>
                                 </svg>
-                                <p class="contact-info-card-social-address-desc text-center">@dubaifitnesschallenge</p>
-                            </button>
+                            </a>
 
-                            <button class="contact-info-card">
+                            <a href="#" target="_blank" class="contact-info-card">
                                 <p class="contact-info-card-title text-center uppercase">Facebook</p>
                                 <svg class="mx-auto" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M59 29.5C59 13.2059 45.7941 0 29.5 0C13.2059 0 0 13.2059 0 29.5C0 45.7941 13.2059 59 29.5 59C29.6729 59 29.8457 59 30.0186 58.9885V36.0338H23.6807V28.6473H30.0186V23.2082C30.0186 16.9049 33.8674 13.4709 39.4908 13.4709C42.1873 13.4709 44.5035 13.6668 45.1719 13.759V20.3504H41.3C38.2463 20.3504 37.6471 21.8023 37.6471 23.9342V28.6357H44.9645L44.008 36.0223H37.6471V57.8592C49.9771 54.3215 59 42.9709 59 29.5Z" fill="#690FAD"/>
                                 </svg>
-                                <p class="contact-info-card-social-address-desc text-center">www.facebook.com
-                                    /dubaifitnesschallenge</p>
-                            </button>
+                            </a>
 
-                            <button class="contact-info-card">
+                            <a href="#" target="_blank" class="contact-info-card">
                                 <p class="contact-info-card-title text-center uppercase">Twitter</p>
                                 <svg class="mx-auto" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M29.5 0C13.2101 0 0 13.2101 0 29.5C0 45.7899 13.2101 59 29.5 59C45.7899 59 59 45.7899 59 29.5C59 13.2101 45.7899 0 29.5 0ZM42.9694 23.001C42.9824 23.2913 42.9887 23.583 42.9887 23.876C42.9887 32.8233 36.1782 43.1409 23.7234 43.1413H23.7239H23.7234C19.8995 43.1413 16.3412 42.0205 13.3447 40.0998C13.8745 40.1623 14.4137 40.1934 14.9598 40.1934C18.1323 40.1934 21.0519 39.1113 23.3696 37.295C20.4055 37.2401 17.9063 35.2824 17.0439 32.592C17.4567 32.6712 17.8811 32.7144 18.3164 32.7144C18.9344 32.7144 19.5331 32.6311 20.1021 32.4758C17.0038 31.8556 14.6699 29.1174 14.6699 25.8386C14.6699 25.808 14.6699 25.7805 14.6708 25.7522C15.5832 26.2595 16.6266 26.5647 17.7375 26.5989C15.9194 25.3858 14.7243 23.312 14.7243 20.9628C14.7243 19.7222 15.0597 18.5599 15.6413 17.5593C18.9804 21.6564 23.9706 24.3509 29.5981 24.634C29.482 24.138 29.4221 23.6212 29.4221 23.0901C29.4221 19.3522 32.4547 16.3196 36.1939 16.3196C38.1417 16.3196 39.9008 17.1429 41.1364 18.4591C42.679 18.1548 44.1276 17.5912 45.4361 16.8157C44.9297 18.3961 43.8566 19.7222 42.4585 20.5608C43.8282 20.3969 45.1336 20.0337 46.3467 19.4944C45.4406 20.8525 44.2914 22.0453 42.9694 23.001Z" fill="#690FAD"/>
                                 </svg>
-                                <p class="contact-info-card-social-address-desc text-center">@dubaifitnesschallenge</p>
-                            </button>
+                            </a>
                             
-                            <button class="contact-info-card">
+                            <a href="#" target="_blank" class="contact-info-card">
                                 <p class="contact-info-card-title text-center uppercase">Youtube</p>
                                 <svg class="mx-auto" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25.8242 35.0266L35.4202 29.4999L25.8242 23.9731V35.0266Z" fill="#690FAD"/>
                                     <path d="M29.5 0C13.2101 0 0 13.2101 0 29.5C0 45.7899 13.2101 59 29.5 59C45.7899 59 59 45.7899 59 29.5C59 13.2101 45.7899 0 29.5 0ZM47.933 29.5302C47.933 29.5302 47.933 35.5129 47.1741 38.3978C46.7487 39.9769 45.5036 41.2219 43.9246 41.6469C41.0396 42.4062 29.5 42.4062 29.5 42.4062C29.5 42.4062 17.9905 42.4062 15.0754 41.6167C13.4964 41.1918 12.2513 39.9463 11.8259 38.3672C11.0666 35.5129 11.0666 29.5 11.0666 29.5C11.0666 29.5 11.0666 23.5177 11.8259 20.6328C12.2509 19.0537 13.5265 17.7781 15.0754 17.3531C17.9604 16.5938 29.5 16.5938 29.5 16.5938C29.5 16.5938 41.0396 16.5938 43.9246 17.3833C45.5036 17.8082 46.7487 19.0537 47.1741 20.6328C47.9636 23.5177 47.933 29.5302 47.933 29.5302Z" fill="#690FAD"/>
                                 </svg>
-                                    <p class="contact-info-card-social-address-desc text-center">www.youtube.com/c
-                                        /dubaifitnesschallnge</p>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
