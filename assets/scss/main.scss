@@ -6821,7 +6821,7 @@ button:focus {
 }
 .contact-information-inner-box{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(372px, 372px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 372px));
     justify-content: center;
     column-gap: 19px;
     row-gap: 19px;
@@ -6865,12 +6865,12 @@ button:focus {
     line-height: 44px;
     margin-bottom: 56px;
     margin-top: 120px;
+    text-align: center;
     @media screen and (min-width: 992px) {
         font-size: 36px;
-        text-align: center;
     }
     @media screen and (max-width: 991px) {
-        font-size: 18px;
+        font-size: 26px;
         line-height: 22px;
     }
 }
