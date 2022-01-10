@@ -9772,15 +9772,15 @@ button:focus {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         align-items: center;
         justify-content: center;
-        column-gap: 1rem;
-        row-gap: 1rem;
+        column-gap: 2.3rem;
+        row-gap: 2.3rem;
         margin-top: 50px;
     }
     .img-box{
         img{
-            max-height: 107px;
+            // max-height: 107px;
             margin: auto;
-            max-width: 160px;
+            // max-width: 160px;
         }
     }
 }

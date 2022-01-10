@@ -9776,15 +9776,13 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
-  row-gap: 1rem;
+  -webkit-column-gap: 2.3rem;
+          column-gap: 2.3rem;
+  row-gap: 2.3rem;
   margin-top: 50px;
 }
 #brand .img-box img {
-  max-height: 107px;
   margin: auto;
-  max-width: 160px;
 }
 
 #location-details .modal-outer-box {
