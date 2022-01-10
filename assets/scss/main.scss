@@ -6231,6 +6231,18 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(#690fad, .45);
+    }
 
     @media screen and (min-width: 992px) {
         min-height: 50vh;
@@ -6261,6 +6273,7 @@ button:focus {
             font-size: 48px;
             color: $colorWhite;
             max-width: 550px;
+            position: relative;
 
             @media screen and (max-width: 991px) {
                 font-size: 36px;
@@ -6274,6 +6287,7 @@ button:focus {
             font-weight: 400;
             line-height: 22px;
             max-width: 550px;
+            position: relative;
             @media screen and (max-width: 991px) {
                 font-size: 12px;
             }
@@ -6281,6 +6295,8 @@ button:focus {
     }
 }
 #customer-support{
+    position: relative;
+    z-index: 999;
     .customer-support-box-container{
         // max-width: 1152px;
         max-width: 768px;
@@ -6462,7 +6478,8 @@ button:focus {
         padding: 37px 50px 44px;
 
         &:hover{
-            background: linear-gradient(159.67deg, rgba(242,245,234,1) 0%, rgba(105,15,173,1) 45%, rgba(105,15,173,1) 55%, rgba(242,245,234,1) 100%);
+            // background: linear-gradient(159.67deg, rgba(242,245,234,1) 0%, rgba(105,15,173,1) 45%, rgba(105,15,173,1) 55%, rgba(242,245,234,1) 100%);
+            background: linear-gradient(159.67deg, rgba(105, 15, 173, 0.85) 1.55%, rgba(202, 168, 245, 0.85) 106.93%);
             p{
                 color: $colorWhite;
             }

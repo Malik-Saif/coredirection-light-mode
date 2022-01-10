@@ -6070,6 +6070,17 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#contact-us-banner::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(105, 15, 173, 0.45);
 }
 @media screen and (min-width: 992px) {
   #contact-us-banner {
@@ -6102,6 +6113,7 @@ button:focus {
   font-size: 48px;
   color: #FFFFFF;
   max-width: 550px;
+  position: relative;
 }
 @media screen and (max-width: 991px) {
   #contact-us-banner .custom-container .contact-us-hero-title {
@@ -6115,6 +6127,7 @@ button:focus {
   font-weight: 400;
   line-height: 22px;
   max-width: 550px;
+  position: relative;
 }
 @media screen and (max-width: 991px) {
   #contact-us-banner .custom-container .contact-us-hero-desc {
@@ -6122,6 +6135,10 @@ button:focus {
   }
 }
 
+#customer-support {
+  position: relative;
+  z-index: 999;
+}
 #customer-support .customer-support-box-container {
   max-width: 768px;
   margin-left: auto;
@@ -6309,7 +6326,7 @@ button:focus {
   padding: 37px 50px 44px;
 }
 .social-media-link-inner-box .contact-info-card:hover {
-  background: linear-gradient(159.67deg, #f2f5ea 0%, #690fad 45%, #690fad 55%, #f2f5ea 100%);
+  background: linear-gradient(159.67deg, rgba(105, 15, 173, 0.85) 1.55%, rgba(202, 168, 245, 0.85) 106.93%);
 }
 .social-media-link-inner-box .contact-info-card:hover p {
   color: #FFFFFF;
