@@ -6317,9 +6317,6 @@ button:focus {
 .social-media-link-inner-box .contact-info-card:hover svg, .social-media-link-inner-box .contact-info-card:hover path {
   fill: #FFFFFF;
 }
-.social-media-link-inner-box .contact-info-card svg, .social-media-link-inner-box .contact-info-card img {
-  margin-bottom: 28px;
-}
 
 .contact-us-title {
   font-family: 'Montserrat', sans-serif;
