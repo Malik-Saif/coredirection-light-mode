@@ -6091,6 +6091,7 @@ button:focus {
 @media screen and (max-width: 991px) {
   #contact-us-banner {
     min-height: 440px;
+    background-position: right center;
   }
 }
 @media screen and (min-width: 992px) {
