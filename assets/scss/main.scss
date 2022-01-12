@@ -10060,7 +10060,9 @@ button:focus {
             }
 
             img {
-                width: 190px;
+                width: 100%;
+                max-width: 190px;
+                margin-bottom: 38px;
             }
 
             p {

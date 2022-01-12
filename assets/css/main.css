@@ -10094,7 +10094,9 @@ button:focus {
   }
 }
 #footer .custom-container .info img {
-  width: 190px;
+  width: 100%;
+  max-width: 190px;
+  margin-bottom: 38px;
 }
 #footer .custom-container .info p {
   font-family: 'Roboto', sans-serif;
