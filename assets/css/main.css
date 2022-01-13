@@ -1092,6 +1092,43 @@ button:focus {
   fill: #FFFFFF;
 }
 
+.field-control-box {
+  position: relative;
+}
+.field-control-box .form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+.field-control-box .form-label .field-primary {
+  color: red;
+}
+.field-control-box .form-control {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  padding: 11px 5px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding-right: 34px;
+}
+.field-control-box svg {
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+}
+
 .form-group {
   display: block;
   padding-left: 36px;
@@ -3946,7 +3983,7 @@ button:focus {
 #reset-password-modal .btn-signIn-instead,
 #password-reset-confirmation-modal .btn-signIn-instead {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 14.63px;
 }
@@ -4098,6 +4135,7 @@ button:focus {
 
 #calendar {
   margin-top: 14px;
+  margin-bottom: 46px;
 }
 #calendar .calendar-header {
   margin-top: 22px;
