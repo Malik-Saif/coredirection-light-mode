@@ -415,7 +415,6 @@ button:focus {
   max-width: 27px;
 }
 .card .card-body .distance-box {
-  margin-right: -6px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -6913,8 +6912,13 @@ button:focus {
     font-size: 14px;
   }
 }
+#sign-up .social-link img {
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 20px 40px 0px #0000001a;
+          box-shadow: 0px 20px 40px 0px #0000001a;
+}
 #sign-up .signup-options {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;

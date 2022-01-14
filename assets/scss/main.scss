@@ -443,7 +443,7 @@ button:focus {
         }
 
         .distance-box {
-            margin-right: -6px;
+            // margin-right: -6px;
             justify-content: flex-end;
         }
 
@@ -7035,8 +7035,12 @@ button:focus {
             font-size: 14px;
         }
     }
+    .social-link img{
+        border-radius: 30px;
+        box-shadow: 0px 20px 40px 0px #0000001a;
+    }
     .signup-options{
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
