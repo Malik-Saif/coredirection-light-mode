@@ -16,7 +16,11 @@ body {
     background-color: $colorWhiteSmoke;
     overflow-x: hidden;
 }
-
+/* image-rendering */
+audio, canvas, embed, iframe, img, object, svg, video {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
     input[type='radio'] {
         --active: #690FAD;
@@ -6591,6 +6595,8 @@ button:focus {
 }
 
 #page-not-found{
+    padding-top: 50px;
+    padding-bottom: 50px;
     .custome-container{
         min-height: 100vh;
         height: 100%;
