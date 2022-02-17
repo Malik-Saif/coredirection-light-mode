@@ -361,13 +361,18 @@
 
             <!-- cart -->
             <section id="cart">
-                <div class="container">
+                <div class="custom-container">
                     <div class="cart-header mx-auto">
                         <div class="progress-bar">
+                            <div class="package-detail-tab progress-status-box done">
+                                <div class="progress-status">
+                                </div>
+                                <button class="progress-status-label"><span class="first-word">Enter</span> Details</button>
+                            </div>
                             <div class="package-membership-tab progress-status-box active">
                                 <div class="progress-status">
                                 </div>
-                                <button class="progress-status-label">Select package</button>
+                                <button class="progress-status-label"><span class="first-word">Select</span> Packages</button>
                             </div>
                             <div class="booking-history-tab progress-status-box">
                                 <div class="progress-status">
@@ -549,12 +554,10 @@
                     </div>
 
                     <div class="cart-footer mx-auto">
-                        <button class="btn-back">
-                            <svg class="mr-2" width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.14355 2.31191C6.43407 2.03175 6.43519 1.57644 6.14603 1.29495C5.85684 1.01338 5.38688 1.01241 5.09639 1.29251L1.21832 5.03185L1.21765 5.03253L1.14894 6.12324L1.14947 6.12375L5.02702 9.86259C5.35641 10.1802 5.88793 10.179 6.21582 9.85981C6.54545 9.53892 6.54416 9.01856 6.213 8.69921L6.14358 8.7712L6.21299 8.69921L3.78762 6.36066H19.2578C19.7199 6.36066 20.1 5.9969 20.1 5.54155C20.1 5.08621 19.7199 4.72245 19.2578 4.72245H3.78765L6.21296 2.38389L6.14355 2.31191ZM6.14355 2.31191L6.21296 2.38389C6.54412 2.06454 6.54541 1.54419 6.21579 1.2233C5.88788 0.904042 5.35632 0.90297 5.02698 1.22052L1.15356 4.9554M6.14355 2.31191L1.15356 4.9554M1.15356 4.9554L1.1489 4.95986L1.15356 4.9554ZM1.14813 4.96065L1.14884 4.95992L1.14813 4.96065ZM1.14813 4.96065C0.817204 5.28067 0.817816 5.80156 1.14673 6.12107L1.14813 4.96065Z" fill="black" stroke="black" stroke-width="0.2"/>
-                            </svg> 
-                            Keep Browsing
-                        </button>
+                        <div class="cart-footer-inner-box">
+                            <button class="btn-cancel">Cancel</button>
+                            <button class="btn-proceed">Proceed </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -646,9 +649,6 @@
                     <ul>
                         <li class="mb-2">
                             <a href="./activity-listing.html">Activity Listings</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="./faqs.html">FAQ Guides</a>
                         </li>
                         <li class="mb-2">
                             <a href="./industryPartner.html">Partner with Us</a>

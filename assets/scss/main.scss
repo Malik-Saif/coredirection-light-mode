@@ -8272,8 +8272,8 @@ button:focus {
         align-items: center;
         height: 193px;
         max-width: 844px;
-        padding-left:70px;
-        padding-right:70px;
+        padding-left:60px;
+        padding-right:60px;
         background: $colorWhite;
         margin-bottom: 13px;
         border-radius: 21px;
@@ -8294,7 +8294,7 @@ button:focus {
                 width: 100%;
                 max-width: 604px;
                 height: 2px;
-                background-color: #F1F1F1;
+                background-color: #CAA8F5;
                 border-radius: 2px;
                 margin-left: auto;
                 margin-right: auto;
@@ -8323,6 +8323,13 @@ button:focus {
                 background: $primaryColor;
                 border-radius: 50%;
                 margin-top: -4px;
+                @media screen and (max-width: 767px){
+                    min-width: 6px;
+                    min-height: 6px;
+                    max-width: 6px;
+                    max-height: 6px;
+                    margin-top: -2px;
+                }
             }
             .progress-status-box.done{
                 .progress-status{
@@ -8354,6 +8361,23 @@ button:focus {
                         transform: rotate( 
                     225deg);
                     }
+                    @media screen and (max-width: 767px){
+                        min-width: 18px;
+                        min-height: 18px;
+                        max-width: 18px;
+                        max-height: 18px;
+                        margin-top: -9px;
+                        &::before {
+                            left: -7px;
+                            right: -8px;
+                            top: -5px;
+                        }
+                        &::after {
+                            left: -16px;
+                            right: -5px;
+                            top: -13px;
+                        }
+                    }
                 }
             }
             .progress-status-box.active{
@@ -8365,6 +8389,17 @@ button:focus {
                     min-height: 32px;
                     max-width: 32px;
                     max-height: 32px;
+                    @media screen and (max-width: 767px){
+                        border: 5px solid $primaryColor;
+                        min-width: 18px;
+                        min-height: 18px;
+                        max-width: 18px;
+                        max-height: 18px;
+                        margin-top: -9px;
+                    }
+                }
+                .progress-status-label{
+                    border-color: $primaryColor;
                 }
             }
             .progress-status{
@@ -8381,6 +8416,21 @@ button:focus {
                 line-height: 17px;
                 letter-spacing: 0em;
                 text-align: left;
+                text-transform: uppercase;
+                @media screen and (max-width: 767px){
+                    font-size: 12px;
+                    border-bottom: 3px solid transparent;
+                    border-radius: 2px;
+                    padding-bottom: 11px;
+                }
+                @media screen and (max-width: 375px){
+                    font-size: 9px;
+                }
+            }
+            @media screen and (max-width: 767px){
+                .first-word{
+                    display: none;
+                }
             }
         }
     }
@@ -8413,6 +8463,9 @@ button:focus {
             letter-spacing: 0em;
             text-align: left;
             margin-bottom: 19px;
+            @media screen and (max-width: 767px){
+                font-size: 14px;
+            }
         }
         .choose-package-box .btn-package-buy,
         .gift-code-box .btn-package-buy{
@@ -8702,6 +8755,9 @@ button:focus {
         padding: 78px 38px 105px;
         background-color: $colorWhite;
         border-radius: 11px 11px 21px 21px;
+        @media screen and (max-width: 767px){
+            padding: 28px 16px 45px;
+        }
         .success-message-title{
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
@@ -8734,7 +8790,8 @@ button:focus {
             text-align: center;
             border-radius: 11px;
             display: block;
-            width: 252px;
+            width: 100%;
+            max-width: 252px;
             height: 37px;
         }
         .btn-share{
@@ -8749,44 +8806,52 @@ button:focus {
     }
 
     .cart-footer{
-        margin-top: 27px;
+        margin-top: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         max-width: 844px;
-        .btn-back,.btn-next{
+        @media screen and (max-width: 767px){
+            margin-top: 71px;
+        }
+        .cart-footer-inner-box{
+            width: 100%;
+            max-width: 444px;
+            margin: auto;
             display: flex;
-            align-items: baseline;
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .btn-cancel,.btn-proceed{
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
             font-style: normal;
-            font-weight: 700;
-            line-height: 16px;
+            font-weight: 600;
+            line-height: 20px;
             letter-spacing: 0em;
-            text-align: center;
-            margin-bottom: 0;
-        }
-        .btn-back{
-            @media screen and (min-width: 992px){
-                padding: 14px 21px 15px;
+            text-align: left;
+            padding: 11px 61px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            box-shadow: 0px 2px 4px 0px #00000040;
+            @media screen and (max-width: 767px){
+                padding: 11px 50px;
             }
-            @media screen and (max-width: 991px){
-                padding: 14px 10px 15px;
-            }
         }
-        .btn-next{
-            padding: 14px 21px 15px;
+        .btn-cancel{
+            color: $colorBlack;
             background-color: $colorWhite;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            &:hover{
-                background-color: $primaryColor;
-                color: $colorWhite;
-                svg,path{
-                    fill: $colorWhite;
-                }
-            }
+        }
+        .btn-proceed{
+            color: $colorWhite;
+            background-color: $primaryColor;
         }
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
-    <title>Cart | Core Direction</title>
+    <title>Cart-Enter Details | Core Direction</title>
     <link rel="stylesheet" href="public/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -364,17 +364,17 @@
                 <div class="custom-container">
                     <div class="cart-header mx-auto">
                         <div class="progress-bar">
-                            <div class="package-detail-tab progress-status-box done">
+                            <div class="package-detail-tab progress-status-box active">
                                 <div class="progress-status">
                                 </div>
                                 <button class="progress-status-label"><span class="first-word">Enter</span> Details</button>
                             </div>
-                            <div class="package-membership-tab progress-status-box done">
+                            <div class="booking-history-tab progress-status-box">
                                 <div class="progress-status">
                                 </div>
-                                <button class="progress-status-label"><span class="first-word">Select</span> package</button>
+                                <button class="progress-status-label"><span class="first-word">Select</span> Packages</button>
                             </div>
-                            <div class="booking-history-tab progress-status-box active">
+                            <div class="booking-history-tab progress-status-box">
                                 <div class="progress-status">
                                 </div>
                                 <button class="progress-status-label">Payment</button>
@@ -388,121 +388,166 @@
                     </div>
 
                     <div class="cart-body mx-auto">
-                        <div class="payment">
-                            <div class="cart-item-box">
-                                <div class="card-item">
-                                    <div class="cart-item-header">
-                                        <p>selected</p>
-                                        <p>price</p>
+                        <div class="select-package-box">
+                            <div class="choose-package-box">
+                                <p class="select-package-title">Choose from your already purchased packages</p>
+                                <div class="package-card-box select-package-section">
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Core PAss</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">Purchased</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <p class="session-available">Session <br>
+                                            available 5/10</p>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
+                                            </div>
+                                            <button class="btn-package-buy">Use</button>
+                                        </div>
                                     </div>
-                                    <div class="cart-item-body">
-                                        <p class="cart-item-title">1 Class Pass</p>
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">Package Type</p>
-                                                <p class="cart-item-info-title">Package</p>
-                                            </div>
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">Payment Type</p>
-                                                <p class="cart-item-info-title">Once Off Purchase</p>
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Core PAss</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">Purchased</p>
                                             </div>
                                         </div>
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">No. of Sessions</p>
-                                                <p class="cart-item-info-title">1</p>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <p class="session-available">Session <br>
+                                            available 5/10</p>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
                                             </div>
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">Validity</p>
-                                                <p class="cart-item-info-title">30 Days</p>
-                                            </div>
+                                            <button class="btn-package-buy">Use</button>
                                         </div>
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">Valid From</p>
-                                                <p class="cart-item-info-title">Tue, 16 January 2021</p>
-                                            </div>
-                                            <div class="cart-item-info-box">
-                                                <p class="cart-item-info-label">Valid To</p>
-                                                <p class="cart-item-info-title">Wed, 17 February 2021</p>
-                                            </div>
-                                        </div>
-                                        <p class="cart-item-package-title">Package Description</p>
-                                        <p class="cart-item-package-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                    </div>
-                                    <div class="cart-item-footer">
-                                        <p class="cart-item-notice flex items-center">
-                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="#690FAD"/>
-                                                <path d="M6.3829 5.40783C7.15134 5.40783 7.52112 5.81228 7.42868 6.56917C7.3709 7.04872 7.18023 7.49361 7.06468 7.96161C7.01268 8.18695 6.94912 8.4065 6.90868 8.63761C6.85668 8.94384 6.98379 9.09406 7.29001 9.11717C7.40557 9.12295 7.52112 9.10561 7.63668 9.11139C7.71757 9.11717 7.84468 9.00161 7.87934 9.15184C7.90823 9.26161 7.86779 9.38295 7.76957 9.46384C7.38246 9.78162 6.36557 9.88561 5.9149 9.64873C5.56824 9.46961 5.40646 9.16917 5.44112 8.7705C5.48735 8.22739 5.69535 7.72472 5.82823 7.20472C5.88601 6.97361 5.97268 6.7425 5.97846 6.49983C5.99001 6.17628 5.87446 6.0665 5.5509 6.0665C5.47579 6.0665 5.3949 6.08961 5.31979 6.08383C5.22157 6.07806 5.07135 6.2225 5.0309 6.05494C5.00201 5.91628 5.05401 5.74872 5.2389 5.68517C5.61446 5.55228 5.97846 5.39628 6.3829 5.40783Z" fill="#690FAD"/>
-                                                <path d="M7.99544 4.01526C7.99544 4.44859 7.59678 4.80681 7.13455 4.79526C6.68389 4.7837 6.291 4.4197 6.28522 4.01526C6.27944 3.59348 6.67811 3.2237 7.14611 3.2237C7.61411 3.21792 7.99544 3.57615 7.99544 4.01526Z" fill="#690FAD"/>
-                                            </svg> 
-                                            This purchase will recur every XX days.
-                                        </p>
-                                        <p class="cart-item-footer-title">Total</p>
-                                        <p class="cart-item-footer-price">100.00 AED</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="cart-payment-box">
-                                <ul class="payment-option-list">
-                                    <li class="payment-option-item">
-                                        <input id="my-card" type="radio" name="radio" value="1">
-                                        <label for="my-card">My card</label>
-                                    </li>
-                                    <li class="payment-option-item">
-                                        <input id="credit-card" type="radio" name="radio" value="2" checked>
-                                        <label for="credit-card">Credit card</label>
-                                    </li>
-                                </ul>
-                                <p class="cart-payment-title">Payment information</p>
-                                <div class="add-payment-info-box">
-                                    <div class="form-control-box">
-                                        <label for="card-holder-name" class="form-label block">name on card</label>
-                                        <input type="text" class="form-control block" id="card-holder-name" placeholder="Clifford Tindell">
-                                    </div>
-                                    <div class="form-control-box">
-                                        <label for="card-holder-email" class="form-label block">Email</label>
-                                        <input type="text" class="form-control block" id="card-holder-email" placeholder="XX-XXX-XXX-XX">
-                                    </div>
-                                    <div class="form-control-box">
-                                        <label for="card-info" class="form-label block">Card information</label>
-                                        <input type="text" class="form-control block" id="card-info" placeholder="XX-XXX-XXX-XX">
-                                    </div>
-                                    <div class="grid grid-cols-2 gap-4">
-                                        <div class="form-control-box">
-                                            <label for="card-expiry-date" class="form-label block">Expiry Date</label>
-                                            <input type="text" class="form-control block" id="card-expiry-date" placeholder="DD-YY">
+                            <div class="gift-code-box">
+                                <p class="select-package-title">Redeem with a Gift Code or Corporate Key</p>
+                                <div class="package-card-box select-package-section">
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <div class="package-header-info-box">
+                                                <p class="package-name">gift code / corporate key</p>
+                                                <p class="gift-code-desc">Enter your code below to redeem your membership or package .</p>
+                                            </div>
                                         </div>
-                                        <div class="form-control-box">
-                                            <label for="card-cvc" class="form-label block">CVc</label>
-                                            <input type="text" class="form-control block" id="card-cvc">
+                                        <div class="package-footer">
+                                            <input class="form-control" type="text" placeholder="XX-XXX-XXX-XX">
+                                            <button class="btn-package-buy">Redeem</button>
                                         </div>
                                     </div>
-                                    <ul class="payment-mode-list flex items-center mt-3">
-                                        <li class="paymment-mode-item mr-auto">
-                                            <img src="./assets/images/payment-icons/payment-01.png" alt="">
-                                        </li>
-                                        <li class="paymment-mode-item mr-1">
-                                            <img src="./assets/images/payment-icons/payment-02.png" alt="">
-                                        </li>
-                                        <li class="paymment-mode-item mr-1">
-                                            <img src="./assets/images/payment-icons/payment-03.png" alt="">
-                                        </li>
-                                        <li class="paymment-mode-item mr-1">
-                                            <img src="./assets/images/payment-icons/payment-04.png" alt="">
-                                        </li>
-                                        <li class="paymment-mode-item">
-                                            <img src="./assets/images/payment-icons/payment-05.png" alt="">
-                                        </li>
-                                    </ul>
-                                    <div class="checkbox-field-box mt-5 mb-2">
-                                        <div class="form-group">
-                                            <input type="checkbox" id="promotionalEmail">
-                                            <label for="promotionalEmail">Save information to pay faster next time</label>
+                                </div>
+                            </div>
+                            <div class="new-package-box">
+                                <p class="select-package-title">Buy a new package to continue</p>
+                                <div class="package-card-box select-package-section">
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Package Name</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">99.99 AED</p>
+                                                <p class="package-prev-price">150.00 AED</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
+                                            </div>
+                                            <button class="btn-package-buy">Buy</button>
                                         </div>
                                     </div>
-                                    <p class="stripe-info">Use Link with Stripe to securely save your payment information and pay faster on future purchases with Core Direction and other supporting sites. You’ll receive a verification text to get started.</p>
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Package Name</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">99.99 AED</p>
+                                                <p class="package-prev-price">150.00 AED</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
+                                            </div>
+                                            <button class="btn-package-buy">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Package Name</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">99.99 AED</p>
+                                                <p class="package-prev-price">150.00 AED</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
+                                            </div>
+                                            <button class="btn-package-buy">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div class="package-card">
+                                        <div class="package-header">
+                                            <p class="package-name">Package Name</p>
+                                            <div class="package-header-info-box">
+                                                <p class="package-current-price">99.99 AED</p>
+                                                <p class="package-prev-price">150.00 AED</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-package-detail flex items-center">
+                                            <svg class="mr-2" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.28 13C6.76 13 6.24 13 5.72 13C5.66222 12.9884 5.61022 12.9711 5.55244 12.9653C3.79022 12.6822 2.36311 11.8387 1.28267 10.4231C0.566222 9.49289 0.179111 8.42978 0 7.28C0 6.74267 0 6.19956 0 5.66222C0.0288889 5.52933 0.0577778 5.40222 0.0866667 5.26933C0.427556 3.54756 1.32311 2.184 2.74444 1.16133C3.63422 0.52 4.64533 0.173333 5.72 0C6.24 0 6.76 0 7.28 0C7.33778 0.0115556 7.38978 0.0288889 7.44756 0.0404444C9.81067 0.456444 11.492 1.75067 12.4916 3.92889C12.7631 4.51244 12.8844 5.14222 13 5.77778C13 6.28044 13 6.77733 13 7.28C12.9827 7.36667 12.9653 7.44756 12.948 7.53422C12.6187 9.36 11.7 10.816 10.1804 11.8849C9.308 12.4973 8.32578 12.8267 7.28 13ZM6.5 12.3818C9.78756 12.3356 12.376 9.71822 12.376 6.52311C12.376 3.42044 9.93778 0.589333 6.46533 0.618222C3.07956 0.647111 0.652889 3.30489 0.618222 6.35556C0.577778 9.74711 3.24711 12.428 6.5 12.3818Z" fill="black"></path>
+                                                <path d="M6.38485 5.40783C7.1533 5.40783 7.52308 5.81228 7.43063 6.56917C7.37285 7.04872 7.18219 7.49361 7.06663 7.96161C7.01463 8.18695 6.95108 8.4065 6.91063 8.63761C6.85863 8.94384 6.98574 9.09406 7.29196 9.11717C7.40752 9.12295 7.52307 9.10561 7.63863 9.11139C7.71952 9.11717 7.84663 9.00161 7.8813 9.15184C7.91019 9.26161 7.86974 9.38295 7.77152 9.46384C7.38441 9.78162 6.36752 9.88561 5.91685 9.64873C5.57019 9.46961 5.40841 9.16917 5.44308 8.7705C5.4893 8.22739 5.6973 7.72472 5.83019 7.20472C5.88797 6.97361 5.97463 6.7425 5.98041 6.49983C5.99197 6.17628 5.87641 6.0665 5.55285 6.0665C5.47774 6.0665 5.39686 6.08961 5.32174 6.08383C5.22352 6.07806 5.0733 6.2225 5.03286 6.05494C5.00397 5.91628 5.05597 5.74872 5.24086 5.68517C5.61641 5.55228 5.98041 5.39628 6.38485 5.40783Z" fill="black"></path>
+                                                <path d="M7.99642 4.01526C7.99642 4.44859 7.59775 4.80681 7.13553 4.79526C6.68486 4.7837 6.29197 4.4197 6.28619 4.01526C6.28042 3.59348 6.67908 3.2237 7.14708 3.2237C7.61509 3.21792 7.99642 3.57615 7.99642 4.01526Z" fill="black"></path>
+                                            </svg> View Package Details</button>
+                                        <div class="package-footer">
+                                            <div class="package-footer-info-box">
+                                                <p class="class-pass">1 Class Pass</p>
+                                                <p class="package-validity">Validity: 30 days</p>
+                                            </div>
+                                            <button class="btn-package-buy">Buy</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -632,99 +677,6 @@
                 Copyright© (2021). Core Direction Holding Ltd. All right reserved
             </p>
         </footer>
-    </div>
-
-
-    <!-- signin-modal -->
-    <div id="signin-modal" class="custom-modal m-auto hidden">
-        <div class="modal-center">
-            <div class="modal-outer-box">
-                <div class="modal-inner-box">
-                    <div class="modal-header">
-                        <div class="btn-modal-close ml-auto">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.7336 5.26685C23.7103 -1.75497 12.2885 -1.75497 5.2652 5.26685C-1.75507 12.2887 -1.75507 23.7135 5.2652 30.7353C8.77685 34.2455 13.3885 35.9997 18.0002 35.9997C22.6119 35.9997 27.222 34.2454 30.7336 30.7353C37.7555 23.7135 37.7555 12.2887 30.7336 5.26685ZM25.4271 23.3068C26.0139 23.8936 26.0139 24.842 25.4271 25.4288C25.1345 25.7214 24.7503 25.8685 24.3661 25.8685C23.982 25.8685 23.5977 25.7214 23.3051 25.4288L18.0001 20.1223L12.6966 25.4272C12.4025 25.7199 12.0183 25.867 11.6356 25.867C11.2515 25.867 10.8672 25.7199 10.5746 25.4272C9.98785 24.8405 9.98785 23.8905 10.5746 23.3053L15.8781 18.0003L10.5731 12.6953C9.98637 12.1086 9.98637 11.1586 10.5731 10.5734C11.1584 9.98661 12.1083 9.98661 12.6951 10.5734L18.0001 15.8783L23.305 10.5734C23.8918 9.98661 24.8402 9.98661 25.427 10.5734C26.0137 11.1586 26.0137 12.1086 25.427 12.6953L20.122 18.0003L25.4271 23.3068Z" fill="black"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="modal-body px-5">
-                        <div class="form-container mx-auto">
-                            <h3 class="modal-title text-center mt-10">Sign in</h3>
-                            <p class="modal-desc text-center my-10">Sign in to your account</p>
-                            <!-- <form action=""> -->
-                            <div class="email-field-box mb-6">
-                                <div class="field-control-box">
-                                    <label for="signInEmail" class="form-label block">Email</label>
-                                    <input id="signInEmail" type="email" placeholder="Enter Your Email" class="form-control block cool border-b-1 border-black" />
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M17.9246 13.5754C16.7811 12.4318 15.4198 11.5853 13.9346 11.0726C15.5252 9.97705 16.5703 8.14365 16.5703 6.07031C16.5703 2.72303 13.8473 0 10.5 0C7.15271 0 4.42969 2.72303 4.42969 6.07031C4.42969 8.14365 5.47477 9.97705 7.06535 11.0726C5.58018 11.5849 4.21887 12.4318 3.07535 13.5754C1.09225 15.5585 0 18.1954 0 21H1.64062C1.64062 16.115 5.61504 12.1406 10.5 12.1406C15.385 12.1406 19.3594 16.115 19.3594 21H21C21 18.1954 19.9078 15.5585 17.9246 13.5754ZM10.5 10.5C8.05752 10.5 6.07031 8.51279 6.07031 6.07031C6.07031 3.62783 8.05752 1.64062 10.5 1.64062C12.9425 1.64062 14.9297 3.62783 14.9297 6.07031C14.9297 8.51279 12.9425 10.5 10.5 10.5Z"
-                                            fill="#690FAD"></path>
-                                    </svg>
-                                </div>
-                                <p class="error-message flex mt-2">
-                                    <svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.00151 12C4.8146 12.0003 3.65426 11.6486 2.66729 10.9893C1.68031 10.33 0.911044 9.39283 0.456797 8.29628C0.00255109 7.19972 -0.116264 5.99308 0.115383 4.829C0.34703 3.66491 0.918731 2.59567 1.75816 1.75656C2.5976 0.917444 3.66705 0.346148 4.83122 0.114941C5.9954 -0.116266 7.20199 0.00300535 8.29837 0.457666C9.39475 0.912327 10.3316 1.68195 10.9906 2.66917C11.6495 3.6564 12.0007 4.81687 12 6.00378C11.999 7.59416 11.3666 9.11909 10.2418 10.2434C9.11706 11.3678 7.59189 11.9996 6.00151 12ZM6.74858 7.13119C6.74858 6.76144 6.74858 6.39168 6.74858 6.02269C6.74858 5.57505 6.42268 5.24839 5.99244 5.25217C5.89296 5.25221 5.7945 5.2723 5.70295 5.31123C5.61141 5.35017 5.52865 5.40716 5.45962 5.4788C5.39059 5.55044 5.33672 5.63526 5.3012 5.72818C5.26569 5.82111 5.24927 5.92025 5.25293 6.01966C5.24991 6.75262 5.24991 7.48507 5.25293 8.21701C5.25293 8.66314 5.57958 9.00189 5.99849 9.0034C6.41739 9.00492 6.7448 8.66465 6.74783 8.22004C6.75085 7.85709 6.74858 7.49414 6.74858 7.13119ZM5.99773 4.49528C6.09514 4.49657 6.19184 4.47864 6.2823 4.44249C6.37275 4.40634 6.45519 4.35269 6.52487 4.28463C6.59455 4.21656 6.65012 4.1354 6.68838 4.04582C6.72664 3.95624 6.74684 3.85998 6.74783 3.76257C6.74843 3.56424 6.67022 3.37379 6.5304 3.23312C6.39058 3.09245 6.2006 3.01308 6.00227 3.01248C5.80393 3.01188 5.61348 3.09009 5.47281 3.22991C5.33214 3.36973 5.25278 3.5597 5.25217 3.75804C5.25257 3.85544 5.27218 3.95181 5.30989 4.04162C5.3476 4.13143 5.40267 4.21291 5.47193 4.2814C5.54119 4.34989 5.62329 4.40404 5.71352 4.44074C5.80374 4.47744 5.90033 4.49597 5.99773 4.49528Z" fill="#F14336"/>
-                                    </svg> Invalid email! please check your spellings
-                                </p>
-                            </div>
-                            <div class="password-field-box mb-8">
-                                <div class="field-control-box">
-                                    <label for="signInPassword" class="form-label block">Password</label>
-                                    <input id="signInPassword" type="email" placeholder="Enter Your Password" class="form-control block cool border-b-1 border-black" />
-                                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M13.8633 15.0117C14.3163 15.0117 14.6836 14.6445 14.6836 14.1914C14.6836 13.7384 14.3163 13.3711 13.8633 13.3711C13.4102 13.3711 13.043 13.7384 13.043 14.1914C13.043 14.6445 13.4102 15.0117 13.8633 15.0117Z"
-                                            fill="#690FAD" />
-                                        <path
-                                            d="M17.5547 14.8477C18.0079 14.8477 18.375 14.4806 18.375 14.0273V10.9922C18.375 9.18299 16.9029 7.71094 15.0938 7.71094H14.1077V4.81811C14.1077 2.16111 11.8999 0 9.18586 0C6.47186 0 4.26398 2.16111 4.26398 4.81811V7.71094H3.28125C1.47205 7.71094 0 9.18299 0 10.9922V17.7188C0 19.5279 1.47205 21 3.28125 21H15.0938C16.9029 21 18.375 19.5279 18.375 17.7188C18.375 17.2655 18.0079 16.8984 17.5547 16.8984C17.1015 16.8984 16.7344 17.2655 16.7344 17.7188C16.7344 18.6236 15.9986 19.3594 15.0938 19.3594H3.28125C2.37645 19.3594 1.64062 18.6236 1.64062 17.7188V10.9922C1.64062 10.0874 2.37645 9.35156 3.28125 9.35156H15.0938C15.9986 9.35156 16.7344 10.0874 16.7344 10.9922V14.0273C16.7344 14.4806 17.1015 14.8477 17.5547 14.8477ZM12.4671 7.71094H5.90461V4.81811C5.90461 3.06633 7.37666 1.64062 9.18586 1.64062C10.9951 1.64062 12.4671 3.06592 12.4671 4.81811V7.71094Z"
-                                            fill="#690FAD" />
-                                        <path
-                                            d="M7.66992 15.0117C8.12297 15.0117 8.49023 14.6445 8.49023 14.1914C8.49023 13.7384 8.12297 13.3711 7.66992 13.3711C7.21688 13.3711 6.84961 13.7384 6.84961 14.1914C6.84961 14.6445 7.21688 15.0117 7.66992 15.0117Z"
-                                            fill="#690FAD" />
-                                        <path
-                                            d="M4.59375 15.0117C5.0468 15.0117 5.41406 14.6445 5.41406 14.1914C5.41406 13.7384 5.0468 13.3711 4.59375 13.3711C4.1407 13.3711 3.77344 13.7384 3.77344 14.1914C3.77344 14.6445 4.1407 15.0117 4.59375 15.0117Z"
-                                            fill="#690FAD" />
-                                        <path
-                                            d="M10.7461 15.0117C11.1992 15.0117 11.5664 14.6445 11.5664 14.1914C11.5664 13.7384 11.1992 13.3711 10.7461 13.3711C10.2931 13.3711 9.92578 13.7384 9.92578 14.1914C9.92578 14.6445 10.2931 15.0117 10.7461 15.0117Z"
-                                            fill="#690FAD" />
-                                    </svg>
-                                </div>
-                                <p class="error-message flex mt-2">
-                                    <svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.00151 12C4.8146 12.0003 3.65426 11.6486 2.66729 10.9893C1.68031 10.33 0.911044 9.39283 0.456797 8.29628C0.00255109 7.19972 -0.116264 5.99308 0.115383 4.829C0.34703 3.66491 0.918731 2.59567 1.75816 1.75656C2.5976 0.917444 3.66705 0.346148 4.83122 0.114941C5.9954 -0.116266 7.20199 0.00300535 8.29837 0.457666C9.39475 0.912327 10.3316 1.68195 10.9906 2.66917C11.6495 3.6564 12.0007 4.81687 12 6.00378C11.999 7.59416 11.3666 9.11909 10.2418 10.2434C9.11706 11.3678 7.59189 11.9996 6.00151 12ZM6.74858 7.13119C6.74858 6.76144 6.74858 6.39168 6.74858 6.02269C6.74858 5.57505 6.42268 5.24839 5.99244 5.25217C5.89296 5.25221 5.7945 5.2723 5.70295 5.31123C5.61141 5.35017 5.52865 5.40716 5.45962 5.4788C5.39059 5.55044 5.33672 5.63526 5.3012 5.72818C5.26569 5.82111 5.24927 5.92025 5.25293 6.01966C5.24991 6.75262 5.24991 7.48507 5.25293 8.21701C5.25293 8.66314 5.57958 9.00189 5.99849 9.0034C6.41739 9.00492 6.7448 8.66465 6.74783 8.22004C6.75085 7.85709 6.74858 7.49414 6.74858 7.13119ZM5.99773 4.49528C6.09514 4.49657 6.19184 4.47864 6.2823 4.44249C6.37275 4.40634 6.45519 4.35269 6.52487 4.28463C6.59455 4.21656 6.65012 4.1354 6.68838 4.04582C6.72664 3.95624 6.74684 3.85998 6.74783 3.76257C6.74843 3.56424 6.67022 3.37379 6.5304 3.23312C6.39058 3.09245 6.2006 3.01308 6.00227 3.01248C5.80393 3.01188 5.61348 3.09009 5.47281 3.22991C5.33214 3.36973 5.25278 3.5597 5.25217 3.75804C5.25257 3.85544 5.27218 3.95181 5.30989 4.04162C5.3476 4.13143 5.40267 4.21291 5.47193 4.2814C5.54119 4.34989 5.62329 4.40404 5.71352 4.44074C5.80374 4.47744 5.90033 4.49597 5.99773 4.49528Z" fill="#F14336"/>
-                                    </svg> Invalid password! please check your spellings
-                                </p>
-                            </div>
-                            <button class="btn-submit bg-gradient rounded-full mb-3">Sign In</button>
-                            <!-- </form> -->
-                            <div class="account-btn-box flex items-center justify-between mb-8">
-                                <button class="underline btn-signup">Create New
-                                    Account</button>
-                                <button class="underline">Forget Password?</button>
-                            </div>
-                            <div class="social-account-box pb-20">
-                                <h4 class="social-title text-center mb-4">Sign in With</h4>
-                                <ul class="social-login flex items-center justify-center">
-                                    <li class="social-item mr-2">
-                                        <button class="social-link rounded-full">
-                                            <img src="./assets/images/social-icons/google.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="social-item ml-2">
-                                        <button class="social-link rounded-full">
-                                            <img src="./assets/images/social-icons/apple.png" alt="">
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 
