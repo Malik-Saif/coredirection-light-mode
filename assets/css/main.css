@@ -8949,6 +8949,13 @@ button:focus {
     display: none;
   }
 }
+#cart .select-package-box .btn-package-buy {
+  color: #FFFFFF;
+  background-color: #CAA8F5;
+}
+#cart .select-package-box .btn-package-buy:hover {
+  background-color: #690FAD;
+}
 @media screen and (min-width: 768px) {
   #cart .payment {
     display: grid;

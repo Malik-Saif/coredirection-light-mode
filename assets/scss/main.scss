@@ -8807,9 +8807,6 @@ button:focus {
         }
         .package-info-inner-box{
             width: 100%;
-            // display: flex;
-            // align-items: center;
-            // flex-wrap: wrap;
             display: grid;
             grid-template-columns: 1fr;
             row-gap: 30px;
@@ -8896,6 +8893,13 @@ button:focus {
             }
             @media screen and (max-width: 767px){
                 display: none;
+            }
+        }
+        .btn-package-buy{
+            color: $colorWhite;
+            background-color: #CAA8F5;
+            &:hover{
+                background-color: $primaryColor;
             }
         }
     }
