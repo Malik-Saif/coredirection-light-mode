@@ -377,7 +377,7 @@
         <main id="main">
 
             <!-- listing-filter-section -->
-            <section id="listing-filter" style="margin-bottom: 0;">
+            <section id="listing-filter">
                 <div class="custom-container filter-box flex  mx-auto justify-between items-center rounded">
                     <div class="input-field-search-activity-box mr-4">
                         <input type="text" class="location rounded-full" placeholder="Select Location...">
@@ -483,70 +483,18 @@
                 </div>
             </section>
 
-            <section id="activity-listing-days-filter">
-                <div class="custom-container">
-                    <!-- Slider main container -->
-                    <div class="swiper-container fitness-villages-swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter active">
-                                    <p class="day">Thursday</p>
-                                    <p class="date">01 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Friday</p>
-                                    <p class="date">02 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Saturday</p>
-                                    <p class="date">03 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Sunday</p>
-                                    <p class="date">04 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Monday</p>
-                                    <p class="date">05 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Tuesday</p>
-                                    <p class="date">06 - Feb - 2022</p>
-                                </button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="btn-day-filter">
-                                    <p class="day">Wednesday</p>
-                                    <p class="date">07 - Feb - 2022</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- advance-filter -->
             <section id="advance-filter">
                 <div class="custom-container">
-                    <button class="advance-filter-btn flex items-center justify-center">Advance Filter
-                        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.000414515 7.61565C-0.00628313 7.36208 0.0941827 7.15649 0.268323 6.98515C2.43838 4.76471 4.60174 2.54427 6.7718 0.330687C7.20715 -0.114772 7.66929 -0.107919 8.11134 0.33754C10.2747 2.54427 12.4314 4.75101 14.588 6.9646C14.9698 7.35523 14.9832 7.86237 14.6282 8.27356C14.4541 8.4723 14.2531 8.65734 14.0455 8.82867C13.7374 9.07539 13.3155 9.04797 13.0074 8.78755C12.9404 8.73272 12.8801 8.66419 12.8198 8.60251C11.132 6.88236 9.44419 5.16905 7.74966 3.4489C7.43487 3.1268 7.43487 3.1268 7.10668 3.45575C5.45235 5.14849 3.79802 6.84124 2.14368 8.52713C2.01642 8.65049 1.88247 8.76699 1.73512 8.86979C1.60786 8.95888 1.45382 9 1.29307 9C0.784047 8.98629 -0.00628316 8.15706 0.000414515 7.61565Z"
-                                fill="#690FAD" />
-                        </svg>
-                    </button>
+                    <div class="advance-filter-menu-btn-box flex items-center justify-center">
+                        <button class="advance-menu-filter-btn flex items-center">Advance Filter
+                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.000414515 7.61565C-0.00628313 7.36208 0.0941827 7.15649 0.268323 6.98515C2.43838 4.76471 4.60174 2.54427 6.7718 0.330687C7.20715 -0.114772 7.66929 -0.107919 8.11134 0.33754C10.2747 2.54427 12.4314 4.75101 14.588 6.9646C14.9698 7.35523 14.9832 7.86237 14.6282 8.27356C14.4541 8.4723 14.2531 8.65734 14.0455 8.82867C13.7374 9.07539 13.3155 9.04797 13.0074 8.78755C12.9404 8.73272 12.8801 8.66419 12.8198 8.60251C11.132 6.88236 9.44419 5.16905 7.74966 3.4489C7.43487 3.1268 7.43487 3.1268 7.10668 3.45575C5.45235 5.14849 3.79802 6.84124 2.14368 8.52713C2.01642 8.65049 1.88247 8.76699 1.73512 8.86979C1.60786 8.95888 1.45382 9 1.29307 9C0.784047 8.98629 -0.00628316 8.15706 0.000414515 7.61565Z"
+                                    fill="#690FAD" />
+                            </svg>
+                        </button>
+                    </div>
                     <div class="advance-filter-btn-outer-box">
                         <div class="advance-filter-btn-inner-box">
                             <div class="business-type-filter-box">
@@ -1793,49 +1741,49 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td class="from-other-month">30</td>
+                                                        <td class="from-other-month">31</td>
                                                         <td>1</td>
                                                         <td>2</td>
                                                         <td>3</td>
                                                         <td>4</td>
                                                         <td>5</td>
-                                                        <td>6</td>
-                                                        <td>7</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>6</td>
+                                                        <td>7</td>
                                                         <td>8</td>
                                                         <td>9</td>
                                                         <td>10</td>
                                                         <td>11</td>
                                                         <td>12</td>
-                                                        <td>13</td>
-                                                        <td>14</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>13</td>
+                                                        <td>14</td>
                                                         <td>15</td>
                                                         <td>16</td>
                                                         <td>17</td>
                                                         <td>18</td>
                                                         <td>19</td>
+                                                    </tr>
+                                                    <tr>
                                                         <td>20</td>
                                                         <td>21</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td>22</td>
                                                         <td>23</td>
-                                                        <td>24</td>
-                                                        <td>25</td>
-                                                        <td>26</td>
-                                                        <td>27</td>
-                                                        <td>28</td>
+                                                        <td class="from">24</td>
+                                                        <td class="between">25</td>
+                                                        <td class="between">26</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>29</td>
-                                                        <td>30</td>
-                                                        <td>31</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td class="between">27</td>
+                                                        <td class="between">28</td>
+                                                        <td class="from-other-month">1</td>
+                                                        <td class="from-other-month">2</td>
+                                                        <td class="from-other-month">3</td>
+                                                        <td class="from-other-month">4</td>
+                                                        <td class="from-other-month">5</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1865,49 +1813,49 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>2</td>
+                                                        <td class="from-other-month">27</td>
+                                                        <td class="from-other-month">28</td>
+                                                        <td class="between">1</td>
+                                                        <td class="to">2</td>
                                                         <td>3</td>
                                                         <td>4</td>
                                                         <td>5</td>
-                                                        <td>6</td>
-                                                        <td>7</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>6</td>
+                                                        <td>7</td>
                                                         <td>8</td>
                                                         <td>9</td>
                                                         <td>10</td>
                                                         <td>11</td>
                                                         <td>12</td>
-                                                        <td>13</td>
-                                                        <td>14</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>13</td>
+                                                        <td>14</td>
                                                         <td>15</td>
                                                         <td>16</td>
                                                         <td>17</td>
                                                         <td>18</td>
                                                         <td>19</td>
-                                                        <td>20</td>
-                                                        <td>21</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>20</td>
+                                                        <td>21</td>
                                                         <td>22</td>
                                                         <td>23</td>
                                                         <td>24</td>
                                                         <td>25</td>
                                                         <td>26</td>
-                                                        <td>27</td>
-                                                        <td>28</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>27</td>
+                                                        <td>28</td>
                                                         <td>29</td>
                                                         <td>30</td>
                                                         <td>31</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td class="from-other-month">1</td>
+                                                        <td class="from-other-month">2</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

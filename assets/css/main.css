@@ -2960,7 +2960,8 @@ button:focus {
 }
 @media screen and (max-width: 991px) {
   #listing-filter .filter-box .input-field-search-box {
-    max-width: calc(50% - .5rem);
+    max-width: 100%;
+    margin-left: 0;
   }
 }
 #listing-filter .filter-box .input-field-search-box svg {
@@ -3026,7 +3027,8 @@ button:focus {
 }
 @media screen and (max-width: 991px) {
   #listing-filter .filter-box .input-field-category-box {
-    max-width: calc(50% - .5rem);
+    max-width: 100%;
+    margin-right: 0;
   }
 }
 #listing-filter .filter-box .input-field-category-box select {
@@ -5625,9 +5627,6 @@ button:focus {
   margin: auto;
 }
 
-#advance-filter {
-  padding-bottom: 100px;
-}
 #advance-filter .swiper-slide > button {
   margin-right: 14px;
   margin-bottom: 21px;
@@ -5640,36 +5639,34 @@ button:focus {
 #advance-filter .activity-listing-title {
   font-family: 'Roboto', sans-serif;
 }
-#advance-filter .advance-filter-btn {
+#advance-filter .advance-filter-menu-btn-box {
   position: relative;
   width: 100%;
+  margin-bottom: 47px;
+}
+#advance-filter .advance-filter-menu-btn-box svg, #advance-filter .advance-filter-menu-btn-box img {
+  margin-left: 10px;
+}
+#advance-filter .advance-filter-menu-btn-box .advance-menu-filter-btn {
   color: #690FAD;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.75px;
-  margin-bottom: 47px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  overflow: hidden;
+  background-color: #F1F1F1;
 }
-#advance-filter .advance-filter-btn svg, #advance-filter .advance-filter-btn img {
-  margin-left: 10px;
-}
-#advance-filter .advance-filter-btn::before {
+#advance-filter .advance-filter-menu-btn-box::before {
   content: "";
   position: absolute;
-  width: 43%;
+  width: 100%;
   height: 1px;
   background: #690FAD;
   margin-right: 10px;
   left: 0;
-}
-#advance-filter .advance-filter-btn::after {
-  content: "";
-  position: absolute;
-  width: 43%;
-  height: 1px;
-  background: #690FAD;
-  margin-left: 10px;
-  right: 0;
 }
 #advance-filter .section-body {
   margin-top: 20px;
@@ -5732,6 +5729,9 @@ button:focus {
 }
 #advance-filter .select-date-range-header .select-date-range-btn-box .selected-date-info .selected-month {
   margin-right: 8px;
+}
+#advance-filter .advance-filter-btn-box {
+  padding-bottom: 100px;
 }
 @media screen and (min-width: 992px) {
   #advance-filter .advance-filter-btn-box {
@@ -5840,19 +5840,61 @@ button:focus {
 }
 #advance-filter .select-date-range td {
   cursor: pointer;
+}
+#advance-filter .select-date-range td:hover {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-}
-#advance-filter .select-date-range td:hover {
   color: #FFFFFF;
   background-color: #690FAD;
 }
 #advance-filter .select-date-range td.active {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   color: #FFFFFF;
   background-color: #690FAD;
+}
+#advance-filter .select-date-range td.from, #advance-filter .select-date-range td.to {
+  color: #FFFFFF;
+  background-color: #690FAD;
+}
+#advance-filter .select-date-range td.from {
+  border-radius: 8px 0 0 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+  -moz-border-radius: 8px 0 0 8px;
+  -ms-border-radius: 8px 0 0 8px;
+  -o-border-radius: 8px 0 0 8px;
+}
+#advance-filter .select-date-range td.to {
+  border-radius: 0 8px 8px 0;
+  -webkit-border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  -ms-border-radius: 0 8px 8px 0;
+  -o-border-radius: 0 8px 8px 0;
+}
+#advance-filter .select-date-range td.from-other-month {
+  color: #06070E73;
+  font-weight: 500;
+}
+#advance-filter .select-date-range td.from-other-month:hover {
+  color: #06070E73;
+  background-color: transparent;
+}
+#advance-filter .select-date-range td.between {
+  color: #FFFFFF;
+  background-color: #CAA8F5;
+}
+#advance-filter .select-date-range td.between:hover {
+  border-radius: unset;
+  -webkit-border-radius: unset;
+  -moz-border-radius: unset;
+  -ms-border-radius: unset;
+  -o-border-radius: unset;
 }
 #advance-filter .select-date-range .calendar-header {
   width: 100%;
@@ -11245,5 +11287,4 @@ button:focus {
   padding-bottom: 30px;
   color: #000000;
 }
-
 /*# sourceMappingURL=main.css.map */
