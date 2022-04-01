@@ -812,6 +812,30 @@ button:focus {
   color: #690FAD;
   text-align: center;
 }
+.booking-card .booking-card-footer .btn-disable-booked {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 262.47px;
+  min-height: 44.82px;
+  background-color: #CAA8F5;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: not-allowed;
+}
+.booking-card .booking-card-footer .btn-diabled-activity-full {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 262.47px;
+  min-height: 44.82px;
+  background-color: #06070E;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: not-allowed;
+}
 
 .booking-history-card {
   padding: 14px 29px 0px;
@@ -11287,4 +11311,5 @@ button:focus {
   padding-bottom: 30px;
   color: #000000;
 }
+
 /*# sourceMappingURL=main.css.map */

@@ -855,6 +855,30 @@ button:focus {
             color: $primaryColor;
             text-align: center;
         }
+        .btn-disable-booked{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            width: 100%;
+            max-width: 262.47px;
+            min-height: 44.82px;
+            background-color: #CAA8F5;
+            color: $colorWhite;
+            text-align: center;
+            cursor: not-allowed;
+        }
+        .btn-diabled-activity-full{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            width: 100%;
+            max-width: 262.47px;
+            min-height: 44.82px;
+            background-color: #06070E;
+            color: $colorWhite;
+            text-align: center;
+            cursor: not-allowed;
+        }
     }
 }
 
