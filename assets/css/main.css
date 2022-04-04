@@ -250,11 +250,18 @@ button:focus {
 }
 .section-body .card {
   width: 340px;
+  height: 338px;
 }
 @media screen and (max-width: 991px) {
   .section-body .card {
     width: 290px;
   }
+}
+.section-body .card .card-body {
+  height: 338px;
+}
+.section-body .card .card-body .carf-info-box {
+  height: 156px;
 }
 .section-body .sm-card {
   width: 324px;
@@ -373,6 +380,8 @@ button:focus {
   min-height: 345px;
 }
 .card .card-body {
+  -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
   border-radius: 11px;
   overflow: hidden;
 }
@@ -386,10 +395,16 @@ button:focus {
   }
 }
 .card .card-body .carf-info-box {
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 15px;
+  padding-top: 18px;
   background-color: #FFFFFF;
+}
+.card .card-body .grid.grid-cols-8.gap-1.mb-2 {
+  margin: 0;
+  height: 100%;
+  max-height: 54px;
 }
 .card .card-body .gym-logo {
   top: 136px;
@@ -409,6 +424,10 @@ button:focus {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-align: left;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 !important;
 }
 .card .card-body .float-right {
   min-width: 20%;
@@ -419,6 +438,9 @@ button:focus {
 }
 .card .card-body .float-right .pl-7 svg, .card .card-body .float-right .pl-7 img {
   max-width: 27px;
+}
+.card .card-body .flex.card-activity-icons-list.mt-1 {
+  margin: 0 !important;
 }
 .card .card-body .distance-box {
   -webkit-box-pack: end;
@@ -434,6 +456,7 @@ button:focus {
 }
 .card .card-body .location-icon {
   min-width: 15px;
+  margin-top: 3px;
 }
 .card .card-body .location {
   font-family: 'Montserrat', sans-serif;
@@ -448,6 +471,11 @@ button:focus {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card .card-body .flex.mt-4.items-center {
+  margin-top: 11px !important;
 }
 .card .card-body .card-activity-icons-list .card-activity-icons-item {
   margin-right: 8px;
@@ -456,7 +484,8 @@ button:focus {
   margin-right: 0px;
 }
 .card .card-body .card-activity-icons-list svg, .card .card-body .card-activity-icons-list img {
-  max-height: 19px;
+  max-height: 18px;
+  height: 100%;
 }
 
 .card > button {
