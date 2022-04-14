@@ -192,7 +192,7 @@ button:focus {
     }
 
     .section-title {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         font-weight: 500;
         line-height: 28.13px;
@@ -203,11 +203,15 @@ button:focus {
     }
 
     .btn-see-all {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-weight: 500;
         line-height: 21px;
         color: $primaryColor;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     .shown-result-box {
@@ -4448,6 +4452,7 @@ button:focus {
             font-weight: 400;
             margin-left: 16px;
             margin-right: 16px;
+            color: $primaryColor;
             @media screen and (max-width: 991px) {
                 font-size: 18px;
                 line-height: 21.94px;
@@ -4455,6 +4460,9 @@ button:focus {
             .selected-month{
                 margin-right: 12px;
             }
+        }
+        svg,path{
+            fill: $primaryColor;
         }
     }
     .calendar-type-box{
@@ -4467,6 +4475,9 @@ button:focus {
             line-height: 12.63px;
             font-weight: 700;
             padding: 10px 25px;
+            @media screen and (max-width: 767px) {
+                padding: 10px 21px;
+            }
             &:hover{
                 color: $colorWhite;
                 background-color: $primaryColor;
@@ -4499,6 +4510,11 @@ button:focus {
                 padding: 8px 15px;
                 min-height: 46px;
                 max-height: 46px;
+                font-weight: 600;
+                color: $primaryColor;
+                @media screen and (max-width: 767px) {
+                    padding: 6px;
+                }
             }
         }
         .calendar-column{
@@ -4507,12 +4523,16 @@ button:focus {
             font-size: 11px;
             font-weight: 400;
             line-height: 13.41px;
-            border-right: 1px solid #363636;
+            border-right: 1px solid #CAA8F5;
             padding: 17px 5px 5px 21px;
             min-height: 69px;
             max-height: 69px;
             @media screen and (max-width: 991px) {
                 position: relative;
+            }
+            @media screen and (max-width: 767px) {
+                padding-top: 14px;
+                padding-left: 6px;
             }
             .date-cell{
                 flex-direction: column;
@@ -4528,7 +4548,7 @@ button:focus {
             }
         }
         .calendar-column:first-child{
-            border-left: 1px solid #363636;
+            border-left: 1px solid #CAA8F5;
         }
         .booking-detail-popup{
             @media screen and (max-width: 991px) {
@@ -10883,6 +10903,317 @@ button:focus {
         padding: 30px 40px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+#community{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    .community-outer-box{
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    .community-profile-img-box{
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        .community-profile-img{
+            max-width: 150px;
+            max-height: 150px;
+            min-width: 100px;
+            min-height: 100px;
+            @media screen and (max-width: 767px) {
+                max-width: 100px;
+                max-height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (min-width: 768px) {
+                margin-right: 20px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-right: 55px;
+            }
+        }
+    }
+    .user-info-box{
+        @media screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            .user-name{
+                order: 1;
+            }
+            .user-profile-list{
+                order: 2;
+            }
+            .activities-btn-box{
+                order: 3;
+            }
+            .user-bio-box{
+                order: 4;
+            }
+            .community-desc{
+                margin-bottom: 45px;
+            }
+            .user-interested-activity-box{
+                order: 5;
+            }
+        }
+    }
+    .user-name{
+        min-width: fit-content;
+        width: 100%;
+        max-width: 404px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 20px;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            max-width: 100%;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 404px;
+            float: left;
+        }
+    }
+    .activities-btn-box{
+        min-width: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 45px;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 48%;
+            float: left;
+        }
+    }
+    .btn-add-activity,.btn-book-activity{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 11px 32px;
+        color: $colorWhite;
+        margin-right: 10px;
+        @media screen and (min-width: 992px) {
+            padding: 11px 21px;
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 15px;
+        }
+    }
+    .btn-share-activity{
+        min-width: 37px;
+        min-height: 37px;
+        max-width: 37px;
+        max-height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: 992px) {
+            min-width: 42px;
+            min-height: 42px;
+            max-width: 42px;
+            max-height: 42px;
+        }
+    }
+    .user-profile-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 628px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 25px;
+            row-gap: 30px;
+            max-width: 100%;
+        }
+        @media screen and (min-width: 992px) {
+            margin-top: 92px;
+            margin-bottom: 35px;
+        }
+    }
+    .user-profile-item{
+        margin-bottom: 10px;
+    }
+    .activity-value{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .activity-label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .community-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    .community-desc{
+        width: 100%;
+        max-width: 628px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 35px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .user-interested-activity-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .user-interested-activity-item{
+        margin-right: 26px;
+    }
+    .activity-icon{
+        width: 100%;
+        max-width: 30px;
+    }
+}
+
+#friends{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    @media screen and (max-width: 767px) {
+        margin-top: 65px;
+        margin-bottom: 70px;
+    }
+    .section-header{
+        margin-bottom: 35px;
+    }
+    .swiper-wrapper{
+        @media screen and (min-width: 768px) {
+            margin-left: 75px; 
+        }
+    }
+    .swiper-slide{
+        width: max-content !important;
+        @media screen and (max-width: 767px) {
+            margin-right: 19px;
+        }
+        @media screen and (min-width: 768px) {
+            margin-right: 30px;
+        }
+    }
+    .swiper-slide:last-child {
+        @media screen and (min-width: 768px) {
+            margin-right: 125px !important;
+        }
+    }
+    .btn-add-friend{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 22px 40px 0px #0000001A;
+    }
+    .add-friend-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .friend-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 139px;
+        padding: 0px 5px 5px;
+    }
+    .friend-img{
+        width: 100%;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .friend-name{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        box-shadow: 0px 4px 4px 0px #00000040;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: $colorWhite;
+        &::after{
+            font-size: 18px;
+            font-weight: 900;
+            color: $colorBlack;
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 }
 
