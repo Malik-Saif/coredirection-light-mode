@@ -6052,7 +6052,7 @@ button:focus {
   padding-right: 15px;
   position: relative;
   overflow: hidden;
-  background-color: #F1F1F1;
+  background-color: #FFFFFF;
 }
 #advance-filter .advance-filter-menu-btn-box::before {
   content: "";
