@@ -11371,9 +11371,13 @@ button:focus {
             line-height: 20px;
             letter-spacing: 0em;
             text-align: left;
+            color: $colorBlack;
         }
         .form-group input:checked + label:after{
             top: 1px;
+        }
+        .form-group input:checked + label{
+            color: $primaryColor;
         }
     }
     .date-box,

@@ -11911,9 +11911,13 @@ button:focus {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  color: #000000;
 }
 #add-activity-modal .activity-session-type .form-group input:checked + label:after {
   top: 1px;
+}
+#add-activity-modal .activity-session-type .form-group input:checked + label {
+  color: #690FAD;
 }
 #add-activity-modal .date-box,
 #add-activity-modal .time-box {
