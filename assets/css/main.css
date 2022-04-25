@@ -5716,8 +5716,8 @@ button:focus {
   margin: 11px 0;
   position: relative;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 22px 40px 0px #0000001A;
-          box-shadow: 0px 22px 40px 0px #0000001A;
+  -webkit-box-shadow: 0px 2px 4px 0px #0000001A;
+          box-shadow: 0px 2px 4px 0px #0000001A;
 }
 #booking-confirmation-modal .inputGroup label,
 #multiple-booking-modal .inputGroup label,
@@ -5738,6 +5738,8 @@ button:focus {
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
+  border: 1px solid transparent;
+  margin: 0;
 }
 @media screen and (max-width: 991px) {
   #booking-confirmation-modal .inputGroup label,
@@ -5753,8 +5755,8 @@ button:focus {
   width: 24px;
   height: 24px;
   content: '';
-  border: 6px solid #CCF1FF;
-  background-color: #690FAD;
+  border: 6px solid #CAA8F5;
+  background-color: #FFFFFF;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
@@ -5765,6 +5767,11 @@ button:focus {
   cursor: pointer;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+}
+#booking-confirmation-modal .inputGroup input:checked ~ label,
+#multiple-booking-modal .inputGroup input:checked ~ label,
+#booking-confirmed-modal .inputGroup input:checked ~ label {
+  border: 1px solid #690FAD;
 }
 #booking-confirmation-modal .inputGroup input:checked ~ label:before,
 #multiple-booking-modal .inputGroup input:checked ~ label:before,
@@ -5777,7 +5784,7 @@ button:focus {
 #multiple-booking-modal .inputGroup input:checked ~ label:after,
 #booking-confirmed-modal .inputGroup input:checked ~ label:after {
   border: 6px solid #690FAD;
-  background-color: #CCF1FF;
+  background-color: #CAA8F5;
 }
 #booking-confirmation-modal .inputGroup input,
 #multiple-booking-modal .inputGroup input,

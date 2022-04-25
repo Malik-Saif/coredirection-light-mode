@@ -5818,7 +5818,7 @@ button:focus {
         margin: 11px 0;
         position: relative;
         border-radius: 15px;
-        box-shadow: 0px 22px 40px 0px #0000001A;
+        box-shadow: 0px 2px 4px 0px #0000001A;
 
         label {
             padding: 52px 80px 45px 38px;
@@ -5836,6 +5836,8 @@ button:focus {
             font-size: 16px;
             font-weight: 400;
             line-height: 19.5px;
+            border: 1px solid transparent;
+            margin: 0;
 
             @media screen and (max-width: 991px) {
                 font-size: 12px;
@@ -5846,8 +5848,8 @@ button:focus {
                 width: 24px;
                 height: 24px;
                 content: '';
-                border: 6px solid #CCF1FF;
-                background-color: $primaryColor;
+                border: 6px solid #CAA8F5;
+                background-color: $colorWhite;
                 border-radius: 50%;
                 z-index: 2;
                 position: absolute;
@@ -5860,6 +5862,7 @@ button:focus {
         }
 
         input:checked~label {
+            border: 1px solid $primaryColor;
             &:before {
                 transform: translate(-50%, -50%) scale3d(56, 56, 1);
                 opacity: 1;
@@ -5867,7 +5870,7 @@ button:focus {
 
             &:after {
                 border: 6px solid $primaryColor;
-                background-color: #CCF1FF;
+                background-color: #CAA8F5;
             }
         }
 
