@@ -819,6 +819,20 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.booking-card strong.block {
+  width: 100%;
+}
+.booking-card a.block {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #61A0FF;
+  text-decoration: underline;
+  width: 100%;
+}
 .booking-card .booking-activity-info-item.expire-soon {
   color: #FFAB07;
 }
@@ -4464,22 +4478,25 @@ button:focus {
 }
 
 #inspire-your-network-modal .modal-outer-box {
-  max-width: calc(550px + 2rem);
+  max-width: calc(460px + 2rem);
   background: #FFFFFF;
 }
 #inspire-your-network-modal .form-container {
   width: 100%;
-  max-width: 310px;
+  max-width: 341px;
 }
 #inspire-your-network-modal .modal-title {
   font-size: 36px;
   line-height: 42.19px;
+  font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 991px) {
   #inspire-your-network-modal .modal-title {
-    margin-bottom: 28px;
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 28.19px;
   }
 }
 #inspire-your-network-modal P {
@@ -4489,10 +4506,13 @@ button:focus {
   font-weight: 400;
   line-height: 16.41px;
   margin-bottom: 22px;
+  text-align: center;
 }
 @media screen and (max-width: 991px) {
   #inspire-your-network-modal P {
-    margin-bottom: 18px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 30px;
   }
 }
 #inspire-your-network-modal .search-add-friend {
@@ -4518,6 +4538,10 @@ button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 38px;
+  width: 100%;
+  max-width: 317px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 991px) {
   #inspire-your-network-modal .social-icons-list {
@@ -4541,8 +4565,8 @@ button:focus {
 }
 @media screen and (max-width: 991px) {
   #inspire-your-network-modal .social-icons-list .social-icon-item .social-icon-link {
-    width: 48px;
-    height: 48px;
+    width: 47px;
+    height: 47px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4557,11 +4581,11 @@ button:focus {
   margin-right: auto;
   width: 100%;
   max-width: 328px;
-  margin-bottom: 89px;
+  margin-bottom: 86px;
 }
 @media screen and (max-width: 991px) {
   #inspire-your-network-modal .invitation-link-box {
-    margin-bottom: 42px;
+    margin-bottom: 60px;
   }
 }
 #inspire-your-network-modal .invitation-link-box input {
@@ -4578,6 +4602,12 @@ button:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (max-width: 991px) {
+  #inspire-your-network-modal .invitation-link-box input {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 #inspire-your-network-modal .invitation-link-box button {
   position: absolute;
@@ -4607,6 +4637,12 @@ button:focus {
   -moz-border-radius: 11px;
   -ms-border-radius: 11px;
   -o-border-radius: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 #calendar {
@@ -7231,12 +7267,12 @@ button:focus {
 }
 
 #checkin-modal .modal-outer-box {
-  max-width: calc(650px + 2rem);
+  max-width: calc(460px + 2rem);
   background: #E0E0E0;
 }
 #checkin-modal .form-container {
   width: 100%;
-  max-width: 450px;
+  max-width: 360px;
 }
 #checkin-modal .booking-checkin-header {
   background-color: #FFFFFF;
@@ -7319,22 +7355,38 @@ button:focus {
   margin-right: auto;
 }
 #checkin-modal .booking-cancelation-message-box {
+  width: 100%;
+  height: 368px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #FFFFFF;
-  margin-top: 67px;
-  margin-bottom: 207px;
+  margin-bottom: 30px;
   padding: 49px 15px 68px;
-  border-radius: 11px 11px 21px 21px;
+  border-radius: 21px 21px 11px 11px;
   -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
 }
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-message-title,
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-success-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 22px;
-  margin-top: 54px;
-  margin-bottom: 29px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-message-desc,
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-success-desc {
@@ -7342,6 +7394,8 @@ button:focus {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-message-title,
 #checkin-modal .booking-cancelation-message-box .booking-cancelation-message-desc {
@@ -7452,7 +7506,24 @@ button:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 108px;
+  margin-bottom: 60px;
+}
+#checkin-modal .booking-checkin-mode-btn-inspiring {
+  width: 100%;
+  max-width: 372px;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #690FAD;
+  margin-bottom: 10px;
 }
 #checkin-modal .booking-checkin-mode-btn-cancel {
   color: #FFFFFF;
@@ -7468,7 +7539,7 @@ button:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 #sign-up {
@@ -11766,6 +11837,102 @@ button:focus {
   max-width: 30px;
 }
 
+#activity-modal .modal-outer-box {
+  max-width: 460px;
+  background: #F1F1F1;
+  -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+}
+#activity-modal .modal-body {
+  max-width: 378px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+#activity-modal .booking-card {
+  margin-bottom: 10px;
+}
+#activity-modal .booking-card .booking-card-header {
+  border-bottom: unset;
+}
+#activity-modal .friend-invited-box {
+  padding: 32px;
+  border-radius: 11px 11px 21px 21px;
+  background-color: #FFFFFF;
+}
+#activity-modal .friend-invited-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 12px;
+}
+#activity-modal .friend-invited-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#activity-modal .invited-friend-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  row-gap: 5px;
+}
+#activity-modal .invited-friend-img {
+  min-width: 26px;
+  min-height: 26px;
+  max-width: 26px;
+  max-height: 26px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#activity-modal .footer-btn-box {
+  margin-top: 30px;
+}
+#activity-modal .footer-btn-box .btn-share, #activity-modal .footer-btn-box .btn-modal-close {
+  padding: 13px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  display: block;
+  width: 100%;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#activity-modal .footer-btn-box .btn-share {
+  background-color: #690FAD;
+}
+#activity-modal .footer-btn-box .btn-modal-close {
+  margin-top: 10px;
+  background-color: #757575;
+}
+
 #friends {
   margin-top: 90px;
   margin-bottom: 100px;
@@ -11907,7 +12074,6 @@ button:focus {
 
 #add-activity-modal .modal-outer-box {
   max-width: 550px;
-  background: #F1F1F1;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
@@ -12201,7 +12367,6 @@ button:focus {
 
 #invite-friend-modal .modal-outer-box {
   max-width: 550px;
-  background: #F1F1F1;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
