@@ -12011,7 +12011,7 @@ button:focus {
   text-align: center;
   margin-top: 10px;
 }
-#friends .friend-card {
+#friends .btn-friend-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
