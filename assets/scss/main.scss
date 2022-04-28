@@ -246,11 +246,14 @@ button:focus {
     .swiper-container {
         overflow-x: hidden;
         margin-right: -1rem;
-        overflow-x: visible;
 
         @media screen and (min-width: 1300px) {
             margin-right: -100px;
             width: calc(100% + 100px);
+        }
+
+        @media (min-width: 1240px) and (max-width: 1400px) {
+            overflow-x: visible;
         }
 
         .swiper-wrapper {
@@ -420,6 +423,70 @@ button:focus {
         border-radius: 11px;
         overflow: hidden;
 
+        .btn-fav-box{
+            position: absolute;
+            right: 15px;
+            top: 16px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            z-index: 1;
+            @media (max-width: 991px){
+                right: 13px;
+                top: 14px;
+                width: 32px;
+                height: 32px;
+            }
+            .fav{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background: $colorWhite;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                svg,path{
+                    fill: #CAA8F5;
+                }
+                @media (max-width: 991px){
+                    width: 32px;
+                    height: 32px;
+                }
+                &:hover{
+                    background: $primaryColor;
+                    svg,path{
+                        fill: $colorWhite;
+                    }
+                }
+            }
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+        }
+        .btn-fav-box.active .fav{
+            background: $primaryColor;
+            svg,path{
+                fill: $colorWhite;
+            }
+            &:hover{
+                background: $colorWhite;
+                svg,path{
+                    fill: #CAA8F5;
+                }
+            }
+        }
+
         .card-img {
             width: 100%;
             height: 181.5px;
@@ -449,11 +516,10 @@ button:focus {
         }
 
         .card-title {
-            width: 80%;
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 500;
-            line-height: 17px;
+            // line-height: 17px;
             color: $colorBlack;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -463,8 +529,9 @@ button:focus {
             text-align: left;
             width: 100%;
             padding-top: 10px;
-            padding-bottom: 10px;
-            margin: 0 !important;
+            margin: 0 0 10px !important;
+            width: fit-content;
+            max-width: -webkit-fill-available;
         }
 
         .float-right {
@@ -475,10 +542,6 @@ button:focus {
                 svg,
                 path {
                     fill: $primaryColor;
-                }
-
-                svg,
-                img {
                     max-width: 27px;
                 }
             }
@@ -489,7 +552,6 @@ button:focus {
         }
 
         .distance-box {
-            // margin-right: -6px;
             justify-content: flex-end;
         }
 
@@ -513,14 +575,12 @@ button:focus {
             line-height: 12.19px;
             color: $colorBlack;
             text-align: left;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            padding-top: 10px;
+            margin-bottom: 10px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
         }
 
         .flex.mt-4.items-center {
@@ -547,7 +607,6 @@ button:focus {
 
 .card>button {
     width: 100%;
-    // box-shadow: 0px 22px 40px 0px #0000001A;
     border-radius: 11px;
 }
 
