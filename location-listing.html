@@ -60,7 +60,7 @@
                     </ul>
                 </nav>
 
-                <div class="search-box active">
+                <div class="search-box">
                     <div class="search-inner-box">
                         <input type="text" class="search-bar" placeholder="Search All">
                         <img src="./assets/images/icons/search-icon.png" class="search-icon" alt="">
@@ -68,8 +68,8 @@
                 </div>
 
                 <div class="sm-btn-search">
-                    <img src="./assets/images/icons/btn-search-box-close.png" class="btn-seach-close show" alt="">
-                    <img src="./assets/images/icons/btn-Search.png" class="btn-search" alt="">
+                    <img src="./assets/images/icons/btn-search-box-close.png" class="btn-seach-close" alt="">
+                    <img src="./assets/images/icons/btn-Search.png" class="btn-search show" alt="">
                 </div>
 
                 <ul class="header-nav-list" role="list">
@@ -88,7 +88,7 @@
                         <button class="header-nav-link btn-user-profile">
                             <img src="./assets/images/icons/profile-icon.png" width="36" height="36" alt="">
                         </button>
-                        <div class="profile-menu-box show">
+                        <div class="profile-menu-box">
                             <div class="profile-menu-header">
                                 <div class="profile-img-box">
                                     <img src="./assets/images/icons/profile-icon.png" alt="" class="profile-img">
@@ -140,7 +140,7 @@
             <section id="listing-filter">
                 <div class="custom-container filter-box flex  mx-auto justify-between items-center rounded">
                     <div class="input-field-search-activity-box mr-4">
-                        <input type="text" class="location rounded-full" placeholder="Select Location...">
+                        <input type="text" class="location rounded-full" placeholder="Search Activity, Provider Name . .">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15.6539 14.7259L11.0786 10.1507C11.9464 9.07931 12.4688 7.7173 12.4688 6.2344C12.4688 2.79677 9.672 0 6.23437 0C2.79674 0 0 2.79677 0 6.2344C0 9.67203 2.79677 12.4688 6.2344 12.4688C7.7173 12.4688 9.07931 11.9464 10.1507 11.0786L14.7259 15.6539C14.8541 15.782 15.0618 15.782 15.19 15.6539L15.6539 15.19C15.782 15.0618 15.782 14.854 15.6539 14.7259ZM6.2344 11.1563C3.52032 11.1563 1.31251 8.94848 1.31251 6.2344C1.31251 3.52032 3.52032 1.31251 6.2344 1.31251C8.94848 1.31251 11.1563 3.52032 11.1563 6.2344C11.1563 8.94848 8.94848 11.1563 6.2344 11.1563Z"
@@ -148,7 +148,7 @@
                         </svg>
                         <div class="manual-location-field-box">
                             <div class="manual-location-field-header">
-                                <input type="text" class="" placeholder="Search for Activity . .">
+                                <input type="text" class="" placeholder="Search Activity, Provider Name . .">
                                 <button>
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -160,9 +160,12 @@
                             </div>
                             <div class="manual-location-field-body">
                                 <ul class="location-list">
-                                    <li class="location-item">Dubai, United Arab Emirates (UAE)</li>
-                                    <li class="location-item">Melbourne, Australia (AU)</li>
-                                    <li class="location-item">Bristol, United Kingdom</li>
+                                    <li class="location-item">CoreDirection events</li>
+                                    <li class="location-item">Beech Meditation</li>
+                                    <li class="location-item">Surfboarding</li>
+                                    <li class="location-item">Swiming Classes</li>
+                                    <li class="location-item">Yoga Sessions</li>
+                                    <li class="location-item">Hotel & Beach Access</li>
                                 </ul>
                             </div>
                         </div>
@@ -191,10 +194,14 @@
                             </div>
                             <div class="category-field-body">
                                 <ul class="category-list">
-                                    <li class="category-item">Gym & Health Clubs</li>
-                                    <li class="category-item">Classes & Activities</li>
-                                    <li class="category-item">Pools & Beeches</li>
-                                    <li class="category-item">Event & Experiences</li>
+                                    <li class="category-item">Select All</li>
+                                    <li class="category-item">My Favorites</li>
+                                    <li class="category-item">Gyms & Health Clubs</li>
+                                    <li class="category-item">Gyms & Health Clubs</li>
+                                    <li class="category-item">Events & Experiences</li>
+                                    <li class="category-item">Hotel & Beach Access</li>
+                                    <li class="category-item">Pools & Sports Courts</li>
+                                    <li class="category-item">Corporates & Brands</li>
                                 </ul>
                             </div>
                         </div>
@@ -224,9 +231,10 @@
                             </div>
                             <div class="manual-location-field-body">
                                 <ul class="location-list">
-                                    <li class="location-item">Dubai, United Arab Emirates (UAE)</li>
-                                    <li class="location-item">Melbourne, Australia (AU)</li>
-                                    <li class="location-item">Bristol, United Kingdom</li>
+                                    <li class="location-item">Dubai, UAE</li>
+                                    <li class="location-item">Melbourne, AU</li>
+                                    <li class="location-item">Bristol, UK</li>
+                                    <li class="location-item">Abu Dhabi, UAE</li>
                                 </ul>
                             </div>
                         </div>
@@ -246,16 +254,6 @@
                         </button>
                     </div>
                 </div>
-                <button class="btn btn-sm-map flex items-center justify-center">Discover on map
-                    <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 22.6632C3.4 20.2632 5.86316 17.8632 8.26316 15.4C8.76842 14.8947 9.33684 14.3895 10.0316 14.2632C10.3474 14.2 10.4105 14.0105 10.2211 13.7579C9.33684 12.2421 8.6421 10.6 8.32631 8.83158C7.69474 5.42105 9.77895 2.01053 13.1263 1.18947C13.3158 1.12632 13.4421 1.06316 13.6316 1C14.3895 1 15.1474 1 15.9053 1C16.0316 1.06316 16.0947 1.06316 16.2211 1.12632C19.6947 1.88421 22.2211 5.42105 21.1474 9.58947C20.7053 11.1684 20.0737 12.5579 19.2526 13.9474C19.1263 14.2 19.1263 14.3263 19.3789 14.5158C20.0737 14.8947 20.7053 15.2737 21.4 15.6526C21.6526 15.7789 21.9053 15.7789 22.1579 15.7158C23.7368 15.3368 25.3789 15.0211 26.9579 14.6421C27.3368 14.5789 27.7158 14.5789 28.0316 14.8316C28.0316 15.0842 28.0316 15.3368 28.0316 15.5895C27.9684 15.6526 27.9053 15.6526 27.8421 15.7158C25.4421 18.1158 23.0421 20.5158 20.6421 22.9158C20.3263 23.2316 20.0105 23.7368 19.5053 23.8C18.8737 23.9263 18.3053 24.0526 17.6737 24.1789C16.5368 24.4316 15.3368 24.6211 14.1368 25C13.8842 25 13.5684 25 13.3158 25C11.4842 23.9895 9.71579 22.9789 7.88421 21.9684C7.56842 21.7789 7.31579 21.7789 6.93684 21.9053C5.29474 22.5368 3.58947 23.1053 1.88421 23.6737C1.56842 23.8 1.31579 23.8632 1 23.6737C1 23.3579 1 23.0421 1 22.6632ZM9.46316 7.63158C9.46316 7.94737 9.46316 8.26316 9.52632 8.57895C9.58947 8.95789 9.65263 9.27368 9.77895 9.65263C10.6632 12.7474 12.4316 15.3368 14.4526 17.7368C14.7053 18.0526 14.8947 17.9895 15.0842 17.7368C15.9053 16.7263 16.6632 15.7158 17.3579 14.5789C18.3684 12.9368 19.3158 11.2947 19.8211 9.46316C20.3263 7.63158 20.1368 5.86316 18.8737 4.34737C17.4211 2.57895 15.1474 1.94737 12.9368 2.70526C10.8526 3.33684 9.46316 5.29474 9.46316 7.63158ZM12.3053 17.1684C12.2421 17.2316 12.1789 17.2947 12.1158 17.3579C11.0421 18.4316 9.90526 19.5684 8.83158 20.6421C8.57895 20.8947 8.64211 21.021 8.89474 21.1474C10.2842 21.9053 11.6737 22.6632 13.0632 23.4842C13.3789 23.6737 13.5053 23.6105 13.7579 23.3579C14.3895 22.7263 15.0211 22.0947 15.6526 21.4632C17.1684 19.9474 18.6211 18.4316 20.1368 16.9789C20.4526 16.6632 20.3895 16.5368 20.0105 16.4105C19.5684 16.2211 19.1263 15.9684 18.6842 15.6526C18.3684 15.4632 18.1789 15.4632 17.9895 15.8421C17.1684 17.0421 16.2842 18.2421 15.3368 19.2526C14.8947 19.7579 14.5789 19.7579 14.0737 19.2526C13.5053 18.6211 13 17.9895 12.4947 17.4211C12.4947 17.2947 12.4947 17.1684 12.3053 17.1684ZM15.6526 23.1684C15.6526 23.2316 15.7158 23.2316 15.7158 23.2947C16.6 23.1053 17.5474 22.9158 18.4316 22.7263C18.9368 22.6632 19.3158 22.4105 19.6316 22.0947C21.0842 20.6421 22.5368 19.1263 23.9895 17.6737C24.3684 17.2947 24.8105 16.8526 25.1895 16.4737C24.1789 16.6 23.2316 16.7895 22.3474 16.9789C21.9684 17.0421 21.7158 17.2316 21.4632 17.4842C19.8211 19.1263 18.1789 20.7684 16.4737 22.4737C16.2842 22.6632 15.9684 22.9158 15.6526 23.1684ZM3.90526 21.6526C4.97895 21.2737 5.98947 20.8947 7 20.5789C7.12632 20.5158 7.18947 20.4526 7.25263 20.3895C8.6421 19 10.0316 17.6105 11.4211 16.2842C11.5474 16.1579 11.6105 15.9684 11.4842 15.8421C11.2947 15.6526 11.2947 15.2737 10.9789 15.4C10.4737 15.5895 9.90526 15.6526 9.52632 16.0947C7.82105 17.8 6.11579 19.5053 4.41053 21.2105C4.22105 21.2737 4.09474 21.4 3.90526 21.6526Z"
-                            fill="#690FAD" stroke="#F1F1F1" stroke-width="0.3" stroke-miterlimit="10" />
-                        <path
-                            d="M18.4315 7.56818C18.4315 9.58923 16.7894 11.2945 14.7683 11.2945C12.7473 11.2945 11.042 9.58923 11.042 7.56818C11.042 5.54713 12.7473 3.84186 14.8315 3.90502C16.8525 3.90502 18.4315 5.54713 18.4315 7.56818ZM14.7683 9.90502C16.1578 9.90502 17.1683 8.83134 17.1051 7.50502C17.1051 6.1787 16.0315 5.16818 14.7051 5.16818C13.442 5.16818 12.3052 6.24186 12.3052 7.50502C12.3683 8.83134 13.442 9.96818 14.7683 9.90502Z"
-                            fill="#690FAD" stroke="#F1F1F1" stroke-width="0.3" stroke-miterlimit="10" />
-                    </svg>
-                </button>
             </section>
 
             <!-- fitness-villages section -->
