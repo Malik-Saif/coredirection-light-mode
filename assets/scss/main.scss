@@ -866,6 +866,18 @@ button:focus {
         }
     }
 
+    .invited-people-box{
+        margin-top: 8px;
+        margin-bottom: 19px;
+    }
+    .invited-people-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        line-height: 14.63px;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+
     .booking-activity-info-item {
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
@@ -896,22 +908,6 @@ button:focus {
             margin-right: 5px;
         }
 
-        .tag {
-            padding: 2px 5px;
-            color: $colorWhite;
-            background-color: $primaryColor;
-            border-radius: 3px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: left;
-            margin-left: 10px;
-            margin-right: 7px;
-        }
-
         .subscription-tag {
             padding: 2px 5px;
             color: $colorWhite;
@@ -927,6 +923,22 @@ button:focus {
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    .tag {
+        padding: 2px 5px;
+        color: $colorWhite;
+        background-color: $primaryColor;
+        border-radius: 3px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 7px;
     }
 
     strong.block{
@@ -969,6 +981,15 @@ button:focus {
         }
     }
 
+    .invited-people-img{
+        padding: 1px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
     .booking-card-footer {
         text-align: center;
         margin-top: 24px;
@@ -978,24 +999,28 @@ button:focus {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
             width: 100%;
             max-width: 262.47px;
             min-height: 44.82px;
             background-color: $primaryColor;
             color: $colorWhite;
-            text-align: center;
         }
 
         .btn-book-secondary {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
             width: 100%;
             max-width: 262.47px;
             min-height: 44.82px;
             background-color: $colorWhiteSmoke;
             color: $primaryColor;
-            text-align: center;
         }
 
         .btn-disable-booked {
@@ -1022,6 +1047,14 @@ button:focus {
             color: $colorWhite;
             text-align: center;
             cursor: not-allowed;
+        }
+        .btn-checked-in{
+            color: $colorWhite;
+            background-color: $colorBlack;
+        }
+        .btn-cancelled{
+            cursor: not-allowed;
+            background-color: #690FAD73;
         }
     }
 }
@@ -1166,6 +1199,13 @@ button:focus {
             background-color: $primaryColor;
             color: $colorWhite;
             border-radius: 0px 0px 11px 11px;
+        }
+        .btn-not-show{
+            color: $colorBlack;
+            background-color: #EAEAEA;
+        }
+        .btn-cancelled{
+            background-color: #690FAD73;
         }
     }
 }
@@ -4820,119 +4860,31 @@ button:focus {
     }
 }
 
-#bookings {
-    .booking-listing-outer-box {
+#your-activities {
+    .booking-card{
+        min-height: 338px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 275px;
-        height: 158px;
-        margin-right: 25px;
-        padding: 25px;
-        border-radius: 11px;
-        -webkit-border-radius: 11px;
-        -moz-border-radius: 11px;
-        -ms-border-radius: 11px;
-        -o-border-radius: 11px;
-        background-color: $colorWhite;
-        margin-bottom: 34px;
-        position: relative;
-
-        @media screen and (min-width: 992px) {
-            box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .activity-status {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: right;
-            position: absolute;
-            right: 0;
-            top: 10px;
-            padding: 2px 10px 2px 5px;
-            color: $colorWhite;
-            background-color: $primaryColor;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .booking-listing-inner-box {
-            display: flex;
-            align-items: center;
-
-            .booking-listing-icon-box {
-                margin-right: 25px;
-            }
-
-            svg,
-            img {
-                max-width: 79px;
-            }
-
-            svg,
-            path {
-                fill: $primaryColor;
-            }
-
-            .exercise-name,
-            .instructor-name,
-            .destination,
-            .date,
-            .time {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 10px;
-                line-height: 12.19px;
-                color: $colorBlack;
-            }
-
-            .exercise-name {
-                font-weight: 400;
-            }
-
-            .instructor-name {
-                font-weight: 500;
-            }
-
-            .destination {
-                font-weight: 400;
-            }
-
-            .date {
-                font-weight: 400;
-                margin-top: 17.78px;
-            }
-
-            .time {
-                font-weight: 400;
-            }
-        }
-
-        &:hover {
-            background-color: $primaryColor;
-            cursor: pointer;
-
-            .activity-status {
-                color: $primaryColor;
-                background-color: $colorWhite;
-            }
-
-            svg,
-            path {
-                fill: $colorWhite;
-            }
-
-            .exercise-name,
-            .instructor-name,
-            .destination,
-            .date,
-            .time {
-                color: $colorWhite;
-            }
-        }
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section-body .booking-card .booking-card-header{
+        border-bottom: none;
+        margin-bottom: 8px;
+    }
+    .booking-card .booking-card-header .business-name{
+        font-weight: 700;
+    }
+    .booking-card-body{
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .booking-card .booking-activity-info-item{
+        margin-bottom: 0;
+    }
+    .booking-card .booking-card-footer .btn-book-now{
+        max-width: 205px;
     }
 }
 

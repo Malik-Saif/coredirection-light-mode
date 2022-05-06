@@ -837,6 +837,17 @@ button:focus {
 .booking-card .booking-activity-time strong {
   font-weight: 700;
 }
+.booking-card .invited-people-box {
+  margin-top: 8px;
+  margin-bottom: 19px;
+}
+.booking-card .invited-people-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
 .booking-card .booking-activity-info-item {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -863,21 +874,6 @@ button:focus {
   font-weight: 700;
   margin-right: 5px;
 }
-.booking-card .booking-activity-info-item .tag {
-  padding: 2px 5px;
-  color: #FFFFFF;
-  background-color: #690FAD;
-  border-radius: 3px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 7px;
-}
 .booking-card .booking-activity-info-item .subscription-tag {
   padding: 2px 5px;
   color: #FFFFFF;
@@ -892,6 +888,21 @@ button:focus {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+.booking-card .tag {
+  padding: 2px 5px;
+  color: #FFFFFF;
+  background-color: #690FAD;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 7px;
 }
 .booking-card strong.block {
   width: 100%;
@@ -921,6 +932,14 @@ button:focus {
 .booking-card .booking-activity-info-item.status-active .booking-activity-info-item-icon-box circle {
   fill: #3AC617;
 }
+.booking-card .invited-people-img {
+  padding: 1px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .booking-card .booking-card-footer {
   text-align: center;
   margin-top: 24px;
@@ -930,23 +949,27 @@ button:focus {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
   width: 100%;
   max-width: 262.47px;
   min-height: 44.82px;
   background-color: #690FAD;
   color: #FFFFFF;
-  text-align: center;
 }
 .booking-card .booking-card-footer .btn-book-secondary {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
   width: 100%;
   max-width: 262.47px;
   min-height: 44.82px;
   background-color: #F1F1F1;
   color: #690FAD;
-  text-align: center;
 }
 .booking-card .booking-card-footer .btn-disable-booked {
   font-family: 'Montserrat', sans-serif;
@@ -971,6 +994,14 @@ button:focus {
   color: #FFFFFF;
   text-align: center;
   cursor: not-allowed;
+}
+.booking-card .booking-card-footer .btn-checked-in {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.booking-card .booking-card-footer .btn-cancelled {
+  cursor: not-allowed;
+  background-color: #690FAD73;
 }
 
 .booking-history-card {
@@ -1104,6 +1135,13 @@ button:focus {
   background-color: #690FAD;
   color: #FFFFFF;
   border-radius: 0px 0px 11px 11px;
+}
+.booking-history-card .booking-card-footer .btn-not-show {
+  color: #000000;
+  background-color: #EAEAEA;
+}
+.booking-history-card .booking-card-footer .btn-cancelled {
+  background-color: #690FAD73;
 }
 
 .package-card {
@@ -4820,115 +4858,44 @@ button:focus {
   margin-bottom: 6px;
 }
 
-#bookings .booking-listing-outer-box {
+#your-activities .booking-card {
+  min-height: 338px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 275px;
-  height: 158px;
-  margin-right: 25px;
-  padding: 25px;
-  border-radius: 11px;
-  -webkit-border-radius: 11px;
-  -moz-border-radius: 11px;
-  -ms-border-radius: 11px;
-  -o-border-radius: 11px;
-  background-color: #FFFFFF;
-  margin-bottom: 34px;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media screen and (min-width: 992px) {
-  #bookings .booking-listing-outer-box {
-    -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-  }
+#your-activities .section-body .booking-card .booking-card-header {
+  border-bottom: none;
+  margin-bottom: 8px;
 }
-#bookings .booking-listing-outer-box .activity-status {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: right;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  padding: 2px 10px 2px 5px;
-  color: #FFFFFF;
-  background-color: #690FAD;
-  border-radius: 3px 0 0 3px;
+#your-activities .booking-card .booking-card-header .business-name {
+  font-weight: 700;
 }
-#bookings .booking-listing-outer-box .booking-listing-inner-box {
+#your-activities .booking-card-body {
+  min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#bookings .booking-listing-outer-box .booking-listing-inner-box .booking-listing-icon-box {
-  margin-right: 25px;
+#your-activities .booking-card .booking-activity-info-item {
+  margin-bottom: 0;
 }
-#bookings .booking-listing-outer-box .booking-listing-inner-box svg,
-#bookings .booking-listing-outer-box .booking-listing-inner-box img {
-  max-width: 79px;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box svg,
-#bookings .booking-listing-outer-box .booking-listing-inner-box path {
-  fill: #690FAD;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .exercise-name,
-#bookings .booking-listing-outer-box .booking-listing-inner-box .instructor-name,
-#bookings .booking-listing-outer-box .booking-listing-inner-box .destination,
-#bookings .booking-listing-outer-box .booking-listing-inner-box .date,
-#bookings .booking-listing-outer-box .booking-listing-inner-box .time {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  line-height: 12.19px;
-  color: #000000;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .exercise-name {
-  font-weight: 400;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .instructor-name {
-  font-weight: 500;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .destination {
-  font-weight: 400;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .date {
-  font-weight: 400;
-  margin-top: 17.78px;
-}
-#bookings .booking-listing-outer-box .booking-listing-inner-box .time {
-  font-weight: 400;
-}
-#bookings .booking-listing-outer-box:hover {
-  background-color: #690FAD;
-  cursor: pointer;
-}
-#bookings .booking-listing-outer-box:hover .activity-status {
-  color: #690FAD;
-  background-color: #FFFFFF;
-}
-#bookings .booking-listing-outer-box:hover svg,
-#bookings .booking-listing-outer-box:hover path {
-  fill: #FFFFFF;
-}
-#bookings .booking-listing-outer-box:hover .exercise-name,
-#bookings .booking-listing-outer-box:hover .instructor-name,
-#bookings .booking-listing-outer-box:hover .destination,
-#bookings .booking-listing-outer-box:hover .date,
-#bookings .booking-listing-outer-box:hover .time {
-  color: #FFFFFF;
+#your-activities .booking-card .booking-card-footer .btn-book-now {
+  max-width: 205px;
 }
 
 #booking-history .section-header {
