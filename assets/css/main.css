@@ -5134,6 +5134,14 @@ button:focus {
           justify-content: center;
   padding-bottom: 102px;
 }
+@media screen and (max-width: 991px) {
+  #business-profile .business-profile-gallery-list {
+    grid-template-columns: repeat(auto-fill, minmax(172px, 172px));
+    -webkit-column-gap: 14px;
+            column-gap: 14px;
+    row-gap: 14px;
+  }
+}
 #business-profile .business-profile-gallery-list .business-profile-gallery-item img {
   border-radius: 11px;
 }

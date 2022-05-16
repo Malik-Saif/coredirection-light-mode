@@ -5129,6 +5129,11 @@ button:focus {
         row-gap: 15px;
         justify-content: center;
         padding-bottom: 102px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(auto-fill, minmax(172px, 172px));
+            column-gap: 14px;
+            row-gap: 14px;
+        }
 
         .business-profile-gallery-item {
             img {
