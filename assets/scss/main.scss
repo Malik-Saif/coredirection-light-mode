@@ -1030,10 +1030,10 @@ button:focus {
             width: 100%;
             max-width: 262.47px;
             min-height: 44.82px;
-            background-color: #CAA8F5;
+            background-color: #06070E;
             color: $colorWhite;
             text-align: center;
-            cursor: not-allowed;
+            cursor: pointer;
         }
 
         .btn-diabled-activity-full {
@@ -1043,9 +1043,9 @@ button:focus {
             width: 100%;
             max-width: 262.47px;
             min-height: 44.82px;
-            background-color: #06070E;
-            color: $colorWhite;
             text-align: center;
+            background-color: #CAA8F5;
+            color: $colorWhite;
             cursor: not-allowed;
         }
         .btn-checked-in{
@@ -1310,6 +1310,10 @@ button:focus {
         background-color: $colorWhiteSmoke;
         border-radius: 11px;
         margin-bottom: 0;
+        &:hover{
+            color: $colorWhite;
+            background-color: $primaryColor;
+        }
     }
 
     .package-header,
@@ -4919,6 +4923,12 @@ button:focus {
                 object-fit: cover;
                 object-position: center;
             }
+            @media screen and (max-width: 767px) {
+                height: 109px;
+                img{
+                    height: 109px;
+                }
+            }
         }
 
         .business-profile-map-box {
@@ -4997,11 +5007,22 @@ button:focus {
         .business-profile-contact-info-box {
             @media screen and (max-width: 991px) {
                 flex-wrap: wrap;
+                column-gap: 12px;
+                row-gap: 12px;
 
                 .btn-brand-number,
                 .btn-brand-map,
                 .btn-business-map {
-                    margin-bottom: 16px;
+                    margin: 0px !important;
+                }
+                .btn-brand-number,
+                .btn-brand-map {
+                    font-size: 10px !important;
+                    line-height: 12px !important;
+                }
+                .btn-business-map svg{
+                    max-width: 40px;
+                    max-height: 40px;
                 }
             }
 
@@ -5023,6 +5044,9 @@ button:focus {
                 img {
                     margin-right: 7.1px;
                 }
+                @media screen and (max-width: 991px) {
+                    padding: 10px 16px 10px 14px;
+                }
             }
 
             .btn-brand-map {
@@ -5030,6 +5054,9 @@ button:focus {
                 color: $colorWhiteSmoke;
                 background-color: $primaryColor;
                 margin-right: 14px;
+                @media screen and (max-width: 991px) {
+                    padding: 13px 22px 15px;
+                }
             }
         }
     }
@@ -5060,6 +5087,9 @@ button:focus {
         border-bottom: 2px solid transparent;
         cursor: pointer;
         height: 48px;
+        @media screen and (max-width: 991px) {
+            padding: 13.28px 18.13px 14.01px;
+        }
 
         svg,
         img {
@@ -5704,6 +5734,115 @@ button:focus {
         row-gap: 15px;
         padding-bottom: 102px;
         justify-content: center;
+    }
+
+    .applied-filter-box{
+        margin-bottom: 41px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+    }
+
+    .applied-filter-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 29px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 31px;
+        }
+    }
+
+    .applied-filter-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorBlack;
+        @media screen and (max-width: 767px){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+        }
+    }
+
+    .applied-filter-btn-reset{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $primaryColor;
+        cursor: pointer;
+        @media screen and (max-width: 767px){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+        }
+    }
+
+    .applied-filter-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 9px;
+        row-gap: 29px;
+        @media screen and (max-width: 767px){
+            column-gap: 10px;
+            row-gap: 15px;
+        }
+    }
+
+    .applied-filter-item{
+        min-width: 103px;
+        display: inline-block;
+        width: fit-content;
+        padding: 14px 27px 13px 26px;
+        background-color: $primaryColor;
+        color: $colorWhite;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -ms-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        @media screen and (max-width: 767px){
+            font-size: 12px;
+            line-height: 15px;
+            padding: 14px 20px;
+        }
+        .btn-remove{
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: -10px;
+            @media screen and (min-width: 768px){
+                display: none;
+            }
+        }
+        &:hover{
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            .btn-remove{
+                @media screen and (min-width: 768px){
+                    display: block;
+                }
+            }
+        }
     }
 }
 

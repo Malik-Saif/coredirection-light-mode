@@ -978,10 +978,10 @@ button:focus {
   width: 100%;
   max-width: 262.47px;
   min-height: 44.82px;
-  background-color: #CAA8F5;
+  background-color: #06070E;
   color: #FFFFFF;
   text-align: center;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 .booking-card .booking-card-footer .btn-diabled-activity-full {
   font-family: 'Montserrat', sans-serif;
@@ -990,9 +990,9 @@ button:focus {
   width: 100%;
   max-width: 262.47px;
   min-height: 44.82px;
-  background-color: #06070E;
-  color: #FFFFFF;
   text-align: center;
+  background-color: #CAA8F5;
+  color: #FFFFFF;
   cursor: not-allowed;
 }
 .booking-card .booking-card-footer .btn-checked-in {
@@ -1238,6 +1238,10 @@ button:focus {
   background-color: #F1F1F1;
   border-radius: 11px;
   margin-bottom: 0;
+}
+.package-card .btn-package-buy:hover {
+  color: #FFFFFF;
+  background-color: #690FAD;
 }
 .package-card .package-header,
 .package-card .package-footer {
@@ -4927,6 +4931,16 @@ button:focus {
   -o-object-position: center;
      object-position: center;
 }
+@media screen and (max-width: 767px) {
+  #business-profile .business-profile-header .business-profile-banner-box,
+  #business-profile .business-profile-header .business-profile-map-box {
+    height: 109px;
+  }
+  #business-profile .business-profile-header .business-profile-banner-box img,
+  #business-profile .business-profile-header .business-profile-map-box img {
+    height: 109px;
+  }
+}
 @media screen and (max-width: 991px) {
   #business-profile .business-profile-header .business-profile-map-box {
     display: none;
@@ -4999,11 +5013,23 @@ button:focus {
   #business-profile .business-profile-info-box .business-profile-contact-info-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-column-gap: 12px;
+            column-gap: 12px;
+    row-gap: 12px;
   }
   #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number,
   #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-map,
   #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-business-map {
-    margin-bottom: 16px;
+    margin: 0px !important;
+  }
+  #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number,
+  #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-map {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-business-map svg {
+    max-width: 40px;
+    max-height: 40px;
   }
 }
 #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number,
@@ -5024,11 +5050,21 @@ button:focus {
 #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number img {
   margin-right: 7.1px;
 }
+@media screen and (max-width: 991px) {
+  #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-number {
+    padding: 10px 16px 10px 14px;
+  }
+}
 #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-map {
   padding: 16px 27px;
   color: #F1F1F1;
   background-color: #690FAD;
   margin-right: 14px;
+}
+@media screen and (max-width: 991px) {
+  #business-profile .business-profile-info-box .business-profile-contact-info-box .btn-brand-map {
+    padding: 13px 22px 15px;
+  }
 }
 #business-profile .tab-container {
   border-top: 1px solid #F1F1F1;
@@ -5057,6 +5093,11 @@ button:focus {
   border-bottom: 2px solid transparent;
   cursor: pointer;
   height: 48px;
+}
+@media screen and (max-width: 991px) {
+  #business-profile .business-profile-menu-tab-item {
+    padding: 13.28px 18.13px 14.01px;
+  }
 }
 #business-profile .business-profile-menu-tab-item svg,
 #business-profile .business-profile-menu-tab-item img {
@@ -5658,6 +5699,141 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+#business-profile .applied-filter-box {
+  margin-bottom: 41px;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-box {
+    margin-bottom: 30px;
+  }
+}
+#business-profile .applied-filter-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 29px;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-header {
+    margin-bottom: 31px;
+  }
+}
+#business-profile .applied-filter-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+#business-profile .applied-filter-btn-reset {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #690FAD;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-btn-reset {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+#business-profile .applied-filter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 9px;
+          column-gap: 9px;
+  row-gap: 29px;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-list {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 15px;
+  }
+}
+#business-profile .applied-filter-item {
+  min-width: 103px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14px 27px 13px 26px;
+  background-color: #690FAD;
+  color: #FFFFFF;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  #business-profile .applied-filter-item {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 14px 20px;
+  }
+}
+#business-profile .applied-filter-item .btn-remove {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}
+@media screen and (min-width: 768px) {
+  #business-profile .applied-filter-item .btn-remove {
+    display: none;
+  }
+}
+#business-profile .applied-filter-item:hover {
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  #business-profile .applied-filter-item:hover .btn-remove {
+    display: block;
+  }
 }
 
 #booking-confirmation-modal .modal-outer-box,
