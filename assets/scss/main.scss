@@ -8819,59 +8819,12 @@ button:focus {
 #profile {
     background-color: $colorWhite;
     box-shadow: 0px -22px 40px rgba(0, 0, 0, 0.1);
-    z-index: 9;
     padding-bottom: 145px;
 
-    .profile-banner {
-        width: 100%;
-        max-width: 1188px;
-        min-height: 335px;
-        max-height: 335px;
-        position: relative;
-
-        .profile-banner-img {
-            width: 100%;
-            min-height: 335px;
-            max-height: 335px;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .custom-container {
-            position: absolute;
-            right: 0;
-            top: 13px;
-        }
-
-        .btn-banner-change {
-            margin-left: auto;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: left;
-            padding: 6px 12px 7px;
-            border-radius: 11px;
-            cursor: pointer;
-            color: $colorWhite;
-            background-color: $colorBlack;
-            opacity: .3;
-
-            img {
-                min-height: 22px;
-                margin-left: 9px;
-            }
-
-            @media screen and (min-width: 992px) {
-                margin-right: 61px;
-            }
-        }
-    }
-
     .profile-img-box {
-        margin-top: -77px;
+        @media screen and (min-width: 992px) {
+            margin-top: 226px;
+        }
 
         .img-box {
             max-width: 150px;
@@ -8880,6 +8833,10 @@ button:focus {
             border-radius: 50%;
             box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            margin-top: 60px;
+            @media screen and (min-width: 992px) {
+                margin-top: -78px;
+            }
 
             .profile-pic {
                 max-width: 175px;
@@ -8932,13 +8889,87 @@ button:focus {
 
     .welcome-message-box {
         width: 100%;
-        max-width: 768px;
+        max-width: 820px;
         border-bottom: 1px solid $colorBlack;
+        @media (max-width: 767px){
+            margin-bottom: 60px;
+        }
+    }
+    .welcome-message-inner-box{
+        width: 100%;
+        max-width: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 767px){
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+    }
+
+    .btn-update-community-profile{
+        margin-bottom: 22px;
+        margin-left: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: $colorBlack;
+        background: $colorWhite;
+        padding: 17px 11px 17px 24px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        cursor: pointer;
+        svg,img{
+            margin-left: 23px;
+        }
+        &:hover{
+            color: $colorWhite;
+            background: $primaryColor;
+            svg,path{
+                fill: $colorWhite;
+            }
+        }
+        @media (max-width: 767px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-right: auto;
+            margin-bottom: 31px;
+        }
+    }
+
+    .btn-update-community-profile-box{
+        @media (max-width: 767px){
+            width: 100%;
+        }
     }
 
     .signup-form-container {
         width: 100%;
         max-width: 550px;
+    }
+
+    .grid.grid-cols-2.gap-4{
+        @media (max-width: 480px){
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            button{
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 
     .form-title {
@@ -8953,9 +8984,9 @@ button:focus {
         margin-bottom: 18px;
 
         @media screen and (max-width: 991px) {
-            font-size: 26px;
-            line-height: 34px;
-            margin-bottom: 12px;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
         }
     }
 
@@ -8971,10 +9002,14 @@ button:focus {
         margin-bottom: 40px;
         max-width: 434px;
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             font-size: 12px;
+            line-height: 15px;
             font-weight: 400;
             margin-bottom: 30px;
+        }
+        strong{
+            font-weight: 500;
         }
     }
 
@@ -8987,6 +9022,7 @@ button:focus {
         letter-spacing: 0em;
         text-align: left;
         color: $colorEerieBlack;
+        opacity: 0.65;
 
         .field-primary {
             color: red;
@@ -9045,11 +9081,15 @@ button:focus {
     }
 
     .checkbox-field-box {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+
         input:checked+label:after {
             top: 1px;
 
-            @media screen and (max-width: 991px) {
-                top: 1px;
+            @media screen and (max-width: 767px) {
+                top: 0px;
             }
         }
 
@@ -9061,6 +9101,10 @@ button:focus {
             line-height: 20px;
             letter-spacing: 0em;
             text-align: left;
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
     }
 
@@ -9077,10 +9121,10 @@ button:focus {
         height: 60px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-        @media screen and (max-width: 992px) {
-            font-size: 14px;
-            width: 180px;
-            height: 46px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            width: 260px;
+            height: 50px;
         }
     }
 
@@ -9096,10 +9140,10 @@ button:focus {
         width: 100%;
         height: 60px;
 
-        @media screen and (max-width: 992px) {
-            font-size: 14px;
-            width: 180px;
-            height: 46px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            width: 260px;
+            height: 50px;
         }
     }
 
@@ -9142,6 +9186,41 @@ button:focus {
             .col-span-2 {
                 order: 1;
             }
+        }
+    }
+}
+#profile.my-profile-community-info{
+    background: transparent;
+    box-shadow: none;
+    .profile-img-box {
+        @media screen and (min-width: 992px) {
+            margin-top: 0px;
+        }
+
+        .img-box {
+            @media screen and (min-width: 992px) {
+                margin-top: 148px;
+            }
+        }
+    }
+
+    .btn-update-community-profile{
+        padding: 16px 42px 15px;
+        svg,img{
+            margin-left: 23px;
+        }
+        &:hover{
+            color: $colorWhite;
+            background: $primaryColor;
+            svg,path{
+                fill: $colorWhite;
+            }
+        }
+        @media (max-width: 767px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-right: auto;
+            margin-bottom: 31px;
         }
     }
 }
