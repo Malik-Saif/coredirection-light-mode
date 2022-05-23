@@ -1885,9 +1885,9 @@ button:focus {
   fill: #FFFFFF;
 }
 .btn-filter.active .btn-filter-content-box,
-.btn-filter.active .btn-filter-activity-type-con,
+.btn-filter.active .btn-filter-activity-type-content-box,
 .btn-filter-activity-type.active .btn-filter-content-box,
-.btn-filter-activity-type.active .btn-filter-activity-type-con {
+.btn-filter-activity-type.active .btn-filter-activity-type-content-box {
   color: #FFFFFF;
 }
 
@@ -8846,7 +8846,7 @@ button:focus {
   width: 100%;
   max-width: 550px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #profile .grid.grid-cols-2.gap-4 {
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -8998,41 +8998,39 @@ button:focus {
 }
 #profile .btn-cancel {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
   color: #000000;
-  width: 100%;
-  height: 60px;
+  width: 192px;
+  height: 42px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 767px) {
   #profile .btn-cancel {
-    font-size: 16px;
-    width: 260px;
+    width: 250px;
     height: 50px;
   }
 }
 #profile .btn-update-profile {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
-  width: 100%;
-  height: 60px;
+  width: 192px;
+  height: 42px;
 }
 @media screen and (max-width: 767px) {
   #profile .btn-update-profile {
-    font-size: 16px;
-    width: 260px;
+    width: 250px;
     height: 50px;
   }
 }
@@ -9078,6 +9076,187 @@ button:focus {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+#profile .community-detail-box {
+  width: 100%;
+  max-width: 810px;
+}
+#profile .community-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 767px) {
+  #profile .community-title {
+    display: block;
+    width: 100%;
+  }
+}
+#profile .account-privacy-box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 77px;
+          column-gap: 77px;
+  row-gap: 25px;
+}
+#profile .account-privacy-box .community-title {
+  margin-bottom: 0;
+}
+#profile .account-privacy-box,
+#profile .user-bio-box {
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 767px) {
+  #profile .account-privacy-box,
+  #profile .user-bio-box {
+    margin-bottom: 34px;
+  }
+}
+#profile .account-privacy-checkbox {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 86px;
+          column-gap: 86px;
+  row-gap: 25px;
+}
+#profile .form-group input:checked + label:after {
+  top: 1px;
+}
+#profile input[type='radio'] + label {
+  vertical-align: unset;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#profile .textarea-field-box {
+  width: 100%;
+  height: 153px;
+  border: 1px solid rgba(6, 7, 14, 0.45);
+  border-radius: 11px;
+  padding: 14px 15px 18px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #profile .textarea-field-box {
+    height: 205px;
+  }
+}
+#profile .textarea-field-box textarea {
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+  height: 121px;
+}
+@media screen and (max-width: 767px) {
+  #profile .textarea-field-box textarea {
+    height: 175px;
+  }
+}
+#profile .textarea-field-box .cheracter-limit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.65);
+  right: 25px;
+  bottom: 6px;
+}
+@media screen and (max-width: 767px) {
+  #profile .textarea-field-box .cheracter-limit {
+    right: 10px;
+    bottom: 8px;
+  }
+}
+#profile .user-interest-box {
+  margin-bottom: 115px;
+}
+@media screen and (max-width: 767px) {
+  #profile .user-interest-box {
+    margin-bottom: 60px;
+  }
+}
+#profile .user-interest-list {
+  padding: 29px 35px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+}
+@media screen and (max-width: 767px) {
+  #profile .user-interest-list {
+    min-height: 232px;
+  }
+}
+#profile .user-interest-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  min-width: 60px;
+  min-height: 58px;
+  max-width: 60px;
+  max-height: 58px;
+  position: relative;
+}
+#profile .user-interest-item img {
+  width: 100%;
+  max-width: 25px;
+}
+#profile .user-interest-item .btn-remove {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  cursor: pointer;
+}
+#profile .btn-add-user-interest {
+  cursor: pointer;
+}
+#profile .btn-add-activity-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 13px;
+          column-gap: 13px;
+  row-gap: 18px;
+  margin-top: 30px;
+}
+#profile .btn-filter-activity-type {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 #profile.my-profile-community-info {
