@@ -7868,6 +7868,150 @@ button:focus {
     }
 
     .signup-body{
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
+    .signup-form{
+        width: 100%;
+        max-width: 391px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signup-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 15px;
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .signup-disc{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 59px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 47px;
+        }
+    }
+
+    .social-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 46px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 31px;
+        }
+        li{
+            position: relative;
+        }
+        li + li:before{
+            content: "";
+            position: absolute;
+            left: -42%;
+            border-left: 1px dashed #CAA8F5;
+            width: 1px;
+            max-width: 1px;
+            height: 75px;
+            top: -18px;
+        }
+        .social-link{
+            width: 100%;
+            max-width: 160px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $colorBlack;
+            background-color: $colorWhite;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            padding: 11px;
+            svg,img{
+                margin-right: 26px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 9px;
+                svg,img{
+                    margin-right: 22px;
+                }
+            }
+        }
+    }
+
+    .other-options{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .input-field{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 15px 22px;
+        border: 1px solid #690FAD;
+        border-radius: 7px;
+        background-color: $colorWhite;
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 13px 18px;
+        }
+    }
+
+    .btn-submit{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 15px;
+        color: $colorWhite;
+        background-color: $primaryColor;
+        display: block;
+        width: 100%;
+        border-radius: 12px;
     }
 
     #signup-footer{
