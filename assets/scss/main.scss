@@ -7865,17 +7865,28 @@ button:focus {
                 font-weight: 600;
             }
         }
+        .signin-link{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: right;
+            color: $primaryColor;
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
     }
 
-    .signup-body{
-        padding-top: 43px;
-        padding-bottom: 43px;
-    }
     .signup-form{
         width: 100%;
         max-width: 391px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 43px;
+        padding-bottom: 100px;
     }
 
     .signup-title{
@@ -7911,7 +7922,10 @@ button:focus {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 46px;
+        column-gap: 20px;
+        row-gap: 20px;
         @media screen and (max-width: 767px) {
             margin-bottom: 31px;
         }
@@ -7921,16 +7935,20 @@ button:focus {
         li + li:before{
             content: "";
             position: absolute;
-            left: -42%;
+            left: -22%;
             border-left: 1px dashed #CAA8F5;
             width: 1px;
             max-width: 1px;
             height: 75px;
             top: -18px;
+            @media screen and (max-width: 767px) {
+                left: -7%;
+            }
         }
         .social-link{
             width: 100%;
             max-width: 160px;
+            min-width: 160px;
             height: 50px;
             display: flex;
             align-items: center;
@@ -8012,6 +8030,143 @@ button:focus {
         display: block;
         width: 100%;
         border-radius: 12px;
+    }
+
+    .form-fields-box{
+        width: 100%;
+        max-width: 1040px;
+        margin-left: auto;
+        padding-top: 134px;
+        padding-bottom: 190px;
+        @media screen and (max-width: 767px) {
+            padding-top: 211px;
+            padding-bottom: 119px;
+        }
+    
+        .field-box{
+            margin-bottom: 30px;
+        }
+
+        .field-label{
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 39px;
+            letter-spacing: 0em;
+            text-align: left;
+            max-width: 711px;
+            margin-bottom: 20px;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            strong{
+                font-weight: 600;
+            }
+            span{
+                font-weight: 300;
+            }
+        }
+
+        .input-field{
+            padding: 0 0 15px;
+            border: none;
+            border-bottom: 1px solid $primaryColor;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $primaryColor;
+            background: transparent;
+            max-width: 606px;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .error-message{
+            align-items: center;
+            color: #06070E;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 10px;
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            svg,img{
+                margin-right: 5px;
+            }
+        }
+
+        .btn-submit{
+            max-width: 101px;
+            margin-right: 21px;
+            svg,img{
+                margin: auto;
+            }
+        }
+        .note{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+
+    .pagination-list{
+        width: 100%;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-bottom: 38px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .btn-back{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        svg{
+            margin-right: 13px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .page-counter{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $primaryColor;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     #signup-footer{

@@ -7809,15 +7809,28 @@ button:focus {
     font-weight: 600;
   }
 }
-#sign-up .signup-body {
-  padding-top: 43px;
-  padding-bottom: 43px;
+#sign-up #signup-header .signin-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #690FAD;
+}
+@media screen and (max-width: 767px) {
+  #sign-up #signup-header .signin-link {
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 #sign-up .signup-form {
   width: 100%;
   max-width: 391px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 43px;
+  padding-bottom: 100px;
 }
 #sign-up .signup-title {
   font-family: 'Montserrat', sans-serif;
@@ -7860,7 +7873,12 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 46px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
 }
 @media screen and (max-width: 767px) {
   #sign-up .social-list {
@@ -7873,16 +7891,22 @@ button:focus {
 #sign-up .social-list li + li:before {
   content: "";
   position: absolute;
-  left: -42%;
+  left: -22%;
   border-left: 1px dashed #CAA8F5;
   width: 1px;
   max-width: 1px;
   height: 75px;
   top: -18px;
 }
+@media screen and (max-width: 767px) {
+  #sign-up .social-list li + li:before {
+    left: -7%;
+  }
+}
 #sign-up .social-list .social-link {
   width: 100%;
   max-width: 160px;
+  min-width: 160px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7971,6 +7995,150 @@ button:focus {
   display: block;
   width: 100%;
   border-radius: 12px;
+}
+#sign-up .form-fields-box {
+  width: 100%;
+  max-width: 1040px;
+  margin-left: auto;
+  padding-top: 134px;
+  padding-bottom: 190px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .form-fields-box {
+    padding-top: 211px;
+    padding-bottom: 119px;
+  }
+}
+#sign-up .form-fields-box .field-box {
+  margin-bottom: 30px;
+}
+#sign-up .form-fields-box .field-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 711px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .form-fields-box .field-label {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+#sign-up .form-fields-box .field-label strong {
+  font-weight: 600;
+}
+#sign-up .form-fields-box .field-label span {
+  font-weight: 300;
+}
+#sign-up .form-fields-box .input-field {
+  padding: 0 0 15px;
+  border: none;
+  border-bottom: 1px solid #690FAD;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #690FAD;
+  background: transparent;
+  max-width: 606px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .form-fields-box .input-field {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+#sign-up .form-fields-box .error-message {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #06070E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .form-fields-box .error-message {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+#sign-up .form-fields-box .error-message svg, #sign-up .form-fields-box .error-message img {
+  margin-right: 5px;
+}
+#sign-up .form-fields-box .btn-submit {
+  max-width: 101px;
+  margin-right: 21px;
+}
+#sign-up .form-fields-box .btn-submit svg, #sign-up .form-fields-box .btn-submit img {
+  margin: auto;
+}
+#sign-up .form-fields-box .note {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#sign-up .pagination-list {
+  width: 100%;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-bottom: 38px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .pagination-list {
+    margin-bottom: 30px;
+  }
+}
+#sign-up .btn-back {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#sign-up .btn-back svg {
+  margin-right: 13px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .btn-back {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+#sign-up .page-counter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #690FAD;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .page-counter {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 #sign-up #signup-footer {
   padding-top: 15px;
