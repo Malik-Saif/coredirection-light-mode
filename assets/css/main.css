@@ -8035,6 +8035,25 @@ button:focus {
 #sign-up .form-fields-box .field-label span {
   font-weight: 300;
 }
+#sign-up .form-fields-box .sub-label {
+  display: block;
+  max-width: 711px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 34px;
+  margin-top: -10px;
+}
+@media screen and (max-width: 767px) {
+  #sign-up .form-fields-box .sub-label {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+}
 #sign-up .form-fields-box .input-field {
   padding: 0 0 15px;
   border: none;
@@ -8072,11 +8091,13 @@ button:focus {
   letter-spacing: 0em;
   text-align: left;
   margin-top: 10px;
+  padding-left: 16px;
 }
 @media screen and (max-width: 767px) {
   #sign-up .form-fields-box .error-message {
     font-size: 12px;
     line-height: 15px;
+    padding-left: 10px;
   }
 }
 #sign-up .form-fields-box .error-message svg, #sign-up .form-fields-box .error-message img {
