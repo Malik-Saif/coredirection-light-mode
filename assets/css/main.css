@@ -2384,6 +2384,17 @@ button:focus {
             flex-direction: row-reverse;
   }
 }
+@media (min-width: 992px) {
+  #header .nav-list {
+    -webkit-column-gap: 33px;
+            column-gap: 33px;
+    margin-left: 33px;
+    margin-right: 75px;
+  }
+}
+#header .btn-dropdown {
+  position: relative;
+}
 @media (max-width: 991px) {
   #header .btn-dropdown {
     margin-left: 15px;
@@ -2402,17 +2413,55 @@ button:focus {
     display: none;
   }
 }
-#header .nav-item {
-  margin-left: 1.5625rem;
-  margin-right: 1.5625rem;
+#header .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #690FAD;
+  -webkit-box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 11px 11px;
+  z-index: 999;
 }
-@media (min-width: 992px) and (max-width: 1023px) {
-  #header .nav-item {
-    margin-left: calc(.9vw + 10px);
-    margin-right: calc(.9vw + 10px);
+@media (min-width: 992px) {
+  #header .dropdown-menu {
+    left: 0;
+    padding: 10px 21px 16px;
+    width: 300px;
+    top: 70px;
   }
 }
+@media (max-width: 991px) {
+  #header .dropdown-menu {
+    right: 0;
+    padding: 0px 16px 16px;
+    width: 207px;
+    top: 45px;
+  }
+}
+#header .dropdown-menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+#header .dropdown-menu-link {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #F2F5EA;
+}
+#header .btn-dropdown.active .dropdown-menu {
+  display: block;
+}
 #header .nav-link {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -2420,12 +2469,41 @@ button:focus {
   color: #FFFFFF;
   padding: 24px 2px 25px;
 }
-#header .nav-link:hover {
-  opacity: .8;
+#header .nav-link:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #690FAD;
+  border-radius: 3px 3px 0px 0px;
+}
+@media (min-width: 992px) {
+  #header .nav-link:hover::after {
+    background: #F2F5EA;
+  }
 }
 @media (min-width: 992px) {
   #header .nav-link .svg {
     display: none;
+  }
+}
+#header .nav-link.active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #690FAD;
+  border-radius: 3px 3px 0px 0px;
+}
+@media (min-width: 992px) {
+  #header .nav-link.active::after {
+    background: #F2F5EA;
   }
 }
 #header .btn-signup {
@@ -2479,6 +2557,7 @@ button:focus {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: right;
+  color: #FFFFFF;
 }
 @media (max-width: 991px) {
   #header .btn-signin {
@@ -13727,13 +13806,13 @@ button:focus {
   }
 }
 #footer .custom-container .links {
-  width: 150px;
-  margin-right: 108px;
+  width: 195px;
+  margin-right: 50px;
   color: #000000;
 }
 @media screen and (max-width: 1140px) {
   #footer .custom-container .links {
-    margin-right: 40px;
+    margin-right: 26px;
   }
 }
 #footer .custom-container .links p {
@@ -13755,6 +13834,43 @@ button:focus {
 #footer .custom-container .links button:hover,
 #footer .custom-container .links a:hover {
   opacity: .8;
+}
+#footer .custom-container .links .btn-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#footer .custom-container .links .btn-dropdown svg {
+  margin-left: 9px;
+}
+#footer .custom-container .links .dropdown {
+  padding-left: 10px;
+}
+#footer .custom-container .links .dropdown-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #690FAD;
+}
+#footer .custom-container .links .dropdown-list {
+  display: none;
+  padding-left: 10px;
+}
+#footer .custom-container .links .btn-dropdown-box.active .btn-dropdown svg {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#footer .custom-container .links .btn-dropdown-box.active .dropdown-list {
+  display: block;
 }
 #footer .custom-container .links:nth-last-child(1) {
   margin-right: 0;
