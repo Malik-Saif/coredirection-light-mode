@@ -8194,6 +8194,187 @@ button:focus {
     }
 }
 
+#additional-info {
+    min-height: 100vh;
+
+    #signup-header{
+        padding-top: 36px;
+        @media screen and (max-width: 767px) {
+            padding-top: 22px;
+        }
+        .brand-img{
+            width: 100%;
+            max-width: 218px;
+            @media screen and (max-width: 767px) {
+                max-width: 137px;
+            }
+        }
+        .home-link{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $primaryColor;
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+        .btn-signin{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $colorWhite;
+            background-color: $primaryColor;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            padding: 11px 32px;
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+        .signin-link{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: right;
+            color: $primaryColor;
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .success-message-box{
+        width: 100%;
+        max-width: 1063px;
+        padding: 69px 15px 94px;
+        background: $primaryColor;
+        box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 11px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 142px;
+        margin-bottom: 170px;
+        @media screen and (max-width: 767px) {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding: 60px 15px 58px;
+        }
+    }
+
+    .success-icon{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .success-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        margin-bottom: 15px;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    .success-subtitle{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        margin-bottom: 67px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 111px;
+        }
+    }
+
+    .additional-info-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #F2F5EA;
+        margin-bottom: 64px;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+        svg{
+            margin-left: 15px;
+        }
+    }
+
+    .btn-close{
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        margin-bottom: 61px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 111px;
+        }
+    }
+
+    .success-desc{
+        max-width: 548px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorWhite;
+        @media screen and (max-width: 767px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}
+
 #wallet {
     margin-bottom: 115px;
 
